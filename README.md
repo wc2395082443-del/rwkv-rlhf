@@ -88,6 +88,44 @@ The RLM line explored recursive or REPL-style reasoning protocols inspired by Re
 
 Additional experiments targeted MMLU-Pro STEM and MMMU text-only evaluation/training. These runs tested prompt formats, boxed-slot variants, CoT vs direct-answer behavior, truncation, and verifier consistency outside the math-only RLVR setup.
 
+
+## Verified Experiment Results
+
+The table below records results that are present in the exported repository files, mainly `summary.json` files. Metrics from different rows are not always comparable because prompt, verifier, rollout count, and sampling settings changed across experiment lines.
+
+| Experiment / source file | Model / setting | Eval protocol | Key result | Notes |
+| --- | --- | --- | --- | --- |
+| `autodl-tmp_code/rwkv-rl-good-experiments-github/README.md` | GSM8K dynamic re-screen snapshot | Full GSM8K eval, n=1319 | best comparable full eval `0.6611`, stage 2 step 100 | Curated historical result from collected summaries. |
+| `autodl-tmp_code/rwkv-rl-good-experiments-github/README.md` | GSM8K hard-buffer/K3/zstd/length family | Full GSM8K eval, n=1319 | best comparable full eval about `0.6262` | Same note records small-eval `0.7500`, but that was n=164 and should not be reported as full GSM8K. |
+| `autodl-tmp_code/rwkv-rl-good-experiments-github/README.md` | GSM8K real-label variant | Full GSM8K eval, n=1319 | best full eval around `0.6065` | Useful lower reference for label-correct/real-label branch. |
+| `autodl-tmp_code/rwkv-rl-good-experiments-github/README.md` | Math500 direct RL snapshots | Full MATH500 eval, n=500 | reference around `0.4000` | Curated note; exact protocol should be checked before comparing to Albatross-aligned eval. |
+| `autodl-tmp_code/base_gsm8k_real_pass8_20260422/summary.json` | RWKV7 G1E 1.5B base | GSM8K test subset, 164 questions, group size 8, temp 0.3, top-p 0.4, top-k 500 | sample avg acc `0.5724`, pass@8 `0.6159` | Conservative eval sampling produced lower pass@8. |
+| `autodl-tmp_code/base_gsm8k_real_pass8_rolloutparams_20260422/summary.json` | RWKV7 G1E 1.5B base | GSM8K test subset, 164 questions, group size 8, temp 1.0, top-p 0.6, top-k 0 | sample avg acc `0.5381`, pass@8 `0.8354` | Rollout-style sampling greatly increased pass@8 while lowering average per-sample acc. |
+| `autodl-tmp_code/train_gsm8k_real_pass8_rolloutparams_20260425/summary.json` | RWKV7 G1E 1.5B base | GSM8K train full, 7473 questions, group size 8, temp 1.0, top-p 0.6 | sample avg acc `0.5839`, pass@8 `0.8834` | Pre-RL train-set pass@8 baseline used for data filtering discussion. |
+| `autodl-tmp_code/pass8_step150_full_20260425/summary.json` | G1E staged core-sub checkpoint step 150 | GSM8K train full, 7473 questions, group size 8 | sample avg acc `0.6877`, pass@8 `0.8571` | Training raised sample avg acc but reduced pass@8 relative to the base train-set pass@8 baseline. |
+| `autodl-tmp_code/pass8_step150_subset_20260425/summary.json` | Same step-150 checkpoint | GSM8K filtered core-subset, 2093 questions, group size 8 | sample avg acc `0.5770`, pass@8 `0.8528` | Used to inspect train-subset transfer and cases that fell to 0/8. |
+| `autodl-tmp_code/g1e_dynamic_rescreen_20260426_020719/stage_1/pass8_full/summary.json` | Dynamic re-screen stage 1 | GSM8K train full, 7473 questions | sample avg acc `0.6955`, pass@8 `0.8840` | Best train-set sample avg in the exported dynamic re-screen summaries. |
+| `autodl-tmp_code/g1e_dynamic_rescreen_20260426_020719/stage_2/pass8_full/summary.json` | Dynamic re-screen stage 2 | GSM8K train full | sample avg acc `0.6998`, pass@8 `0.8620` | Further sample avg gain, but pass@8 declined. |
+| `autodl-tmp_code/g1e_dynamic_rescreen_20260426_020719/stage_4/pass8_full/summary.json` | Dynamic re-screen stage 4 | GSM8K train full | sample avg acc `0.6900`, pass@8 `0.8339` | Later stages show pass@8 erosion despite high sample avg acc. |
+| `autodl-tmp_code/g1e_dynamic_rescreen_20260426_020719/math500_pass8_compare/pre/summary.json` | RWKV7 G1E 1.5B base | MATH500 test, group size 8, temp 1.0, top-p 0.6 | sample avg acc `0.3293`, pass@8 `0.5860` | Older MATH500 evaluation protocol, not Albatross-aligned. |
+| `autodl-tmp_code/g1e_dynamic_rescreen_20260426_020719/math500_pass8_compare/post/summary.json` | Dynamic re-screen final stage checkpoint | MATH500 test, same older pass@8 protocol | sample avg acc `0.2430`, pass@8 `0.4560` | Negative transfer to MATH500 under this protocol. |
+| `autodl-tmp_code/eval_math500_rwkv7_g1f_1p5b_full_20260607/summary.json` | RWKV7 G1F 1.5B base | Albatross-style MATH500, rollout 1, max new 1500, temp 1.0, top-p 0.28, top-k 32 | acc `0.3960`, truncation `0.174`, mean generated tokens `603.8` | Full MATH500 baseline under the later aligned evaluator. |
+| `autodl-tmp_code/eval_math500_rwkv7_g1f_7p2b_full_20260607/summary.json` | RWKV7 G1F 7.2B base | Same Albatross-style MATH500, rollout 1 | acc `0.6400`, truncation `0.094`, mean generated tokens `526.8` | Shows large base-model gap between 1.5B and 7.2B RWKV. |
+| `autodl-tmp_code/albatross_math500_run6/summary.json` | RWKV7 G1F 1.5B base in `/dev/shm` | Albatross-style MATH500, rollout 4 | rollout accuracy `0.4015`, pass@4 `0.5040`, truncation `0.180` | Multi-rollout eval improved pass@k but kept per-sample acc near the rollout-1 baseline. |
+| `autodl-tmp_code/stem-rlvr-repro/evals/qwen25_1p5b_pre_brief_eval1176.jsonl.summary.json` | Qwen2.5-1.5B-Instruct | STEM eval split, brief prompt, 1176 items | acc `0.1922`, no-parse `0.1352` | Pre-training reference for non-math RLVR exploration. |
+| `autodl-tmp_code/stem-rlvr-repro/evals/qwen25_1p5b_pre_eval200.jsonl.summary.json` | Qwen2.5-1.5B-Instruct | STEM eval subset, non-brief prompt, 200 items | acc `0.1050`, no-parse `0.4500` | Prompt format strongly affected parseability. |
+| `autodl-tmp_code/stem-rlvr-repro/evals/qwen25_1p5b_pre_brief_eval200.jsonl.summary.json` | Qwen2.5-1.5B-Instruct | STEM eval subset, brief prompt, 200 items | acc `0.1850`, no-parse `0.1350` | Brief prompt improved parse rate and accuracy on the same-size pre-eval subset. |
+
+### Main Takeaways From The Verified Results
+
+- Best curated full-GSM8K result in the exported snapshot index is dynamic re-screen stage 2 step 100: `0.6611` on n=1319; the often-noted `0.7500` is explicitly a small eval with n=164, not full GSM8K.
+- RWKV G1F 7.2B is much stronger than G1F 1.5B on Albatross-style MATH500: `0.6400` vs `0.3960` rollout-1 accuracy.
+- Increasing rollout count helps pass@k: G1F 1.5B has rollout-1 acc `0.3960`, while rollout-4 pass@4 reaches `0.5040` with similar per-sample accuracy.
+- GSM8K train-set pass@8 was already high before RL (`0.8834`), so many data-engineering runs mainly changed pass distribution rather than creating new solvable mass.
+- Dynamic re-screening improved GSM8K train sample average (`0.5839` base to about `0.70` in stages), but pass@8 declined in later stages, consistent with narrowing/diversity loss.
+- GSM8K-oriented dynamic re-screening did not transfer to MATH500 in the exported comparison: MATH500 sample avg fell from `0.3293` to `0.2430` under the older pass@8 protocol.
+- STEM multiple-choice experiments showed that prompt/format parseability can dominate score: Qwen2.5-1.5B brief prompt had far lower no-parse and higher accuracy than the non-brief prompt.
+
 ## Evaluation Discipline
 
 When comparing experiments, keep these fields fixed or explicitly label them as changed:
