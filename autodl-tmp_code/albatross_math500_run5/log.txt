@@ -1,0 +1,44 @@
+master tasks=500 rollout=4 total_generations=2000
+master launching workers on GPUs=['0']
+worker=0/1 tasks=500 work_items=2000 bsz=256 cuda_visible=0
+[rwkv7_fast_v3a] loading CUDA extensions v3a_ops + fast_ops + wkv=fp32io16
+W0527 17:05:30.420000 38037 site-packages/torch/utils/cpp_extension.py:2425] TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+W0527 17:05:30.420000 38037 site-packages/torch/utils/cpp_extension.py:2425] If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'] to specific architectures.
+W0527 17:05:59.797000 38037 site-packages/torch/utils/cpp_extension.py:2425] TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+W0527 17:05:59.797000 38037 site-packages/torch/utils/cpp_extension.py:2425] If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'] to specific architectures.
+W0527 17:06:17.181000 38037 site-packages/torch/utils/cpp_extension.py:2425] TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+W0527 17:06:17.181000 38037 site-packages/torch/utils/cpp_extension.py:2425] If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'] to specific architectures.
+[rwkv7_fast_v3a] CUDA extensions loaded in 62.930s
+[rwkv7_fast_v3a] loading weights from /dev/shm/rwkv7-g1f-1.5b-20260419-ctx8192.pth
+Process SpawnProcess-1:
+Traceback (most recent call last):
+  File "/root/miniconda3/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/root/miniconda3/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/root/Albatross/faster3a_2605/eval_math500.py", line 377, in run_worker_process
+    run_worker(args, result_queue)
+  File "/root/Albatross/faster3a_2605/eval_math500.py", line 359, in run_worker
+    model = v3a.RWKV7()
+            ^^^^^^^^^^^
+  File "/root/Albatross/faster3a_2605/rwkv7_fast_v3a.py", line 243, in __init__
+    z = torch.load(MODEL_PATH, map_location="cpu", mmap=True)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/torch/serialization.py", line 1484, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/torch/serialization.py", line 759, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/torch/serialization.py", line 740, in __init__
+    super().__init__(open(name, mode))
+                     ^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/shm/rwkv7-g1f-1.5b-20260419-ctx8192.pth'
+Traceback (most recent call last):
+  File "/root/Albatross/faster3a_2605/eval_math500.py", line 542, in <module>
+    main()
+  File "/root/Albatross/faster3a_2605/eval_math500.py", line 538, in main
+    run_master(args)
+  File "/root/Albatross/faster3a_2605/eval_math500.py", line 475, in run_master
+    raise RuntimeError(f"worker errors: {worker_errors[:3]}")
+RuntimeError: worker errors: [{'type': 'error', 'worker_rank': 0, 'gpu': '0', 'error': "FileNotFoundError: [Errno 2] No such file or directory: '/dev/shm/rwkv7-g1f-1.5b-20260419-ctx8192.pth'"}]

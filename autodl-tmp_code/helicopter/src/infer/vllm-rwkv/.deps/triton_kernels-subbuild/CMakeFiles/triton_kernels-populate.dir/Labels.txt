@@ -1,0 +1,14 @@
+# Target labels
+ triton_kernels-populate
+# Source files and their labels
+/root/autodl-tmp/helicopter/src/infer/vllm-rwkv/.deps/triton_kernels-subbuild/CMakeFiles/triton_kernels-populate
+/root/autodl-tmp/helicopter/src/infer/vllm-rwkv/.deps/triton_kernels-subbuild/CMakeFiles/triton_kernels-populate.rule
+/root/autodl-tmp/helicopter/src/infer/vllm-rwkv/.deps/triton_kernels-subbuild/CMakeFiles/triton_kernels-populate-complete.rule
+/root/autodl-tmp/helicopter/src/infer/vllm-rwkv/.deps/triton_kernels-subbuild/triton_kernels-populate-prefix/src/triton_kernels-populate-stamp/triton_kernels-populate-build.rule
+/root/autodl-tmp/helicopter/src/infer/vllm-rwkv/.deps/triton_kernels-subbuild/triton_kernels-populate-prefix/src/triton_kernels-populate-stamp/triton_kernels-populate-configure.rule
+/root/autodl-tmp/helicopter/src/infer/vllm-rwkv/.deps/triton_kernels-subbuild/triton_kernels-populate-prefix/src/triton_kernels-populate-stamp/triton_kernels-populate-download.rule
+/root/autodl-tmp/helicopter/src/infer/vllm-rwkv/.deps/triton_kernels-subbuild/triton_kernels-populate-prefix/src/triton_kernels-populate-stamp/triton_kernels-populate-install.rule
+/root/autodl-tmp/helicopter/src/infer/vllm-rwkv/.deps/triton_kernels-subbuild/triton_kernels-populate-prefix/src/triton_kernels-populate-stamp/triton_kernels-populate-mkdir.rule
+/root/autodl-tmp/helicopter/src/infer/vllm-rwkv/.deps/triton_kernels-subbuild/triton_kernels-populate-prefix/src/triton_kernels-populate-stamp/triton_kernels-populate-patch.rule
+/root/autodl-tmp/helicopter/src/infer/vllm-rwkv/.deps/triton_kernels-subbuild/triton_kernels-populate-prefix/src/triton_kernels-populate-stamp/triton_kernels-populate-test.rule
+/root/autodl-tmp/helicopter/src/infer/vllm-rwkv/.deps/triton_kernels-subbuild/triton_kernels-populate-prefix/src/triton_kernels-populate-stamp/triton_kernels-populate-update.rule

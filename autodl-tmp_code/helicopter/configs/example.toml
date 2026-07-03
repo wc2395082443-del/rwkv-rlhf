@@ -1,0 +1,46 @@
+# Environment-specific values live in .env.local or .env.remote:
+# WEIGHT_PATH, DATASETS_PATH, GPU counts, venv paths, and machine-local paths.
+# Select experiments with --config; without --config, the CLI uses the newest
+# configs/local/*.toml file.
+
+[infer]
+enable_auto_tool_choice = false
+
+[takeoff.grpo]
+project_name = "verl_rwkv_grpo"
+experiment_name = "rwkv7_grpo_vllm"
+wkv_mode = "fp32io16"
+emb_device = "gpu"
+train_batch_size = 56
+ppo_mini_batch_size = 56
+ppo_micro_batch_size = 1
+max_prompt_length = 512
+max_response_length = 512
+ppo_max_token_len_per_gpu = 8192
+rwkv_use_dynamic_bsz = false
+actor_lr = "1e-5"
+rollout_n = 8
+trainer_n_gpus_per_node = 7
+rollout_n_gpus_per_node = 1
+rollout_mode = "async"
+rollout_tensor_parallel_size = 1
+rollout_data_parallel_size = 1
+rollout_pipeline_parallel_size = 1
+rollout_checkpoint_engine_backend = "nccl"
+rollout_correction_bypass_mode = true
+total_epochs = 2
+save_freq = 20
+test_freq = -1
+
+[datasets.gsm8k]
+# When root is omitted, the CLI uses ${DATASETS_PATH}/gsm8k.
+
+[models."g1g-1.5b"]
+file = "rwkv7-g1g-1.5b-20260526-ctx8192.pth"
+served_model_name = "g1g-1.5b"
+max_model_len = 8192
+
+[models."g1g-7.2b"]
+file = "rwkv7-g1g-7.2b-20260523-ctx8192.pth"
+served_model_name = "g1g-7.2b"
+max_model_len = 8192

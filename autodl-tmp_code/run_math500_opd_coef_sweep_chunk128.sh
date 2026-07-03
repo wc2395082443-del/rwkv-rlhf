@@ -1,0 +1,193 @@
+#!/usr/bin/env bash
+set -u
+CODE=/root/RWKV-LM/RWKV7-math500_trl_doc_g1f1p5b_align_traintempv3_opd_20260607
+PY=/root/miniconda3/bin/python
+TRAIN_JSON=/root/Albatross/faster3a_2605/dataset/MATH500.jsonl
+EVAL_JSON=/root/Albatross/faster3a_2605/dataset/MATH500.jsonl
+MODEL=/root/autodl-tmp/rwkv_models/ms_g1_1p5b/rwkv7-g1f-1.5b-20260419-ctx8192.pth
+TEACHER=/root/autodl-tmp/rwkv_models/ms_g1_7p2b/rwkv7-g1f-7.2b-20260414-ctx8192.pth
+TOK=/root/RWKV-LM/rwkv_vocab_v20230424.txt
+TS=$(date +%Y%m%d_%H%M%S)
+OUT=/root/autodl-tmp/logs/math500_opd_coef_sweep_chunk128_${TS}
+mkdir -p "$OUT"
+echo "$OUT" > /tmp/math500_opd_coef_sweep_chunk128_latest
+cd "$CODE" || exit 1
+{
+  echo "[$(date '+%F %T')] OUT=$OUT"
+  echo "[$(date '+%F %T')] code_sha256"
+  sha256sum main.py train.py infer.py stateful_rollout.py rwkv7_trainable.py reward.py 2>/dev/null || true
+  echo "[$(date '+%F %T')] sweep coef list: 0.0005 0.001 0.002 0.005 0.01 0.02"
+} | tee "$OUT/progress.log"
+printf "coef\topd_temp\tpost_acc\tdelta_vs_base0422\tgroups_used_rate\tgroups_used\tgroups_total\tall0_rate\tall1_rate\tavg_train_acc\tavg_trunc\tavg_len\tavg_step_time\tavg_opd_loss\tckpt\ttrain_dir\teval_dir\n" > "$OUT/summary.tsv"
+
+run_one() {
+  local COEF="$1"
+  local TAG="coef_${COEF//./p}"
+  local RDIR="$OUT/$TAG"
+  local TDIR="$RDIR/train"
+  local EDIR="$RDIR/eval"
+  mkdir -p "$TDIR" "$EDIR"
+  cat > "$RDIR/command.txt" <<EOF
+$PY main.py \\
+  --train_jsonl "$TRAIN_JSON" \\
+  --eval_jsonl "$EVAL_JSON" \\
+  --model "$MODEL" \\
+  --teacher_model "$TEACHER" \\
+  --tokenizer "$TOK" \\
+  --out_dir "$TDIR" \\
+  --tune_mode full \\
+  --reward_mode trl_doc \\
+  --prompt_mode trl_doc \\
+  --num_questions 8 \\
+  --samples_per_question 8 \\
+  --total_steps 100 \\
+  --max_new_tokens 1024 \\
+  --temperature 0.8 \\
+  --top_p 1.0 \\
+  --top_k 0 \\
+  --eval_temperature 1.0 \\
+  --eval_top_p 0.28 \\
+  --eval_top_k 32 \\
+  --eval_max_new_tokens 1500 \\
+  --eval_chunk_size 64 \\
+  --min_tokens 1 \\
+  --length_weight 0.0 \\
+  --zstd_penalty_weight 0.0 \\
+  --ngram_penalty 0.0 \\
+  --neg_adv_weight 1.0 \\
+  --opd_coef "$COEF" \\
+  --opd_temp 1.0 \\
+  --logit_chunk_tokens 128 \\
+  --kl_coef 0.0 \\
+  --lr 1e-6 \\
+  --micro_batch 1 \\
+  --rollout_forward_batch 8 \\
+  --hard_buffer_target_samples 0 \\
+  --eval_interval 999999 \\
+  --skip_preeval 1 \\
+  --skip_posteval 1 \\
+  --save_interval 999999 \\
+  --save_last 1 \\
+  --save_responses 0 \\
+  --seed 42
+EOF
+  echo "[$(date '+%F %T')] START TRAIN $TAG opd_coef=$COEF opd_temp=1.0 logit_chunk=128" | tee -a "$OUT/progress.log"
+  bash "$RDIR/command.txt" > "$TDIR/run.log" 2>&1
+  local RC=$?
+  echo "[$(date '+%F %T')] TRAIN DONE $TAG rc=$RC" | tee -a "$OUT/progress.log"
+  local CKPT="$TDIR/ckpt_step100.pth"
+  if [[ $RC -ne 0 || ! -s "$CKPT" ]]; then
+    echo "[$(date '+%F %T')] SKIP EVAL $TAG missing_ckpt=$CKPT" | tee -a "$OUT/progress.log"
+    printf "%s\t1.0\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t%s\t%s\t%s\n" "$COEF" "$CKPT" "$TDIR" "$EDIR" >> "$OUT/summary.tsv"
+    return 0
+  fi
+  cat > "$RDIR/eval_command.txt" <<EOF
+$PY main.py \\
+  --train_jsonl "$TRAIN_JSON" \\
+  --eval_jsonl "$EVAL_JSON" \\
+  --model "$MODEL" \\
+  --full_init_ckpt "$CKPT" \\
+  --tokenizer "$TOK" \\
+  --out_dir "$EDIR" \\
+  --tune_mode full \\
+  --reward_mode trl_doc \\
+  --prompt_mode trl_doc \\
+  --num_questions 8 \\
+  --samples_per_question 8 \\
+  --total_steps 0 \\
+  --max_new_tokens 1024 \\
+  --temperature 0.8 \\
+  --top_p 1.0 \\
+  --top_k 0 \\
+  --eval_temperature 1.0 \\
+  --eval_top_p 0.28 \\
+  --eval_top_k 32 \\
+  --eval_max_new_tokens 1500 \\
+  --eval_chunk_size 64 \\
+  --min_tokens 1 \\
+  --length_weight 0.0 \\
+  --zstd_penalty_weight 0.0 \\
+  --ngram_penalty 0.0 \\
+  --neg_adv_weight 1.0 \\
+  --opd_coef 0.0 \\
+  --opd_temp 1.0 \\
+  --logit_chunk_tokens 128 \\
+  --kl_coef 0.0 \\
+  --lr 1e-6 \\
+  --micro_batch 1 \\
+  --rollout_forward_batch 8 \\
+  --hard_buffer_target_samples 0 \\
+  --eval_interval 999999 \\
+  --preeval_sample_ratio 1.0 \\
+  --skip_preeval 0 \\
+  --skip_posteval 1 \\
+  --save_interval 999999 \\
+  --save_last 0 \\
+  --save_responses 0 \\
+  --seed 42
+EOF
+  echo "[$(date '+%F %T')] START EVAL $TAG ckpt=$CKPT" | tee -a "$OUT/progress.log"
+  bash "$RDIR/eval_command.txt" > "$EDIR/run.log" 2>&1
+  echo "[$(date '+%F %T')] EVAL DONE $TAG" | tee -a "$OUT/progress.log"
+  $PY - "$COEF" "$TDIR" "$EDIR" "$CKPT" "$OUT/summary.tsv" <<'PY'
+import json, sys, os, statistics
+coef, tdir, edir, ckpt, summary = sys.argv[1:]
+metrics_path=os.path.join(tdir,'metrics.jsonl')
+rows=[]
+try:
+    with open(metrics_path) as f:
+        for line in f:
+            line=line.strip()
+            if not line: continue
+            try: rows.append(json.loads(line))
+            except Exception: pass
+except FileNotFoundError:
+    pass
+post_acc='NA'
+for cand in [os.path.join(edir,'metrics.jsonl'), os.path.join(edir,'eval_by_step','pre_eval_step_0.jsonl')]:
+    if os.path.exists(cand):
+        try:
+            with open(cand) as f:
+                for line in f:
+                    if not line.strip(): continue
+                    obj=json.loads(line)
+                    if 'accuracy' in obj:
+                        post_acc=float(obj['accuracy'])
+        except Exception:
+            pass
+if rows:
+    gtot=sum(float(r.get('groups_total',0)) for r in rows)
+    guse=sum(float(r.get('groups_used',0)) for r in rows)
+    all0=sum(float(r.get('groups_all_wrong',0)) for r in rows)
+    all1=sum(float(r.get('groups_all_correct',0)) for r in rows)
+    avg=lambda k: statistics.mean(float(r.get(k,0.0)) for r in rows)
+    groups_used_rate=(guse/gtot) if gtot else 0.0
+    all0_rate=(all0/gtot) if gtot else 0.0
+    all1_rate=(all1/gtot) if gtot else 0.0
+    avg_train_acc=avg('accuracy')
+    avg_trunc=avg('trunc_rate')
+    avg_len=avg('avg_length')
+    avg_step_time=avg('time')
+    avg_opd=avg('avg_opd_loss')
+else:
+    gtot=guse=groups_used_rate=all0_rate=all1_rate=avg_train_acc=avg_trunc=avg_len=avg_step_time=avg_opd='NA'
+if isinstance(post_acc,float):
+    delta=post_acc-0.422
+    post_s=f'{post_acc:.6f}'
+    delta_s=f'{delta:.6f}'
+else:
+    post_s=delta_s='NA'
+def fmt(x):
+    if isinstance(x,str): return x
+    return f'{x:.6f}'
+with open(summary,'a') as out:
+    out.write('\t'.join([coef,'1.0',post_s,delta_s,fmt(groups_used_rate),fmt(guse),fmt(gtot),fmt(all0_rate),fmt(all1_rate),fmt(avg_train_acc),fmt(avg_trunc),fmt(avg_len),fmt(avg_step_time),fmt(avg_opd),ckpt,tdir,edir])+'\n')
+PY
+  tail -1 "$OUT/summary.tsv" | tee -a "$OUT/progress.log"
+}
+
+for c in 0.0005 0.001 0.002 0.005 0.01 0.02; do
+  run_one "$c"
+done
+
+echo "[$(date '+%F %T')] ALL DONE" | tee -a "$OUT/progress.log"

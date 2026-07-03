@@ -1,0 +1,26 @@
+{
+  "model": "/root/autodl-tmp/g1e_dynamic_rescreen_20260426_020719/stage_4/run/checkpoint_step_100.pth",
+  "eval_jsonl": "/root/RWKV-LM/RWKV7-statetuning/gsm8k_train_formatted.jsonl",
+  "group_size": 8,
+  "temperature": 1.0,
+  "top_p": 0.6,
+  "top_k": 0,
+  "total_questions": 7473,
+  "sample_avg_acc": 0.6899672153084437,
+  "pass8": 0.8339355011374281,
+  "first_sample_acc": 0.6871403720058878,
+  "questions_with_any_correct": 6232,
+  "questions_all_wrong": 1241,
+  "num_correct_hist": {
+    "0": 1241,
+    "1": 297,
+    "2": 296,
+    "3": 284,
+    "4": 300,
+    "5": 334,
+    "6": 357,
+    "7": 416,
+    "8": 3948
+  },
+  "elapsed_sec": 5714.756006002426
+}

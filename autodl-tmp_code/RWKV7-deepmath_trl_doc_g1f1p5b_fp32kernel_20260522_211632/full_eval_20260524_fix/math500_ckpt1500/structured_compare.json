@@ -1,0 +1,282 @@
+[
+  {
+    "idx": 0,
+    "ground_truth": "\\left( 3, \\frac{\\pi}{2} \\right)",
+    "old_pred": "2",
+    "old_gt": "2",
+    "old_ok": true,
+    "new_pred": "(3,\\pi/2)",
+    "new_gt": "(3,\\frac{\\pi}{2})",
+    "new_ok": false
+  },
+  {
+    "idx": 25,
+    "ground_truth": "1,-2",
+    "old_pred": null,
+    "old_gt": "-2",
+    "old_ok": false,
+    "new_pred": ":∏-Let'strytosolvegeneralsolution.",
+    "new_gt": "1,-2",
+    "new_ok": false
+  },
+  {
+    "idx": 36,
+    "ground_truth": "3, 5, 7",
+    "old_pred": "7",
+    "old_gt": "7",
+    "old_ok": true,
+    "new_pred": "3,7",
+    "new_gt": "3,5,7",
+    "new_ok": false
+  },
+  {
+    "idx": 60,
+    "ground_truth": "(6,31,-1)",
+    "old_pred": "000",
+    "old_gt": "-1",
+    "old_ok": false,
+    "new_pred": "(0,0,0)",
+    "new_gt": "(6,31,-1)",
+    "new_ok": false
+  },
+  {
+    "idx": 78,
+    "ground_truth": "(-2,1)",
+    "old_pred": "3",
+    "old_gt": "-21",
+    "old_ok": false,
+    "new_pred": "(0,x^2+3x+3)",
+    "new_gt": "(-2,1)",
+    "new_ok": false
+  },
+  {
+    "idx": 102,
+    "ground_truth": "(a+5)(b+2)",
+    "old_pred": "+2",
+    "old_gt": "+2",
+    "old_ok": true,
+    "new_pred": "(a+5)(b+2)",
+    "new_gt": "(a+5)(b+2)",
+    "new_ok": true
+  },
+  {
+    "idx": 103,
+    "ground_truth": "(3,4]",
+    "old_pred": null,
+    "old_gt": "34",
+    "old_ok": false,
+    "new_pred": "allλin[0,4].",
+    "new_gt": "(3,4]",
+    "new_ok": false
+  },
+  {
+    "idx": 144,
+    "ground_truth": "(15,-29)",
+    "old_pred": "-29",
+    "old_gt": "-29",
+    "old_ok": true,
+    "new_pred": "(15,\\-29)",
+    "new_gt": "(15,-29)",
+    "new_ok": false
+  },
+  {
+    "idx": 184,
+    "ground_truth": "(2,\\infty)",
+    "old_pred": "2",
+    "old_gt": "2",
+    "old_ok": true,
+    "new_pred": "2",
+    "new_gt": "(2,\\infty)",
+    "new_ok": false
+  },
+  {
+    "idx": 206,
+    "ground_truth": "\\left( \\frac{3}{2}, -13 \\right)",
+    "old_pred": "-1",
+    "old_gt": "3/2",
+    "old_ok": false,
+    "new_pred": "(2,-1)",
+    "new_gt": "(\\frac{3}{2},-13)",
+    "new_ok": false
+  },
+  {
+    "idx": 218,
+    "ground_truth": "(-1,6)",
+    "old_pred": "-16",
+    "old_gt": "-16",
+    "old_ok": true,
+    "new_pred": "(-1,6)",
+    "new_gt": "(-1,6)",
+    "new_ok": true
+  },
+  {
+    "idx": 227,
+    "ground_truth": "\\text{(C)}",
+    "old_pred": null,
+    "old_gt": null,
+    "old_ok": false,
+    "new_pred": "C",
+    "new_gt": "(C)",
+    "new_ok": true
+  },
+  {
+    "idx": 255,
+    "ground_truth": "\\text{(E)}",
+    "old_pred": null,
+    "old_gt": null,
+    "old_ok": false,
+    "new_pred": "E",
+    "new_gt": "(E)",
+    "new_ok": true
+  },
+  {
+    "idx": 293,
+    "ground_truth": "\\left(\\frac{3}{5},\\frac{8}{3}\\right]",
+    "old_pred": null,
+    "old_gt": "3/58",
+    "old_ok": false,
+    "new_pred": "\\varnothing",
+    "new_gt": "(\\frac{3}{5},\\frac{8}{3}]",
+    "new_ok": false
+  },
+  {
+    "idx": 296,
+    "ground_truth": "\\text{(B)}",
+    "old_pred": "7",
+    "old_gt": null,
+    "old_ok": false,
+    "new_pred": "3(1+3)^x=7",
+    "new_gt": "(B)",
+    "new_ok": false
+  },
+  {
+    "idx": 307,
+    "ground_truth": "(-\\infty, 0]",
+    "old_pred": "12",
+    "old_gt": "0",
+    "old_ok": false,
+    "new_pred": "(0,\\frac{1}{2}]",
+    "new_gt": "(-\\infty,0]",
+    "new_ok": false
+  },
+  {
+    "idx": 312,
+    "ground_truth": "(5,\\infty)",
+    "old_pred": "5",
+    "old_gt": "5",
+    "old_ok": true,
+    "new_pred": "(5,\\infty)",
+    "new_gt": "(5,\\infty)",
+    "new_ok": true
+  },
+  {
+    "idx": 314,
+    "ground_truth": "(2,4)",
+    "old_pred": "40",
+    "old_gt": "24",
+    "old_ok": false,
+    "new_pred": "(4,0)",
+    "new_gt": "(2,4)",
+    "new_ok": false
+  },
+  {
+    "idx": 356,
+    "ground_truth": "(-\\sqrt{3}, \\sqrt{3})",
+    "old_pred": "3",
+    "old_gt": "3",
+    "old_ok": true,
+    "new_pred": "(-\\sqrt{3},0)\\cup(0,\\sqrt{3})",
+    "new_gt": "(-\\sqrt{3},\\sqrt{3})",
+    "new_ok": false
+  },
+  {
+    "idx": 364,
+    "ground_truth": "(1,-16,-4,43)",
+    "old_pred": "41047/2",
+    "old_gt": "-443",
+    "old_ok": false,
+    "new_pred": "(4,1,0,\\frac{47}{2})",
+    "new_gt": "(1,-16,-4,43)",
+    "new_ok": false
+  },
+  {
+    "idx": 376,
+    "ground_truth": "(8,-2)",
+    "old_pred": "-2",
+    "old_gt": "-2",
+    "old_ok": true,
+    "new_pred": "(8,-2)",
+    "new_gt": "(8,-2)",
+    "new_ok": true
+  },
+  {
+    "idx": 380,
+    "ground_truth": "(0,9) \\cup (9,36)",
+    "old_pred": "36",
+    "old_gt": "936",
+    "old_ok": false,
+    "new_pred": "(-9,0)\\cup(36,\\infty)",
+    "new_gt": "(0,9)\\cup(9,36)",
+    "new_ok": false
+  },
+  {
+    "idx": 383,
+    "ground_truth": "x \\in [-2,7]",
+    "old_pred": "-27",
+    "old_gt": "-27",
+    "old_ok": true,
+    "new_pred": "[-2,7]",
+    "new_gt": "x\\in[-2,7]",
+    "new_ok": false
+  },
+  {
+    "idx": 422,
+    "ground_truth": "\\{1\\pm\\sqrt{5},-2\\}",
+    "old_pred": "2",
+    "old_gt": "-2",
+    "old_ok": false,
+    "new_pred": ":∛(-2)+i√2-Waitcomputediscriminant:D=(-2)^2-4*1*p=4-4p.Forp=0,D=4,rootsare1,-2.Forp=3,D=0,doubleroot-2.So",
+    "new_gt": "\\{1\\pm\\sqrt{5},-2\\}",
+    "new_ok": false
+  },
+  {
+    "idx": 431,
+    "ground_truth": "\\left[ \\frac{\\pi^2}{8}, \\frac{5 \\pi^2}{4} \\right]",
+    "old_pred": "8",
+    "old_gt": "2/4",
+    "old_ok": false,
+    "new_pred": "[\\frac{\\pi^{2}}{8},\\infty)",
+    "new_gt": "[\\frac{\\pi^2}{8},\\frac{5\\pi^2}{4}]",
+    "new_ok": false
+  },
+  {
+    "idx": 435,
+    "ground_truth": "(-\\infty, 2) \\cup (3, \\infty)",
+    "old_pred": "3",
+    "old_gt": "3",
+    "old_ok": true,
+    "new_pred": "(-\\infty,2)\\cup(3,\\infty)",
+    "new_gt": "(-\\infty,2)\\cup(3,\\infty)",
+    "new_ok": true
+  },
+  {
+    "idx": 456,
+    "ground_truth": "-2,1",
+    "old_pred": "-2",
+    "old_gt": "-21",
+    "old_ok": false,
+    "new_pred": "1,\\-2",
+    "new_gt": "-21",
+    "new_ok": false
+  },
+  {
+    "idx": 495,
+    "ground_truth": "(2,12) \\cup (12,102)",
+    "old_pred": "102",
+    "old_gt": "12102",
+    "old_ok": false,
+    "new_pred": "(-\\infty,102)\\setminus\\{102\\}",
+    "new_gt": "(2,12)\\cup(12,102)",
+    "new_ok": false
+  }
+]

@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/root/autodl-tmp/helicopter/src/infer/vllm-rwkv/.deps/vllm-flash-attn-subbuild/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -1,0 +1,26 @@
+{
+  "model": "/root/autodl-tmp/g1e_dynamic_rescreen_20260426_020719/stage_5/run/final_step_100.pth",
+  "eval_jsonl": "/root/autodl-tmp/data/math500/test.jsonl",
+  "group_size": 8,
+  "temperature": 1.0,
+  "top_p": 0.6,
+  "top_k": 0,
+  "total_questions": 500,
+  "sample_avg_acc": 0.243,
+  "pass8": 0.456,
+  "first_sample_acc": 0.24,
+  "questions_with_any_correct": 228,
+  "questions_all_wrong": 272,
+  "num_correct_hist": {
+    "0": 272,
+    "1": 50,
+    "2": 26,
+    "3": 26,
+    "4": 22,
+    "5": 22,
+    "6": 23,
+    "7": 16,
+    "8": 43
+  },
+  "elapsed_sec": 420.2763192653656
+}

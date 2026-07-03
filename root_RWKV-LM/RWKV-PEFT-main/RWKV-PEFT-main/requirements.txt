@@ -1,0 +1,12 @@
+bitsandbytes
+deepspeed
+einops
+triton
+peft
+rwkv-fla
+rwkv
+transformers
+lightning>=2.0.0
+datasets
+jsonlines
+wandb

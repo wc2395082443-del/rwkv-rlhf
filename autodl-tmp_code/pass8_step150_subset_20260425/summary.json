@@ -1,0 +1,14 @@
+{
+  "model": "/root/autodl-tmp/g1e_staged_core_sub_150_ckpt_20260425_201112/run/checkpoint_step_150.pth",
+  "eval_jsonl": "/root/RWKV-LM/RWKV7-statetuning/gsm8k_train_filtered_core_sub_20260425.jsonl",
+  "group_size": 8,
+  "temperature": 1.0,
+  "top_p": 0.6,
+  "top_k": 0,
+  "total_questions": 2093,
+  "sample_avg_acc": 0.5769827998088868,
+  "pass8": 0.8528428093645485,
+  "questions_with_any_correct": 1785,
+  "questions_all_wrong": 308,
+  "elapsed_sec": 1589.0358176231384
+}

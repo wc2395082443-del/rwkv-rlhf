@@ -1,0 +1,1 @@
+{"default": {"features": {"question": {"_type": "Value"}, "final_answer": {"_type": "Value"}, "difficulty": {"_type": "Value"}, "topic": {"_type": "Value"}, "r1_solution_1": {"_type": "Value"}, "r1_solution_2": {"_type": "Value"}, "r1_solution_3": {"_type": "Value"}}, "splits": {"train": {"name": "train", "dataset_name": "DeepMath-103K"}}}}

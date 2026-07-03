@@ -1,0 +1,68 @@
+[
+  {
+    "idx": 0,
+    "ground_truth": "\\left( 3, \\frac{\\pi}{2} \\right)",
+    "old_ok": true,
+    "mid_ok": false,
+    "new_ok": true,
+    "old_pred": "2",
+    "mid_pred": "(3,\\pi/2)",
+    "new_pred": "(3,\\frac{\\pi}{2})",
+    "new_gt": "(3,\\frac{\\pi}{2})"
+  },
+  {
+    "idx": 25,
+    "ground_truth": "1,-2",
+    "old_ok": false,
+    "mid_ok": false,
+    "new_ok": false,
+    "old_pred": null,
+    "mid_pred": ":∏-Let'strytosolvegeneralsolution.",
+    "new_pred": ":∏-Let'strytosolvegeneralsolution.",
+    "new_gt": "1,-2"
+  },
+  {
+    "idx": 36,
+    "ground_truth": "3, 5, 7",
+    "old_ok": true,
+    "mid_ok": false,
+    "new_ok": false,
+    "old_pred": "7",
+    "mid_pred": "3,7",
+    "new_pred": "3,7",
+    "new_gt": "3,5,7"
+  },
+  {
+    "idx": 60,
+    "ground_truth": "(6,31,-1)",
+    "old_ok": false,
+    "mid_ok": false,
+    "new_ok": false,
+    "old_pred": "000",
+    "mid_pred": "(0,0,0)",
+    "new_pred": "(0,0,0)",
+    "new_gt": "(6,31,-1)"
+  },
+  {
+    "idx": 78,
+    "ground_truth": "(-2,1)",
+    "old_ok": false,
+    "mid_ok": false,
+    "new_ok": false,
+    "old_pred": "3",
+    "mid_pred": "(0,x^2+3x+3)",
+    "new_pred": "(0,x^2+3x+3)",
+    "new_gt": "(-2,1)"
+  },
+  {
+    "idx": 102,
+    "ground_truth": "(a+5)(b+2)",
+    "old_ok": true,
+    "mid_ok": true,
+    "new_ok": true,
+    "old_pred": "+2",
+    "mid_pred": "(a+5)(b+2)",
+    "new_pred": "(a+5)(b+2)",
+    "new_gt": "(a+5)(b+2)"
+  }
+]

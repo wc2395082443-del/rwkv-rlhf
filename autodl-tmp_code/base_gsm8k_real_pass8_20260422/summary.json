@@ -1,0 +1,14 @@
+{
+  "model": "/root/autodl-tmp/rwkv_models/rwkv7-g1e-1.5b-20260309-ctx8192.pth",
+  "eval_jsonl": "/root/RWKV-LM/RWKV7-statetuning/gsm8k_test_formatted_1of8.jsonl",
+  "group_size": 8,
+  "eval_temperature": 0.3,
+  "eval_top_p": 0.4,
+  "eval_top_k": 500,
+  "total_questions": 164,
+  "sample_avg_acc": 0.5724085365853658,
+  "pass8": 0.6158536585365854,
+  "questions_with_any_correct": 101,
+  "questions_all_wrong": 63,
+  "elapsed_sec": 200.97417640686035
+}

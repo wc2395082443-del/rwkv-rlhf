@@ -1,0 +1,44 @@
+# Target class for this configuration
+_target_: verl.workers.config.RWKVLMOptimizerConfig
+
+# Native optimizer name
+optimizer: adamw
+
+# Learning rate
+lr: 1e-4
+
+# LR warmup steps ratio
+lr_warmup_steps_ratio: 0.0
+
+# Total training steps
+total_training_steps: -1
+
+# Weight decay
+weight_decay: 0.01
+
+# LR warmup steps
+lr_warmup_steps: -1
+
+# Betas for Adam optimizer
+betas: [0.9, 0.999]
+
+# Clip gradient
+clip_grad: 1.0
+
+# Whether to delegate layer-wise LR behavior to rwkv-lm
+layerwise_lr: false
+
+# LR scheduler type
+lr_scheduler_type: cosine
+
+# Native beta1 override
+beta1: null
+
+# Native beta2 override
+beta2: null
+
+# Native Adam epsilon
+adam_eps: 1e-8
+
+# Extra native optimizer keyword arguments
+native_optimizer_kwargs: {}

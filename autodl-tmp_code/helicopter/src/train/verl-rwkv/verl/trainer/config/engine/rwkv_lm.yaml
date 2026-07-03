@@ -1,0 +1,50 @@
+# Target class for this configuration
+_target_: verl.workers.config.RWKVLMEngineConfig
+
+# Native rwkv-lm repository path
+rwkv_lm_path: ???
+
+# Native rwkv-lm training entrypoint relative to rwkv_lm_path
+train_entrypoint: train.py
+
+# Native rwkv-lm model implementation relative to rwkv_lm_path
+model_entrypoint: src/model.py
+
+# RWKV architecture version
+rwkv_version: v7
+
+# Native training precision
+precision: bf16
+
+# Context length passed to rwkv-lm
+ctx_len: null
+
+# RWKV head size passed to rwkv-lm
+head_size: null
+
+# Whether the native rwkv-lm CUDA extension should be compiled by the future adapter
+compile_cuda: true
+
+# Native rwkv-lm environment variables
+native_env: {}
+
+# Native rwkv-lm checkpoint format
+checkpoint_format: pth
+
+# Format exposed to rollout weight synchronization
+export_weight_format: state_dict
+
+# Whether to offload model parameters to CPU
+param_offload: false
+
+# Whether to offload optimizer state to CPU
+optimizer_offload: false
+
+# Whether the engine is forward only
+forward_only: false
+
+# Strategy name
+strategy: rwkv_lm
+
+# Mixed precision training param dtype
+dtype: bfloat16

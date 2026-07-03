@@ -1,0 +1,14 @@
+# Target labels
+ vllm-flash-attn-populate
+# Source files and their labels
+/root/autodl-tmp/helicopter/src/infer/vllm-rwkv/.deps/vllm-flash-attn-subbuild/CMakeFiles/vllm-flash-attn-populate
+/root/autodl-tmp/helicopter/src/infer/vllm-rwkv/.deps/vllm-flash-attn-subbuild/CMakeFiles/vllm-flash-attn-populate.rule
+/root/autodl-tmp/helicopter/src/infer/vllm-rwkv/.deps/vllm-flash-attn-subbuild/CMakeFiles/vllm-flash-attn-populate-complete.rule
+/root/autodl-tmp/helicopter/src/infer/vllm-rwkv/.deps/vllm-flash-attn-subbuild/vllm-flash-attn-populate-prefix/src/vllm-flash-attn-populate-stamp/vllm-flash-attn-populate-build.rule
+/root/autodl-tmp/helicopter/src/infer/vllm-rwkv/.deps/vllm-flash-attn-subbuild/vllm-flash-attn-populate-prefix/src/vllm-flash-attn-populate-stamp/vllm-flash-attn-populate-configure.rule
+/root/autodl-tmp/helicopter/src/infer/vllm-rwkv/.deps/vllm-flash-attn-subbuild/vllm-flash-attn-populate-prefix/src/vllm-flash-attn-populate-stamp/vllm-flash-attn-populate-download.rule
+/root/autodl-tmp/helicopter/src/infer/vllm-rwkv/.deps/vllm-flash-attn-subbuild/vllm-flash-attn-populate-prefix/src/vllm-flash-attn-populate-stamp/vllm-flash-attn-populate-install.rule
+/root/autodl-tmp/helicopter/src/infer/vllm-rwkv/.deps/vllm-flash-attn-subbuild/vllm-flash-attn-populate-prefix/src/vllm-flash-attn-populate-stamp/vllm-flash-attn-populate-mkdir.rule
+/root/autodl-tmp/helicopter/src/infer/vllm-rwkv/.deps/vllm-flash-attn-subbuild/vllm-flash-attn-populate-prefix/src/vllm-flash-attn-populate-stamp/vllm-flash-attn-populate-patch.rule
+/root/autodl-tmp/helicopter/src/infer/vllm-rwkv/.deps/vllm-flash-attn-subbuild/vllm-flash-attn-populate-prefix/src/vllm-flash-attn-populate-stamp/vllm-flash-attn-populate-test.rule
+/root/autodl-tmp/helicopter/src/infer/vllm-rwkv/.deps/vllm-flash-attn-subbuild/vllm-flash-attn-populate-prefix/src/vllm-flash-attn-populate-stamp/vllm-flash-attn-populate-update.rule

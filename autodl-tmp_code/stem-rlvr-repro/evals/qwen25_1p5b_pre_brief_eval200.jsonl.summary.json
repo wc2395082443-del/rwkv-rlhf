@@ -1,0 +1,9 @@
+{
+  "model": "/root/autodl-tmp/models/Qwen2.5-1.5B-Instruct",
+  "split": "eval",
+  "n": 200,
+  "acc": 0.185,
+  "no_parse": 0.135,
+  "elapsed_s": 29.314614295959473,
+  "out": "/root/autodl-tmp/stem-rlvr-repro/evals/qwen25_1p5b_pre_brief_eval200.jsonl"
+}

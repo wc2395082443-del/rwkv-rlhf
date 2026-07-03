@@ -1,0 +1,332 @@
+master tasks=500 rollout=4 total_generations=2000
+master launching workers on GPUs=['0']
+worker=0/1 tasks=500 work_items=2000 bsz=256 cuda_visible=0
+[rwkv7_fast_v3a] loading CUDA extensions v3a_ops + fast_ops + wkv=fp32io16
+W0527 17:07:24.637000 38428 site-packages/torch/utils/cpp_extension.py:2425] TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+W0527 17:07:24.637000 38428 site-packages/torch/utils/cpp_extension.py:2425] If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'] to specific architectures.
+W0527 17:07:24.711000 38428 site-packages/torch/utils/cpp_extension.py:2425] TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+W0527 17:07:24.711000 38428 site-packages/torch/utils/cpp_extension.py:2425] If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'] to specific architectures.
+W0527 17:07:24.740000 38428 site-packages/torch/utils/cpp_extension.py:2425] TORCH_CUDA_ARCH_LIST is not set, all archs for visible cards are included for compilation. 
+W0527 17:07:24.740000 38428 site-packages/torch/utils/cpp_extension.py:2425] If this is not desired, please set os.environ['TORCH_CUDA_ARCH_LIST'] to specific architectures.
+[rwkv7_fast_v3a] CUDA extensions loaded in 0.132s
+[rwkv7_fast_v3a] loading weights from /dev/shm/rwkv_models/rwkv7-g1f-1.5b-20260419-ctx8192.pth
+[rwkv7_fast_v3a] weights mmap loaded in 0.027s tensors=798
+[rwkv7_fast_v3a] detected model C=2048 H=32 N=64 V=65536
+[rwkv7_fast_v3a] cmix no-fc path: rows<=19 row20_t<=5
+[rwkv7_fast_v3a] moving and preprocessing weights to CUDA emb=cpu
+[rwkv7_fast_v3a] model ready in 5.364s L=24 C=2048 H=32 N=64 V=65536
+[rwkv7_fast_v3a] gpu_mem used=3.30GiB allocated=2.70GiB reserved=2.73GiB total=31.36GiB
+worker=0 prefill_cache 20/500 elapsed_s=0.897
+worker=0 prefill_cache 40/500 elapsed_s=1.612
+worker=0 prefill_cache 60/500 elapsed_s=2.305
+worker=0 prefill_cache 80/500 elapsed_s=2.989
+worker=0 prefill_cache 100/500 elapsed_s=3.606
+worker=0 prefill_cache 120/500 elapsed_s=4.290
+worker=0 prefill_cache 140/500 elapsed_s=4.988
+worker=0 prefill_cache 160/500 elapsed_s=5.605
+worker=0 prefill_cache 180/500 elapsed_s=6.303
+worker=0 prefill_cache 200/500 elapsed_s=6.996
+worker=0 prefill_cache 220/500 elapsed_s=7.699
+worker=0 prefill_cache 240/500 elapsed_s=8.389
+worker=0 prefill_cache 260/500 elapsed_s=9.005
+worker=0 prefill_cache 280/500 elapsed_s=9.700
+worker=0 prefill_cache 300/500 elapsed_s=10.390
+worker=0 prefill_cache 320/500 elapsed_s=11.005
+worker=0 prefill_cache 340/500 elapsed_s=11.803
+worker=0 prefill_cache 360/500 elapsed_s=12.588
+worker=0 prefill_cache 380/500 elapsed_s=13.308
+worker=0 prefill_cache 400/500 elapsed_s=14.004
+worker=0 prefill_cache 420/500 elapsed_s=14.620
+worker=0 prefill_cache 440/500 elapsed_s=15.293
+worker=0 prefill_cache 460/500 elapsed_s=15.907
+worker=0 prefill_cache 480/500 elapsed_s=16.611
+worker=0 prefill_cache 500/500 elapsed_s=17.217
+worker=0 prefill_cache done prompts=500 elapsed_s=17.217
+worker=0 dynamic step=20 active=256/256 done=0/2000 pending=1744 tokens=5120 tps=5483.2 window_tps=5483.2
+worker=0 dynamic step=40 active=256/256 done=0/2000 pending=1744 tokens=10240 tps=5639.5 window_tps=5805.0
+worker=0 dynamic step=60 active=256/256 done=0/2000 pending=1744 tokens=15360 tps=5689.5 window_tps=5792.1
+worker=0 dynamic step=80 active=256/256 done=8/2000 pending=1736 tokens=20488 tps=5640.2 window_tps=5497.5
+worker=0 dynamic step=100 active=256/256 done=8/2000 pending=1736 tokens=25608 tps=5645.0 window_tps=5664.2
+worker=0 dynamic step=120 active=256/256 done=9/2000 pending=1735 tokens=30729 tps=5779.2 window_tps=6559.1
+worker=0 dynamic step=140 active=256/256 done=19/2000 pending=1725 tokens=35859 tps=5878.8 window_tps=6555.3
+worker=0 dynamic step=160 active=256/256 done=21/2000 pending=1723 tokens=40981 tps=5939.4 window_tps=6402.0
+worker=0 dynamic step=180 active=256/256 done=24/2000 pending=1720 tokens=46104 tps=5911.0 window_tps=5692.8
+worker=0 dynamic step=200 active=256/256 done=38/2000 pending=1706 tokens=51238 tps=5933.9 window_tps=6148.5
+worker=0 dynamic step=220 active=256/256 done=52/2000 pending=1692 tokens=56372 tps=5934.0 window_tps=5935.1
+worker=0 dynamic step=240 active=256/256 done=65/2000 pending=1679 tokens=61505 tps=5961.6 window_tps=6282.0
+worker=0 dynamic step=260 active=256/256 done=79/2000 pending=1665 tokens=66639 tps=5948.9 window_tps=5801.2
+worker=0 dynamic step=280 active=256/256 done=86/2000 pending=1658 tokens=71766 tps=5969.5 window_tps=6249.9
+worker=0 dynamic step=300 active=256/256 done=92/2000 pending=1652 tokens=76892 tps=5914.9 window_tps=5243.5
+worker=0 dynamic step=320 active=256/256 done=102/2000 pending=1642 tokens=82022 tps=5893.7 window_tps=5594.1
+worker=0 dynamic step=340 active=256/256 done=114/2000 pending=1630 tokens=87154 tps=5849.4 window_tps=5221.5
+worker=0 dynamic step=360 active=256/256 done=125/2000 pending=1619 tokens=92285 tps=5863.1 window_tps=6106.9
+worker=0 dynamic step=380 active=256/256 done=137/2000 pending=1607 tokens=97417 tps=5862.4 window_tps=5848.7
+worker=0 dynamic step=400 active=256/256 done=156/2000 pending=1588 tokens=102556 tps=5859.1 window_tps=5796.9
+worker=0 dynamic step=420 active=256/256 done=164/2000 pending=1580 tokens=107684 tps=5852.5 window_tps=5724.3
+worker=0 dynamic step=440 active=256/256 done=170/2000 pending=1574 tokens=112810 tps=5840.3 window_tps=5596.0
+worker=0 dynamic step=460 active=256/256 done=174/2000 pending=1570 tokens=117934 tps=5833.4 window_tps=5685.7
+worker=0 dynamic step=480 active=256/256 done=181/2000 pending=1563 tokens=123061 tps=5827.7 window_tps=5698.0
+worker=0 dynamic step=500 active=256/256 done=194/2000 pending=1550 tokens=128194 tps=5822.4 window_tps=5698.1
+worker=0 dynamic step=520 active=256/256 done=205/2000 pending=1539 tokens=133325 tps=5821.9 window_tps=5810.7
+worker=0 dynamic step=540 active=256/256 done=221/2000 pending=1523 tokens=138461 tps=5815.9 window_tps=5663.3
+worker=0 dynamic step=560 active=256/256 done=234/2000 pending=1510 tokens=143594 tps=5828.8 window_tps=6201.6
+worker=0 dynamic step=580 active=256/256 done=241/2000 pending=1503 tokens=148721 tps=5823.8 window_tps=5685.4
+worker=0 dynamic step=600 active=256/256 done=248/2000 pending=1496 tokens=153848 tps=5819.8 window_tps=5707.6
+worker=0 dynamic step=620 active=256/256 done=253/2000 pending=1491 tokens=158973 tps=5816.1 window_tps=5707.8
+worker=0 dynamic step=640 active=256/256 done=259/2000 pending=1485 tokens=164099 tps=5795.9 window_tps=5230.8
+worker=0 dynamic step=660 active=256/256 done=269/2000 pending=1475 tokens=169229 tps=5794.4 window_tps=5746.1
+worker=0 dynamic step=680 active=256/256 done=277/2000 pending=1467 tokens=174357 tps=5791.5 window_tps=5698.9
+worker=0 dynamic step=700 active=256/256 done=280/2000 pending=1464 tokens=179480 tps=5788.9 window_tps=5699.9
+worker=0 dynamic step=720 active=256/256 done=292/2000 pending=1452 tokens=184612 tps=5769.2 window_tps=5156.0
+worker=0 dynamic step=740 active=256/256 done=304/2000 pending=1440 tokens=189744 tps=5779.0 window_tps=6155.0
+worker=0 dynamic step=760 active=256/256 done=314/2000 pending=1430 tokens=194874 tps=5748.5 window_tps=4811.1
+worker=0 dynamic step=780 active=256/256 done=319/2000 pending=1425 tokens=199999 tps=5760.9 window_tps=6272.5
+worker=0 dynamic step=800 active=256/256 done=334/2000 pending=1410 tokens=205134 tps=5743.9 window_tps=5152.9
+worker=0 dynamic step=820 active=256/256 done=342/2000 pending=1402 tokens=210262 tps=5743.2 window_tps=5717.0
+worker=0 dynamic step=840 active=256/256 done=351/2000 pending=1393 tokens=215391 tps=5754.1 window_tps=6236.9
+worker=0 dynamic step=860 active=256/256 done=361/2000 pending=1383 tokens=220521 tps=5738.5 window_tps=5154.2
+worker=0 dynamic step=880 active=256/256 done=365/2000 pending=1379 tokens=225645 tps=5727.1 window_tps=5272.9
+worker=0 dynamic step=900 active=256/256 done=376/2000 pending=1368 tokens=230776 tps=5738.3 window_tps=6278.5
+worker=0 dynamic step=920 active=256/256 done=381/2000 pending=1363 tokens=235901 tps=5736.5 window_tps=5657.4
+worker=0 dynamic step=940 active=256/256 done=382/2000 pending=1362 tokens=241022 tps=5738.6 window_tps=5839.9
+worker=0 dynamic step=960 active=256/256 done=388/2000 pending=1356 tokens=246148 tps=5735.4 window_tps=5589.1
+worker=0 dynamic step=980 active=256/256 done=396/2000 pending=1348 tokens=251276 tps=5735.0 window_tps=5711.9
+worker=0 dynamic step=1000 active=256/256 done=404/2000 pending=1340 tokens=256404 tps=5735.8 window_tps=5779.4
+worker=0 dynamic step=1020 active=256/256 done=413/2000 pending=1331 tokens=261533 tps=5734.8 window_tps=5681.5
+worker=0 dynamic step=1040 active=256/256 done=425/2000 pending=1319 tokens=266665 tps=5742.7 window_tps=6181.1
+worker=0 dynamic step=1060 active=256/256 done=436/2000 pending=1308 tokens=271796 tps=5746.3 window_tps=5934.6
+worker=0 dynamic step=1080 active=256/256 done=440/2000 pending=1304 tokens=276920 tps=5753.1 window_tps=6139.4
+worker=0 dynamic step=1100 active=256/256 done=443/2000 pending=1301 tokens=282043 tps=5754.1 window_tps=5810.0
+worker=0 dynamic step=1120 active=256/256 done=447/2000 pending=1297 tokens=287167 tps=5750.9 window_tps=5579.8
+worker=0 dynamic step=1140 active=256/256 done=449/2000 pending=1295 tokens=292289 tps=5738.3 window_tps=5112.6
+worker=0 dynamic step=1160 active=256/256 done=450/2000 pending=1294 tokens=297410 tps=5726.5 window_tps=5121.5
+worker=0 dynamic step=1180 active=256/256 done=456/2000 pending=1288 tokens=302536 tps=5716.5 window_tps=5191.0
+worker=0 dynamic step=1200 active=256/256 done=459/2000 pending=1285 tokens=307659 tps=5706.2 window_tps=5160.1
+worker=0 dynamic step=1220 active=256/256 done=465/2000 pending=1279 tokens=312785 tps=5697.4 window_tps=5212.1
+worker=0 dynamic step=1240 active=256/256 done=469/2000 pending=1275 tokens=317909 tps=5687.1 window_tps=5124.8
+worker=0 dynamic step=1260 active=256/256 done=481/2000 pending=1263 tokens=323041 tps=5685.8 window_tps=5602.0
+worker=0 dynamic step=1280 active=256/256 done=491/2000 pending=1253 tokens=328171 tps=5685.8 window_tps=5686.6
+worker=0 dynamic step=1300 active=256/256 done=498/2000 pending=1246 tokens=333298 tps=5677.5 window_tps=5191.3
+worker=0 dynamic step=1320 active=256/256 done=510/2000 pending=1234 tokens=338430 tps=5677.8 window_tps=5697.9
+worker=0 dynamic step=1340 active=256/256 done=519/2000 pending=1225 tokens=343559 tps=5675.2 window_tps=5509.9
+worker=0 dynamic step=1360 active=256/256 done=527/2000 pending=1217 tokens=348687 tps=5668.1 window_tps=5229.8
+worker=0 dynamic step=1380 active=256/256 done=529/2000 pending=1215 tokens=353809 tps=5668.3 window_tps=5686.1
+worker=0 dynamic step=1400 active=256/256 done=532/2000 pending=1212 tokens=358932 tps=5657.9 window_tps=5016.8
+worker=0 dynamic step=1420 active=256/256 done=540/2000 pending=1204 tokens=364060 tps=5659.7 window_tps=5791.2
+worker=0 dynamic step=1440 active=256/256 done=548/2000 pending=1196 tokens=369188 tps=5669.1 window_tps=6424.5
+worker=0 dynamic step=1460 active=256/256 done=559/2000 pending=1185 tokens=374319 tps=5678.6 window_tps=6456.4
+worker=0 dynamic step=1480 active=256/256 done=571/2000 pending=1173 tokens=379451 tps=5680.4 window_tps=5820.1
+worker=0 dynamic step=1500 active=256/256 done=611/2000 pending=1133 tokens=384611 tps=5694.9 window_tps=7011.5
+worker=0 dynamic step=1520 active=256/256 done=618/2000 pending=1126 tokens=389738 tps=5703.3 window_tps=6413.3
+worker=0 dynamic step=1540 active=256/256 done=621/2000 pending=1123 tokens=394861 tps=5711.5 window_tps=6406.5
+worker=0 dynamic step=1560 active=256/256 done=627/2000 pending=1117 tokens=399987 tps=5712.7 window_tps=5808.5
+worker=0 dynamic step=1580 active=256/256 done=630/2000 pending=1114 tokens=405110 tps=5719.0 window_tps=6263.1
+worker=0 dynamic step=1600 active=256/256 done=635/2000 pending=1109 tokens=410235 tps=5720.3 window_tps=5817.8
+worker=0 dynamic step=1620 active=256/256 done=648/2000 pending=1096 tokens=415368 tps=5720.0 window_tps=5697.3
+worker=0 dynamic step=1640 active=256/256 done=654/2000 pending=1090 tokens=420494 tps=5721.0 window_tps=5807.6
+worker=0 dynamic step=1660 active=256/256 done=667/2000 pending=1077 tokens=425627 tps=5727.2 window_tps=6278.6
+worker=0 dynamic step=1680 active=256/256 done=677/2000 pending=1067 tokens=430757 tps=5726.7 window_tps=5692.5
+worker=0 dynamic step=1700 active=256/256 done=686/2000 pending=1058 tokens=435886 tps=5726.4 window_tps=5700.6
+worker=0 dynamic step=1720 active=256/256 done=693/2000 pending=1051 tokens=441013 tps=5726.3 window_tps=5712.7
+worker=0 dynamic step=1740 active=256/256 done=698/2000 pending=1046 tokens=446138 tps=5731.8 window_tps=6247.8
+worker=0 dynamic step=1760 active=256/256 done=703/2000 pending=1041 tokens=451263 tps=5724.2 window_tps=5132.6
+worker=0 dynamic step=1780 active=256/256 done=711/2000 pending=1033 tokens=456391 tps=5725.2 window_tps=5819.3
+worker=0 dynamic step=1800 active=256/256 done=713/2000 pending=1031 tokens=461513 tps=5724.7 window_tps=5679.7
+worker=0 dynamic step=1820 active=256/256 done=717/2000 pending=1027 tokens=466637 tps=5725.2 window_tps=5771.1
+worker=0 dynamic step=1840 active=256/256 done=727/2000 pending=1017 tokens=471767 tps=5723.0 window_tps=5525.1
+worker=0 dynamic step=1860 active=256/256 done=736/2000 pending=1008 tokens=476896 tps=5717.8 window_tps=5276.1
+worker=0 dynamic step=1880 active=256/256 done=741/2000 pending=1003 tokens=482021 tps=5722.4 window_tps=6194.6
+worker=0 dynamic step=1900 active=256/256 done=750/2000 pending=994 tokens=487150 tps=5723.3 window_tps=5804.6
+worker=0 dynamic step=1920 active=256/256 done=761/2000 pending=983 tokens=492281 tps=5723.8 window_tps=5766.8
+worker=0 dynamic step=1940 active=256/256 done=768/2000 pending=976 tokens=497408 tps=5723.9 window_tps=5740.7
+worker=0 dynamic step=1960 active=256/256 done=772/2000 pending=972 tokens=502532 tps=5727.9 window_tps=6140.8
+worker=0 dynamic step=1980 active=256/256 done=783/2000 pending=961 tokens=507663 tps=5728.6 window_tps=5799.1
+worker=0 dynamic step=2000 active=256/256 done=790/2000 pending=954 tokens=512790 tps=5728.4 window_tps=5710.0
+worker=0 dynamic step=2020 active=256/256 done=794/2000 pending=950 tokens=517914 tps=5728.1 window_tps=5693.0
+worker=0 dynamic step=2040 active=256/256 done=810/2000 pending=934 tokens=523050 tps=5728.7 window_tps=5796.2
+worker=0 dynamic step=2060 active=256/256 done=824/2000 pending=920 tokens=528184 tps=5733.8 window_tps=6308.6
+worker=0 dynamic step=2080 active=256/256 done=832/2000 pending=912 tokens=533312 tps=5732.9 window_tps=5636.4
+worker=0 dynamic step=2100 active=256/256 done=833/2000 pending=911 tokens=538433 tps=5733.8 window_tps=5824.5
+worker=0 dynamic step=2120 active=256/256 done=838/2000 pending=906 tokens=543558 tps=5731.9 window_tps=5542.1
+worker=0 dynamic step=2140 active=256/256 done=853/2000 pending=891 tokens=548693 tps=5731.3 window_tps=5671.0
+worker=0 dynamic step=2160 active=256/256 done=865/2000 pending=879 tokens=553825 tps=5733.2 window_tps=5941.7
+worker=0 dynamic step=2180 active=256/256 done=874/2000 pending=870 tokens=558954 tps=5731.9 window_tps=5592.6
+worker=0 dynamic step=2200 active=256/256 done=878/2000 pending=866 tokens=564078 tps=5731.5 window_tps=5688.3
+worker=0 dynamic step=2220 active=256/256 done=886/2000 pending=858 tokens=569206 tps=5729.8 window_tps=5551.9
+worker=0 dynamic step=2240 active=256/256 done=891/2000 pending=853 tokens=574331 tps=5729.5 window_tps=5694.5
+worker=0 dynamic step=2260 active=256/256 done=899/2000 pending=845 tokens=579459 tps=5725.3 window_tps=5297.3
+worker=0 dynamic step=2280 active=256/256 done=902/2000 pending=842 tokens=584582 tps=5729.2 window_tps=6199.7
+worker=0 dynamic step=2300 active=256/256 done=914/2000 pending=830 tokens=589714 tps=5728.9 window_tps=5695.1
+worker=0 dynamic step=2320 active=256/256 done=924/2000 pending=820 tokens=594844 tps=5723.9 window_tps=5205.2
+worker=0 dynamic step=2340 active=256/256 done=939/2000 pending=805 tokens=599979 tps=5723.8 window_tps=5704.4
+worker=0 dynamic step=2360 active=256/256 done=954/2000 pending=790 tokens=605114 tps=5724.7 window_tps=5841.5
+worker=0 dynamic step=2380 active=256/256 done=961/2000 pending=783 tokens=610241 tps=5729.0 window_tps=6285.3
+worker=0 dynamic step=2400 active=256/256 done=970/2000 pending=774 tokens=615370 tps=5733.2 window_tps=6277.4
+worker=0 dynamic step=2420 active=256/256 done=981/2000 pending=763 tokens=620501 tps=5733.9 window_tps=5813.4
+worker=0 dynamic step=2440 active=256/256 done=988/2000 pending=756 tokens=625628 tps=5733.6 window_tps=5704.9
+worker=0 dynamic step=2460 active=256/256 done=994/2000 pending=750 tokens=630754 tps=5728.5 window_tps=5169.7
+worker=0 dynamic step=2480 active=256/256 done=1003/2000 pending=741 tokens=635883 tps=5727.4 window_tps=5589.4
+worker=0 dynamic step=2500 active=256/256 done=1013/2000 pending=731 tokens=641013 tps=5727.6 window_tps=5758.8
+worker=0 dynamic step=2520 active=256/256 done=1016/2000 pending=728 tokens=646136 tps=5732.4 window_tps=6402.6
+worker=0 dynamic step=2540 active=256/256 done=1022/2000 pending=722 tokens=651262 tps=5736.3 window_tps=6273.7
+worker=0 dynamic step=2560 active=256/256 done=1025/2000 pending=719 tokens=656385 tps=5735.2 window_tps=5599.8
+worker=0 dynamic step=2580 active=256/256 done=1030/2000 pending=714 tokens=661510 tps=5735.6 window_tps=5780.5
+worker=0 dynamic step=2600 active=256/256 done=1037/2000 pending=707 tokens=666637 tps=5736.1 window_tps=5805.4
+worker=0 dynamic step=2620 active=256/256 done=1048/2000 pending=696 tokens=671768 tps=5735.6 window_tps=5664.8
+worker=0 dynamic step=2640 active=256/256 done=1057/2000 pending=687 tokens=676897 tps=5734.7 window_tps=5630.6
+worker=0 dynamic step=2660 active=256/256 done=1064/2000 pending=680 tokens=682024 tps=5735.4 window_tps=5823.5
+worker=0 dynamic step=2680 active=256/256 done=1071/2000 pending=673 tokens=687151 tps=5735.2 window_tps=5711.2
+worker=0 dynamic step=2700 active=256/256 done=1077/2000 pending=667 tokens=692277 tps=5738.7 window_tps=6244.3
+worker=0 dynamic step=2720 active=256/256 done=1080/2000 pending=664 tokens=697400 tps=5739.9 window_tps=5913.0
+worker=0 dynamic step=2740 active=256/256 done=1085/2000 pending=659 tokens=702525 tps=5743.5 window_tps=6269.9
+worker=0 dynamic step=2760 active=256/256 done=1100/2000 pending=644 tokens=707660 tps=5743.6 window_tps=5767.4
+worker=0 dynamic step=2780 active=256/256 done=1108/2000 pending=636 tokens=712788 tps=5738.0 window_tps=5051.0
+worker=0 dynamic step=2800 active=256/256 done=1118/2000 pending=626 tokens=717918 tps=5737.8 window_tps=5716.5
+worker=0 dynamic step=2820 active=256/256 done=1127/2000 pending=617 tokens=723047 tps=5737.7 window_tps=5714.9
+worker=0 dynamic step=2840 active=256/256 done=1137/2000 pending=607 tokens=728177 tps=5732.7 window_tps=5111.2
+worker=0 dynamic step=2860 active=256/256 done=1151/2000 pending=593 tokens=733311 tps=5728.3 window_tps=5162.3
+worker=0 dynamic step=2880 active=256/256 done=1156/2000 pending=588 tokens=738436 tps=5731.9 window_tps=6302.2
+worker=0 dynamic step=2900 active=256/256 done=1163/2000 pending=581 tokens=743563 tps=5728.3 window_tps=5247.3
+worker=0 dynamic step=2920 active=256/256 done=1172/2000 pending=572 tokens=748692 tps=5730.7 window_tps=6102.9
+worker=0 dynamic step=2940 active=256/256 done=1180/2000 pending=564 tokens=753820 tps=5727.4 window_tps=5291.0
+worker=0 dynamic step=2960 active=256/256 done=1188/2000 pending=556 tokens=758948 tps=5726.9 window_tps=5646.5
+worker=0 dynamic step=2980 active=256/256 done=1197/2000 pending=547 tokens=764077 tps=5727.7 window_tps=5855.0
+worker=0 dynamic step=3000 active=256/256 done=1219/2000 pending=525 tokens=769219 tps=5731.1 window_tps=6283.6
+worker=0 dynamic step=3020 active=256/256 done=1231/2000 pending=513 tokens=774351 tps=5722.6 window_tps=4681.4
+worker=0 dynamic step=3040 active=256/256 done=1237/2000 pending=507 tokens=779477 tps=5721.6 window_tps=5577.8
+worker=0 dynamic step=3060 active=256/256 done=1239/2000 pending=505 tokens=784599 tps=5718.0 window_tps=5214.4
+worker=0 dynamic step=3080 active=256/256 done=1242/2000 pending=502 tokens=789722 tps=5714.4 window_tps=5206.3
+worker=0 dynamic step=3100 active=256/256 done=1254/2000 pending=490 tokens=794854 tps=5717.0 window_tps=6158.7
+worker=0 dynamic step=3120 active=256/256 done=1266/2000 pending=478 tokens=799986 tps=5713.4 window_tps=5209.0
+worker=0 dynamic step=3140 active=256/256 done=1274/2000 pending=470 tokens=805114 tps=5710.0 window_tps=5224.7
+worker=0 dynamic step=3160 active=256/256 done=1287/2000 pending=457 tokens=810247 tps=5713.3 window_tps=6272.6
+worker=0 dynamic step=3180 active=256/256 done=1298/2000 pending=446 tokens=815378 tps=5705.4 window_tps=4686.3
+worker=0 dynamic step=3200 active=256/256 done=1304/2000 pending=440 tokens=820504 tps=5700.6 window_tps=5021.5
+worker=0 dynamic step=3220 active=256/256 done=1311/2000 pending=433 tokens=825631 tps=5701.6 window_tps=5868.2
+worker=0 dynamic step=3240 active=256/256 done=1318/2000 pending=426 tokens=830758 tps=5705.1 window_tps=6339.8
+worker=0 dynamic step=3260 active=256/256 done=1324/2000 pending=420 tokens=835884 tps=5704.8 window_tps=5646.5
+worker=0 dynamic step=3280 active=256/256 done=1334/2000 pending=410 tokens=841014 tps=5697.9 window_tps=4767.8
+worker=0 dynamic step=3300 active=256/256 done=1343/2000 pending=401 tokens=846143 tps=5692.7 window_tps=4942.8
+worker=0 dynamic step=3320 active=256/256 done=1357/2000 pending=387 tokens=851277 tps=5689.2 window_tps=5175.6
+worker=0 dynamic step=3340 active=256/256 done=1370/2000 pending=374 tokens=856410 tps=5689.3 window_tps=5698.7
+worker=0 dynamic step=3360 active=256/256 done=1378/2000 pending=366 tokens=861538 tps=5681.8 window_tps=4657.1
+worker=0 dynamic step=3380 active=256/256 done=1393/2000 pending=351 tokens=866673 tps=5682.5 window_tps=5795.5
+worker=0 dynamic step=3400 active=256/256 done=1399/2000 pending=345 tokens=871799 tps=5675.1 window_tps=4661.9
+worker=0 dynamic step=3420 active=256/256 done=1401/2000 pending=343 tokens=876921 tps=5675.5 window_tps=5736.8
+worker=0 dynamic step=3440 active=256/256 done=1408/2000 pending=336 tokens=882048 tps=5672.3 window_tps=5179.2
+worker=0 dynamic step=3460 active=256/256 done=1424/2000 pending=320 tokens=887184 tps=5671.2 window_tps=5486.4
+worker=0 dynamic step=3480 active=256/256 done=1437/2000 pending=307 tokens=892317 tps=5668.8 window_tps=5277.2
+worker=0 dynamic step=3500 active=256/256 done=1443/2000 pending=301 tokens=897443 tps=5668.5 window_tps=5619.1
+worker=0 dynamic step=3520 active=256/256 done=1451/2000 pending=293 tokens=902571 tps=5668.9 window_tps=5728.8
+worker=0 dynamic step=3540 active=256/256 done=1464/2000 pending=280 tokens=907704 tps=5668.4 window_tps=5590.3
+worker=0 dynamic step=3560 active=256/256 done=1474/2000 pending=270 tokens=912834 tps=5665.7 window_tps=5225.8
+worker=0 dynamic step=3580 active=256/256 done=1484/2000 pending=260 tokens=917964 tps=5666.2 window_tps=5756.1
+worker=0 dynamic step=3600 active=256/256 done=1491/2000 pending=253 tokens=923091 tps=5665.5 window_tps=5536.6
+worker=0 dynamic step=3620 active=256/256 done=1495/2000 pending=249 tokens=928215 tps=5662.5 window_tps=5171.5
+worker=0 dynamic step=3640 active=256/256 done=1500/2000 pending=244 tokens=933340 tps=5662.3 window_tps=5630.5
+worker=0 dynamic step=3660 active=256/256 done=1508/2000 pending=236 tokens=938468 tps=5656.3 window_tps=4740.4
+worker=0 dynamic step=3680 active=256/256 done=1519/2000 pending=225 tokens=943599 tps=5656.5 window_tps=5689.4
+worker=0 dynamic step=3700 active=256/256 done=1531/2000 pending=213 tokens=948731 tps=5656.9 window_tps=5741.2
+worker=0 dynamic step=3720 active=256/256 done=1539/2000 pending=205 tokens=953859 tps=5660.3 window_tps=6360.4
+worker=0 dynamic step=3740 active=256/256 done=1542/2000 pending=202 tokens=958982 tps=5661.1 window_tps=5807.8
+worker=0 dynamic step=3760 active=256/256 done=1544/2000 pending=200 tokens=964104 tps=5661.2 window_tps=5691.8
+worker=0 dynamic step=3780 active=256/256 done=1560/2000 pending=184 tokens=969240 tps=5664.8 window_tps=6419.6
+worker=0 dynamic step=3800 active=256/256 done=1571/2000 pending=173 tokens=974371 tps=5667.7 window_tps=6273.5
+worker=0 dynamic step=3820 active=256/256 done=1575/2000 pending=169 tokens=979495 tps=5671.4 window_tps=6489.6
+worker=0 dynamic step=3840 active=256/256 done=1580/2000 pending=164 tokens=984620 tps=5671.5 window_tps=5681.1
+worker=0 dynamic step=3860 active=256/256 done=1584/2000 pending=160 tokens=989744 tps=5671.9 window_tps=5754.5
+worker=0 dynamic step=3880 active=256/256 done=1601/2000 pending=143 tokens=994881 tps=5674.7 window_tps=6279.1
+worker=0 dynamic step=3900 active=256/256 done=1613/2000 pending=131 tokens=1000013 tps=5672.2 window_tps=5227.0
+worker=0 dynamic step=3920 active=256/256 done=1630/2000 pending=114 tokens=1005150 tps=5675.1 window_tps=6283.0
+worker=0 dynamic step=3940 active=256/256 done=1641/2000 pending=103 tokens=1010281 tps=5675.5 window_tps=5760.0
+worker=0 dynamic step=3960 active=256/256 done=1650/2000 pending=94 tokens=1015410 tps=5675.6 window_tps=5706.5
+worker=0 dynamic step=3980 active=256/256 done=1655/2000 pending=89 tokens=1020535 tps=5675.7 window_tps=5696.3
+worker=0 dynamic step=4000 active=256/256 done=1664/2000 pending=80 tokens=1025664 tps=5675.5 window_tps=5633.8
+worker=0 dynamic step=4020 active=256/256 done=1674/2000 pending=70 tokens=1030794 tps=5675.1 window_tps=5587.2
+worker=0 dynamic step=4040 active=256/256 done=1682/2000 pending=62 tokens=1035922 tps=5678.1 window_tps=6357.3
+worker=0 dynamic step=4060 active=256/256 done=1692/2000 pending=52 tokens=1041052 tps=5678.6 window_tps=5781.7
+worker=0 dynamic step=4080 active=256/256 done=1697/2000 pending=47 tokens=1046177 tps=5678.7 window_tps=5692.0
+worker=0 dynamic step=4100 active=256/256 done=1704/2000 pending=40 tokens=1051304 tps=5679.2 window_tps=5784.8
+worker=0 dynamic step=4120 active=256/256 done=1714/2000 pending=30 tokens=1056434 tps=5679.1 window_tps=5659.3
+worker=0 dynamic step=4140 active=256/256 done=1728/2000 pending=16 tokens=1061568 tps=5679.8 window_tps=5833.5
+worker=0 dynamic step=4160 active=256/256 done=1736/2000 pending=8 tokens=1066696 tps=5682.5 window_tps=6292.7
+worker=0 dynamic step=4180 active=256/256 done=1743/2000 pending=1 tokens=1071823 tps=5682.5 window_tps=5696.2
+worker=0 dynamic step=4200 active=248/256 done=1752/2000 pending=0 tokens=1076889 tps=5679.8 window_tps=5156.3
+worker=0 dynamic step=4220 active=241/256 done=1759/2000 pending=0 tokens=1081776 tps=5678.2 window_tps=5355.8
+worker=0 dynamic step=4240 active=232/256 done=1768/2000 pending=0 tokens=1086535 tps=5679.1 window_tps=5867.3
+worker=0 dynamic step=4260 active=226/256 done=1774/2000 pending=0 tokens=1091095 tps=5676.4 window_tps=5100.0
+worker=0 dynamic step=4280 active=221/256 done=1779/2000 pending=0 tokens=1095561 tps=5673.5 window_tps=5061.4
+worker=0 dynamic step=4300 active=217/256 done=1783/2000 pending=0 tokens=1099951 tps=5672.2 window_tps=5366.0
+worker=0 dynamic step=4320 active=215/256 done=1785/2000 pending=0 tokens=1104286 tps=5662.8 window_tps=3984.4
+worker=0 dynamic step=4340 active=210/256 done=1790/2000 pending=0 tokens=1108522 tps=5661.5 window_tps=5334.8
+worker=0 dynamic step=4360 active=203/256 done=1797/2000 pending=0 tokens=1112627 tps=5659.3 window_tps=5132.3
+worker=0 dynamic step=4380 active=195/256 done=1805/2000 pending=0 tokens=1116624 tps=5655.7 window_tps=4798.2
+worker=0 dynamic step=4400 active=188/256 done=1812/2000 pending=0 tokens=1120439 tps=5649.7 window_tps=4314.0
+worker=0 dynamic step=4420 active=179/256 done=1821/2000 pending=0 tokens=1124135 tps=5645.1 window_tps=4523.8
+worker=0 dynamic step=4440 active=176/256 done=1824/2000 pending=0 tokens=1127688 tps=5638.0 window_tps=4024.5
+worker=0 dynamic step=4460 active=166/256 done=1834/2000 pending=0 tokens=1131112 tps=5632.1 window_tps=4191.6
+worker=0 dynamic step=4480 active=162/256 done=1838/2000 pending=0 tokens=1134399 tps=5623.8 window_tps=3742.1
+worker=0 dynamic step=4500 active=157/256 done=1843/2000 pending=0 tokens=1137622 tps=5619.7 window_tps=4467.3
+worker=0 dynamic step=4520 active=155/256 done=1845/2000 pending=0 tokens=1140742 tps=5613.4 window_tps=3982.7
+worker=0 dynamic step=4540 active=152/256 done=1848/2000 pending=0 tokens=1143813 tps=5606.4 window_tps=3821.0
+worker=0 dynamic step=4560 active=151/256 done=1849/2000 pending=0 tokens=1146839 tps=5597.1 window_tps=3443.0
+worker=0 dynamic step=4580 active=145/256 done=1855/2000 pending=0 tokens=1149810 tps=5589.3 window_tps=3641.5
+worker=0 dynamic step=4600 active=140/256 done=1860/2000 pending=0 tokens=1152698 tps=5581.2 window_tps=3534.6
+worker=0 dynamic step=4620 active=129/256 done=1871/2000 pending=0 tokens=1155380 tps=5570.3 window_tps=3033.4
+worker=0 dynamic step=4640 active=128/256 done=1872/2000 pending=0 tokens=1157953 tps=5553.3 window_tps=2341.2
+worker=0 dynamic step=4660 active=127/256 done=1873/2000 pending=0 tokens=1160512 tps=5543.9 window_tps=3133.7
+worker=0 dynamic step=4680 active=127/256 done=1873/2000 pending=0 tokens=1163052 tps=5532.8 window_tps=2895.3
+worker=0 dynamic step=4700 active=117/256 done=1883/2000 pending=0 tokens=1165456 tps=5520.0 window_tps=2605.9
+worker=0 dynamic step=4720 active=112/256 done=1888/2000 pending=0 tokens=1167747 tps=5507.5 window_tps=2552.3
+worker=0 dynamic step=4740 active=111/256 done=1889/2000 pending=0 tokens=1169979 tps=5492.4 window_tps=2262.7
+worker=0 dynamic step=4760 active=110/256 done=1890/2000 pending=0 tokens=1172193 tps=5481.8 window_tps=2710.9
+worker=0 dynamic step=4780 active=106/256 done=1894/2000 pending=0 tokens=1174347 tps=5468.9 window_tps=2393.7
+worker=0 dynamic step=4800 active=102/256 done=1898/2000 pending=0 tokens=1176443 tps=5456.2 window_tps=2374.2
+worker=0 dynamic step=4820 active=98/256 done=1902/2000 pending=0 tokens=1178437 tps=5444.9 window_tps=2446.3
+worker=0 dynamic step=4840 active=97/256 done=1903/2000 pending=0 tokens=1180385 tps=5432.1 window_tps=2242.2
+worker=0 dynamic step=4860 active=94/256 done=1906/2000 pending=0 tokens=1182305 tps=5420.2 window_tps=2308.8
+worker=0 dynamic step=4880 active=90/256 done=1910/2000 pending=0 tokens=1184130 tps=5406.4 window_tps=2048.8
+worker=0 dynamic step=4900 active=87/256 done=1913/2000 pending=0 tokens=1185903 tps=5392.5 window_tps=1983.9
+worker=0 dynamic step=4920 active=87/256 done=1913/2000 pending=0 tokens=1187643 tps=5375.9 window_tps=1734.5
+worker=0 dynamic step=4940 active=85/256 done=1915/2000 pending=0 tokens=1189357 tps=5363.9 window_tps=2107.0
+worker=0 dynamic step=4960 active=79/256 done=1921/2000 pending=0 tokens=1190983 tps=5350.3 window_tps=1874.6
+worker=0 dynamic step=4980 active=75/256 done=1925/2000 pending=0 tokens=1192510 tps=5335.6 window_tps=1693.3
+worker=0 dynamic step=5000 active=75/256 done=1925/2000 pending=0 tokens=1194010 tps=5322.9 window_tps=1841.4
+worker=0 dynamic step=5020 active=70/256 done=1930/2000 pending=0 tokens=1195442 tps=5310.0 window_tps=1761.8
+worker=0 dynamic step=5040 active=68/256 done=1932/2000 pending=0 tokens=1196825 tps=5295.7 window_tps=1588.2
+worker=0 dynamic step=5060 active=65/256 done=1935/2000 pending=0 tokens=1198176 tps=5284.5 window_tps=1844.4
+worker=0 dynamic step=5080 active=64/256 done=1936/2000 pending=0 tokens=1199460 tps=5270.0 window_tps=1480.2
+worker=0 dynamic step=5100 active=61/256 done=1939/2000 pending=0 tokens=1200711 tps=5258.2 window_tps=1664.8
+worker=0 dynamic step=5120 active=58/256 done=1942/2000 pending=0 tokens=1201916 tps=5243.6 window_tps=1396.4
+worker=0 dynamic step=5140 active=53/256 done=1947/2000 pending=0 tokens=1203045 tps=5228.0 window_tps=1253.9
+worker=0 dynamic step=5160 active=52/256 done=1948/2000 pending=0 tokens=1204096 tps=5214.4 window_tps=1311.2
+worker=0 dynamic step=5180 active=52/256 done=1948/2000 pending=0 tokens=1205136 tps=5200.6 window_tps=1277.8
+worker=0 dynamic step=5200 active=50/256 done=1950/2000 pending=0 tokens=1206144 tps=5185.1 window_tps=1138.1
+worker=0 dynamic step=5220 active=48/256 done=1952/2000 pending=0 tokens=1207132 tps=5169.7 window_tps=1117.4
+worker=0 dynamic step=5240 active=47/256 done=1953/2000 pending=0 tokens=1208089 tps=5155.6 window_tps=1158.2
+worker=0 dynamic step=5260 active=47/256 done=1953/2000 pending=0 tokens=1209029 tps=5140.1 window_tps=1057.8
+worker=0 dynamic step=5280 active=46/256 done=1954/2000 pending=0 tokens=1209958 tps=5126.3 window_tps=1138.5
+worker=0 dynamic step=5300 active=45/256 done=1955/2000 pending=0 tokens=1210878 tps=5111.1 window_tps=1045.3
+worker=0 dynamic step=5320 active=44/256 done=1956/2000 pending=0 tokens=1211763 tps=5097.5 window_tps=1094.7
+worker=0 dynamic step=5340 active=43/256 done=1957/2000 pending=0 tokens=1212624 tps=5081.6 window_tps=944.9
+worker=0 dynamic step=5360 active=43/256 done=1957/2000 pending=0 tokens=1213484 tps=5066.1 window_tps=955.8
+worker=0 dynamic step=5380 active=43/256 done=1957/2000 pending=0 tokens=1214344 tps=5051.0 window_tps=972.5
+worker=0 dynamic step=5400 active=38/256 done=1962/2000 pending=0 tokens=1215148 tps=5037.3 window_tps=985.9
+worker=0 dynamic step=5420 active=36/256 done=1964/2000 pending=0 tokens=1215902 tps=5019.6 window_tps=754.1
+worker=0 dynamic step=5440 active=32/256 done=1968/2000 pending=0 tokens=1216586 tps=5004.1 window_tps=771.9
+worker=0 dynamic step=5460 active=26/256 done=1974/2000 pending=0 tokens=1217154 tps=4988.3 window_tps=642.2
+worker=0 dynamic step=5480 active=25/256 done=1975/2000 pending=0 tokens=1217674 tps=4975.2 window_tps=694.8
+worker=0 dynamic step=5500 active=18/256 done=1982/2000 pending=0 tokens=1218077 tps=4959.1 window_tps=459.6
+worker=0 dynamic step=5520 active=13/256 done=1987/2000 pending=0 tokens=1218374 tps=4942.4 window_tps=334.4
+worker=0 dynamic step=5540 active=10/256 done=1990/2000 pending=0 tokens=1218613 tps=4925.4 window_tps=265.8
+worker=0 dynamic step=5560 active=7/256 done=1993/2000 pending=0 tokens=1218760 tps=4908.1 window_tps=162.7
+worker=0 dynamic step=5580 active=7/256 done=1993/2000 pending=0 tokens=1218900 tps=4890.4 window_tps=150.7
+worker=0 dynamic step=5600 active=7/256 done=1993/2000 pending=0 tokens=1219040 tps=4873.9 window_tps=161.4
+worker=0 dynamic step=5620 active=5/256 done=1995/2000 pending=0 tokens=1219148 tps=4854.9 window_tps=107.7
+worker=0 dynamic step=5640 active=5/256 done=1995/2000 pending=0 tokens=1219248 tps=4838.0 window_tps=111.1
+worker=0 dynamic step=5660 active=5/256 done=1995/2000 pending=0 tokens=1219348 tps=4819.4 window_tps=100.6
+worker=0 dynamic done B=256 rows=2000 decode_s=253.816 tokens=1219394
+worker=0 finished elapsed_s=253.912
+master verifying rows=2000 workers=8
+Timeout during comparison
+MATH500_RWKV_V3A_RESULT {"num_tasks": 500, "rollout": 4, "total_generations": 2000, "correct_generations": 803, "rollout_accuracy": 0.4015, "pass_at_rollout_accuracy": 0.504, "ended_eod": 1640, "ended_eod_rate": 0.82, "ended_user_stop": 0, "ended_user_stop_rate": 0.0, "truncated": 360, "truncated_rate": 0.18, "mean_generated_tokens": 608.877, "mean_tokens_including_eod": 609.697, "mean_tokens_including_stop": 609.697, "elapsed_sec": 288.21071924827993, "sample_per_sec": 6.939367158919215, "token_per_sec": 4230.911338691569, "generations_jsonl": "/root/autodl-tmp/albatross_math500_run6/generations.jsonl", "config": {"model": "/dev/shm/rwkv_models/rwkv7-g1f-1.5b-20260419-ctx8192.pth", "albatross_dir": "/root/Albatross/faster3a_2605", "dataset": "/root/Albatross/faster3a_2605/dataset/MATH500.jsonl", "rollout": 4, "bsz": 256, "max_new_tokens": 1500, "temperature": 1.0, "top_p": 0.28, "top_k": 32, "sampler_order": "temperature -> top_k -> top_p", "penalty": "off", "prompt_style": "fake_think", "wkv": "fp32io16", "emb": "cpu", "batched_rkv": "off", "cmix_sparse": "no-fc", "lowrank_weight": "both", "orig_linear_groups": "att_c2c,ffn_key,head", "torch_extensions_dir": "", "verify_workers": 8, "seed": 42, "gpus": "0"}}

@@ -1,0 +1,29 @@
+# Format checks enforced on CI:
+# 1. Comments must appear above each field.
+# 2. There must be a blank line between each field.
+# 3. Inline comments (after a field on the same line) are not allowed.
+# 4. Indentation level is respected for nested fields.
+
+# defaults specify the default config from each component
+defaults:
+
+  # native rwkv-lm optimizer config
+  - ../optim@optim: rwkv_lm
+
+  # native rwkv-lm engine config
+  - ../engine@engine: rwkv_lm
+
+  # rwkv-lm actor config, inheriting from trainer/config/actor/actor.yaml
+  - actor
+
+  # load the reference default config, then apply the fields in the current yaml
+  - _self_
+
+# Target class for this configuration
+_target_: verl.workers.config.ActorConfig
+
+# Native RWKV training strategy
+strategy: rwkv_lm
+
+# Native rwkv-lm uses its own model code, not torch.compile wrapping
+use_torch_compile: false

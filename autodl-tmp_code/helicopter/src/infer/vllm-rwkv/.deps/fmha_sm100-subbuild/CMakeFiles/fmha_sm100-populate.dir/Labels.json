@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/root/autodl-tmp/helicopter/src/infer/vllm-rwkv/.deps/fmha_sm100-subbuild/CMakeFiles/fmha_sm100-populate"
+		},
+		{
+			"file" : "/root/autodl-tmp/helicopter/src/infer/vllm-rwkv/.deps/fmha_sm100-subbuild/CMakeFiles/fmha_sm100-populate.rule"
+		},
+		{
+			"file" : "/root/autodl-tmp/helicopter/src/infer/vllm-rwkv/.deps/fmha_sm100-subbuild/CMakeFiles/fmha_sm100-populate-complete.rule"
+		},
+		{
+			"file" : "/root/autodl-tmp/helicopter/src/infer/vllm-rwkv/.deps/fmha_sm100-subbuild/fmha_sm100-populate-prefix/src/fmha_sm100-populate-stamp/fmha_sm100-populate-build.rule"
+		},
+		{
+			"file" : "/root/autodl-tmp/helicopter/src/infer/vllm-rwkv/.deps/fmha_sm100-subbuild/fmha_sm100-populate-prefix/src/fmha_sm100-populate-stamp/fmha_sm100-populate-configure.rule"
+		},
+		{
+			"file" : "/root/autodl-tmp/helicopter/src/infer/vllm-rwkv/.deps/fmha_sm100-subbuild/fmha_sm100-populate-prefix/src/fmha_sm100-populate-stamp/fmha_sm100-populate-download.rule"
+		},
+		{
+			"file" : "/root/autodl-tmp/helicopter/src/infer/vllm-rwkv/.deps/fmha_sm100-subbuild/fmha_sm100-populate-prefix/src/fmha_sm100-populate-stamp/fmha_sm100-populate-install.rule"
+		},
+		{
+			"file" : "/root/autodl-tmp/helicopter/src/infer/vllm-rwkv/.deps/fmha_sm100-subbuild/fmha_sm100-populate-prefix/src/fmha_sm100-populate-stamp/fmha_sm100-populate-mkdir.rule"
+		},
+		{
+			"file" : "/root/autodl-tmp/helicopter/src/infer/vllm-rwkv/.deps/fmha_sm100-subbuild/fmha_sm100-populate-prefix/src/fmha_sm100-populate-stamp/fmha_sm100-populate-patch.rule"
+		},
+		{
+			"file" : "/root/autodl-tmp/helicopter/src/infer/vllm-rwkv/.deps/fmha_sm100-subbuild/fmha_sm100-populate-prefix/src/fmha_sm100-populate-stamp/fmha_sm100-populate-test.rule"
+		},
+		{
+			"file" : "/root/autodl-tmp/helicopter/src/infer/vllm-rwkv/.deps/fmha_sm100-subbuild/fmha_sm100-populate-prefix/src/fmha_sm100-populate-stamp/fmha_sm100-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"fmha_sm100-populate"
+		],
+		"name" : "fmha_sm100-populate"
+	}
+}

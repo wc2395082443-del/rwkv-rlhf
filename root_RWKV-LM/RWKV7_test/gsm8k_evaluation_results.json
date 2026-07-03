@@ -1,0 +1,21 @@
+{
+  "accuracy": 0.0,
+  "correct": 0,
+  "total": 10,
+  "avg_tokens": 512.0,
+  "avg_time": 32.98478305339813,
+  "tokens_per_sec": 15.522309156047433,
+  "config": {
+    "model": "C:\\RWKV-LM\\rwkv7-g1b-1.5b-20251202-ctx8192",
+    "decode_params": {
+      "temperature": 1.0,
+      "top_k": 0,
+      "top_p": 0.85,
+      "alpha_presence": 0.3,
+      "alpha_frequency": 0.3,
+      "alpha_decay": 0.996
+    },
+    "max_new_tokens": 512,
+    "max_samples": 10
+  }
+}

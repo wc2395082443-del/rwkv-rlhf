@@ -1,0 +1,42 @@
+name: DCO
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+
+permissions:
+  contents: read
+  pull-requests: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  dco:
+    name: DCO
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check commit sign-offs
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
+        with:
+          script: |
+            const commits = await github.paginate(github.rest.pulls.listCommits, {
+              ...context.repo,
+              pull_number: context.payload.pull_request.number,
+              per_page: 100,
+            });
+
+            const signoffPattern = /^Signed-off-by:\s+.+\s+<[^<>\s]+@[^<>\s]+>$/im;
+            const missing = commits
+              .filter((commit) => !signoffPattern.test(commit.commit.message || ''))
+              .map((commit) => commit.sha.slice(0, 12));
+
+            if (missing.length > 0) {
+              core.setFailed([
+                'DCO check failed. Every commit must include a Signed-off-by trailer.',
+                `Missing sign-off: ${missing.join(', ')}`,
+                'Use `git commit -s` for new commits or `git rebase --signoff main` to repair existing commits.',
+              ].join('\n'));
+            }

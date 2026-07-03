@@ -1,0 +1,7 @@
+{
+  "source_train_jsonl": "/root/RWKV-LM/RWKV7-statetuning/gsm8k_train_formatted.jsonl",
+  "pass8_jsonl": "/root/autodl-tmp/g1e_dynamic_rescreen_20260426_020719/stage_1/pass8_full/pass8_eval.jsonl",
+  "out_jsonl": "/root/autodl-tmp/g1e_dynamic_rescreen_20260426_020719/subset_stage_2.jsonl",
+  "selected_keys": 1341,
+  "written": 1341
+}

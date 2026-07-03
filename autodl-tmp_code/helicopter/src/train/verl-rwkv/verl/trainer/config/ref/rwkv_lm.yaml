@@ -1,0 +1,35 @@
+# Format checks enforced on CI:
+# 1. Comments must appear above each field.
+# 2. There must be a blank line between each field.
+# 3. Inline comments (after a field on the same line) are not allowed.
+# 4. Indentation level is respected for nested fields.
+
+# defaults specify the default config from each component
+defaults:
+
+  # ref config shared by actor/ref policy
+  - ref
+
+  # native rwkv-lm optimizer config
+  - ../optim@optim: rwkv_lm
+
+  # native rwkv-lm engine config
+  - ../engine@engine: rwkv_lm
+
+  # load the reference default config, then apply the fields in the current yaml
+  - _self_
+
+# Target class for this configuration
+_target_: verl.workers.config.ActorConfig
+
+# Native RWKV reference-policy strategy
+strategy: rwkv_lm
+
+# Native rwkv-lm uses its own model code, not torch.compile wrapping
+use_torch_compile: false
+
+# Native rwkv-lm ref policy is forward-only
+engine:
+
+  # Whether the engine is forward only
+  forward_only: true

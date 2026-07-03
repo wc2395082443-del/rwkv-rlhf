@@ -1,0 +1,53 @@
+[paths]
+weight_path = "/root/autodl-tmp/rwkv_models/ms_g1_1p5b"
+datasets_path = "/root/autodl-tmp/data/helicopter"
+python = "/root/autodl-tmp/venvs/helicopter-torch211/bin/python"
+verl_path = "/root/autodl-tmp/helicopter/src/train/verl-rwkv"
+rwkv_lm_path = "/root/autodl-tmp/helicopter/src/train/rwkv-lm"
+vllm_rwkv_path = "/root/autodl-tmp/helicopter/src/infer/vllm-rwkv"
+
+[infer]
+enable_auto_tool_choice = false
+
+[takeoff.grpo]
+project_name = "verl_rwkv_grpo"
+experiment_name = "rwkv7_grpo_vllm_gsm8k_5090_smoke"
+wkv_mode = "fp32io16"
+emb_device = "gpu"
+train_batch_size = 8
+ppo_mini_batch_size = 8
+ppo_micro_batch_size = 1
+max_prompt_length = 512
+max_response_length = 512
+ppo_max_token_len_per_gpu = 4096
+rwkv_use_dynamic_bsz = false
+actor_lr = "1e-6"
+rollout_n = 2
+trainer_n_gpus_per_node = 1
+rollout_n_gpus_per_node = 1
+rollout_mode = "async"
+rollout_tensor_parallel_size = 1
+rollout_data_parallel_size = 1
+rollout_pipeline_parallel_size = 1
+rollout_gpu_memory_utilization = 0.60
+rollout_max_num_seqs = 16
+rollout_max_num_batched_tokens = 4096
+rollout_checkpoint_engine_backend = "naive"
+rollout_correction_bypass_mode = true
+total_epochs = 1
+save_freq = 10
+test_freq = -1
+val_before_train = false
+
+[datasets.gsm8k]
+root = "/root/autodl-tmp/data/helicopter/gsm8k"
+
+[models."g1g-1.5b"]
+file = "rwkv7-g1g-1.5b-20260526-ctx8192.pth"
+served_model_name = "g1g-1.5b"
+max_model_len = 8192
+
+[models."g1f-1.5b"]
+file = "rwkv7-g1f-1.5b-20260419-ctx8192.pth"
+served_model_name = "g1f-1.5b"
+max_model_len = 8192

@@ -1,0 +1,101 @@
+[
+  {
+    "name": "gsm8k_dynamic_rescreen_best_full",
+    "src": "/root/RWKV-LM/RWKV7-statetuning_dynresample_v1",
+    "note": "Dynamic rescreen / dynamic sampling. Best comparable full GSM8K eval observed: 0.6611, n=1319, stage_2 step=100.",
+    "results": [
+      "/root/autodl-tmp/g1e_dynamic_rescreen_20260426_020719/stage_2/run/metrics.jsonl"
+    ],
+    "file_count": 27,
+    "bytes": 217057
+  },
+  {
+    "name": "gsm8k_hardbuffer_k3_zstd_length",
+    "src": "/root/RWKV-LM/RWKV7-statetuning_hardbuffer_v1",
+    "note": "Hard buffer family with K3/negative-weight/zstd/length reward variants. Full GSM8K best in summary: 0.6262 n=1319; small eval 0.7500 n=164 exists but is not full eval.",
+    "results": [
+      "/root/RWKV-LM/RWKV7-statetuning_hardbuffer_v1/log/hb_decoupled_negw06_ttl4_cd4_repro_k3loss_20260312_214201/metrics.jsonl",
+      "/root/autodl-tmp/baseline_hardbuffer_kl005_bestcfg_20260422_194041/run/metrics.jsonl"
+    ],
+    "file_count": 27,
+    "bytes": 231838
+  },
+  {
+    "name": "gsm8k_state_tuning_mainline",
+    "src": "/root/RWKV-LM/RWKV7-statetuning",
+    "note": "Early GRPO/state-tuning mainline. Included because many early high small-eval and baseline experiments point here.",
+    "results": [
+      "/root/RWKV-LM/RWKV7-statetuning/log/grpo_full_20260203_030025/metrics.jsonl"
+    ],
+    "file_count": 71,
+    "bytes": 1762909
+  },
+  {
+    "name": "gsm8k_real_label_variant",
+    "src": "/root/RWKV-LM/RWKV7-statetuning_real_v1",
+    "note": "Real-label / label-correct variant. Full GSM8K best in summary around 0.6065 n=1319.",
+    "results": [
+      "/root/RWKV-LM/RWKV7-statetuning_real_v1/log/real_label_pair_20260316_093612/label_correct/metrics.jsonl"
+    ],
+    "file_count": 31,
+    "bytes": 241845
+  },
+  {
+    "name": "math500_hardbuffer",
+    "src": "/root/RWKV-LM/RWKV7-statetuning_math500_hb_v1",
+    "note": "Math500 hard-buffer code family; also used by several GSM8K hard-buffer result dirs through copied code lineage.",
+    "results": [
+      "/root/autodl-tmp/math500_g1e1p5b_purehard_zstd_len0_lr4e7_20260428_183524/run/metrics.jsonl"
+    ],
+    "file_count": 27,
+    "bytes": 222860
+  },
+  {
+    "name": "math500_dynamic_resample",
+    "src": "/root/RWKV-LM/RWKV7-statetuning_math500_dynresample_v1",
+    "note": "Math500 dynamic resampling version.",
+    "results": [],
+    "file_count": 27,
+    "bytes": 219252
+  },
+  {
+    "name": "rwkv_deepmath_trl_doc_baseline",
+    "src": "/root/RWKV-LM/RWKV7-deepmath_trl_doc_g1f1p5b",
+    "note": "RWKV implementation aligned to TRL GRPO doc / DeepMath-style runs.",
+    "results": [],
+    "file_count": 17,
+    "bytes": 201965
+  },
+  {
+    "name": "rwkv_deepmath_fp32_noentropy",
+    "src": "/root/RWKV-LM/RWKV7-deepmath_trl_doc_g1f1p5b_fp32kernel_noentropy",
+    "note": "FP32-kernel/no-entropy variant used after precision and entropy-memory debugging.",
+    "results": [],
+    "file_count": 17,
+    "bytes": 210774
+  },
+  {
+    "name": "rwkv_deepmath_fastrollout_traintempv3",
+    "src": "/root/RWKV-LM/RWKV7-deepmath_trl_doc_g1f1p5b_fastrollout_traintempv3",
+    "note": "Fast rollout / train_temp v3 version. Included as the useful speed-optimized branch.",
+    "results": [],
+    "file_count": 17,
+    "bytes": 207191
+  },
+  {
+    "name": "rwkv_gsm8k_rlcsd",
+    "src": "/root/RWKV-LM/RWKV7-gsm8k_rlcsd_20260615",
+    "note": "RLCSD reproduction branch for GSM8K. Included as a paper-aligned comparable algorithm branch.",
+    "results": [],
+    "file_count": 19,
+    "bytes": 246330
+  },
+  {
+    "name": "qwen_trl_grpo_reference",
+    "src": "/root/autodl-tmp/trl-grpo-repro",
+    "note": "Qwen/TRL reference reproduction scripts; useful control for comparing RWKV against TRL doc settings.",
+    "results": [],
+    "file_count": 18,
+    "bytes": 68377
+  }
+]

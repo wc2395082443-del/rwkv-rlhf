@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/root/autodl-tmp/helicopter/src/infer/vllm-rwkv/.deps/triton_kernels-subbuild/CMakeFiles/triton_kernels-populate"
+		},
+		{
+			"file" : "/root/autodl-tmp/helicopter/src/infer/vllm-rwkv/.deps/triton_kernels-subbuild/CMakeFiles/triton_kernels-populate.rule"
+		},
+		{
+			"file" : "/root/autodl-tmp/helicopter/src/infer/vllm-rwkv/.deps/triton_kernels-subbuild/CMakeFiles/triton_kernels-populate-complete.rule"
+		},
+		{
+			"file" : "/root/autodl-tmp/helicopter/src/infer/vllm-rwkv/.deps/triton_kernels-subbuild/triton_kernels-populate-prefix/src/triton_kernels-populate-stamp/triton_kernels-populate-build.rule"
+		},
+		{
+			"file" : "/root/autodl-tmp/helicopter/src/infer/vllm-rwkv/.deps/triton_kernels-subbuild/triton_kernels-populate-prefix/src/triton_kernels-populate-stamp/triton_kernels-populate-configure.rule"
+		},
+		{
+			"file" : "/root/autodl-tmp/helicopter/src/infer/vllm-rwkv/.deps/triton_kernels-subbuild/triton_kernels-populate-prefix/src/triton_kernels-populate-stamp/triton_kernels-populate-download.rule"
+		},
+		{
+			"file" : "/root/autodl-tmp/helicopter/src/infer/vllm-rwkv/.deps/triton_kernels-subbuild/triton_kernels-populate-prefix/src/triton_kernels-populate-stamp/triton_kernels-populate-install.rule"
+		},
+		{
+			"file" : "/root/autodl-tmp/helicopter/src/infer/vllm-rwkv/.deps/triton_kernels-subbuild/triton_kernels-populate-prefix/src/triton_kernels-populate-stamp/triton_kernels-populate-mkdir.rule"
+		},
+		{
+			"file" : "/root/autodl-tmp/helicopter/src/infer/vllm-rwkv/.deps/triton_kernels-subbuild/triton_kernels-populate-prefix/src/triton_kernels-populate-stamp/triton_kernels-populate-patch.rule"
+		},
+		{
+			"file" : "/root/autodl-tmp/helicopter/src/infer/vllm-rwkv/.deps/triton_kernels-subbuild/triton_kernels-populate-prefix/src/triton_kernels-populate-stamp/triton_kernels-populate-test.rule"
+		},
+		{
+			"file" : "/root/autodl-tmp/helicopter/src/infer/vllm-rwkv/.deps/triton_kernels-subbuild/triton_kernels-populate-prefix/src/triton_kernels-populate-stamp/triton_kernels-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"triton_kernels-populate"
+		],
+		"name" : "triton_kernels-populate"
+	}
+}

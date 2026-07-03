@@ -1,0 +1,111 @@
+{
+  "builder_name": "parquet",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "parquet",
+  "dataset_size": 4961682391,
+  "description": "",
+  "download_checksums": {
+    "/root/autodl-tmp/official_repro_assets/DeepMath-103K/data/train-00000-of-00010.parquet": {
+      "num_bytes": 216818587,
+      "checksum": null
+    },
+    "/root/autodl-tmp/official_repro_assets/DeepMath-103K/data/train-00001-of-00010.parquet": {
+      "num_bytes": 212374597,
+      "checksum": null
+    },
+    "/root/autodl-tmp/official_repro_assets/DeepMath-103K/data/train-00002-of-00010.parquet": {
+      "num_bytes": 213616309,
+      "checksum": null
+    },
+    "/root/autodl-tmp/official_repro_assets/DeepMath-103K/data/train-00003-of-00010.parquet": {
+      "num_bytes": 208137532,
+      "checksum": null
+    },
+    "/root/autodl-tmp/official_repro_assets/DeepMath-103K/data/train-00004-of-00010.parquet": {
+      "num_bytes": 207032084,
+      "checksum": null
+    },
+    "/root/autodl-tmp/official_repro_assets/DeepMath-103K/data/train-00005-of-00010.parquet": {
+      "num_bytes": 207744721,
+      "checksum": null
+    },
+    "/root/autodl-tmp/official_repro_assets/DeepMath-103K/data/train-00006-of-00010.parquet": {
+      "num_bytes": 207048095,
+      "checksum": null
+    },
+    "/root/autodl-tmp/official_repro_assets/DeepMath-103K/data/train-00007-of-00010.parquet": {
+      "num_bytes": 207374607,
+      "checksum": null
+    },
+    "/root/autodl-tmp/official_repro_assets/DeepMath-103K/data/train-00008-of-00010.parquet": {
+      "num_bytes": 273432098,
+      "checksum": null
+    },
+    "/root/autodl-tmp/official_repro_assets/DeepMath-103K/data/train-00009-of-00010.parquet": {
+      "num_bytes": 182527630,
+      "checksum": null
+    }
+  },
+  "download_size": 2136106260,
+  "features": {
+    "question": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "difficulty": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "topic": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "prompt": {
+      "feature": {
+        "content": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "role": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      },
+      "_type": "List"
+    },
+    "solution": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 7097788651,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 4961682391,
+      "num_examples": 103022,
+      "shard_lengths": [
+        10303,
+        11303,
+        11302,
+        11302,
+        11302,
+        11302,
+        11302,
+        10302,
+        9302,
+        5302
+      ],
+      "dataset_name": "parquet"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

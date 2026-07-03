@@ -1,0 +1,129 @@
+manifest=/root/cleanup_manifest_20260701_095415.tsv
+### df before
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/md0        400G  395G  5.4G  99% /root/autodl-tmp
+### candidates 776 total 313.3G
+file	2.9G	/root/autodl-tmp/stem-rlvr-repro/outputs/rwkv_g1f1p5b_mmlupro_stem_boxprefix_grpo_100_20260624_061955/rwkv_step100_merged_model.pth
+file	2.9G	/root/autodl-tmp/stem-rlvr-repro/outputs/rwkv_g1f1p5b_mmlupro_stem_boxprefix_grpo_continue500_20260624_132808/rwkv_step600_merged_model.pth
+file	2.9G	/root/autodl-tmp/math500_rlm_repl_comment_sft500_20260622_175959/ckpt_sft_step500.pth
+file	2.9G	/root/autodl-tmp/math500_rlm_repl_compact_comment_sft500_20260622_180647/ckpt_sft_step500.pth
+file	2.9G	/root/autodl-tmp/math500_rlm_repl_minimal_sft500_20260622_160446/ckpt_sft_step500.pth
+file	2.9G	/root/autodl-tmp/math500_rlm_repl_mixed_sft500_20260622_174953/ckpt_sft_step500.pth
+file	2.9G	/root/autodl-tmp/math500_rlm_repl_solution_sft200_20260622_103729/ckpt_sft_step100.pth
+file	2.9G	/root/autodl-tmp/math500_rlm_repl_solution_sft200_20260622_103729/ckpt_sft_step200.pth
+file	2.9G	/root/autodl-tmp/math500_rlm_repl_sft30_20260621_231203/ckpt_sft_step30.pth
+file	2.9G	/root/autodl-tmp/math500_rlm_repl_solution_sft_smoke_20260622_103627/ckpt_sft_step2.pth
+file	2.9G	/root/autodl-tmp/deepmath_repro_oldcode_20260628_075952/ckpt_step1000.pth
+file	2.9G	/root/autodl-tmp/deepmath_repro_oldcode_20260628_075952/ckpt_step1500.pth
+file	2.9G	/root/autodl-tmp/deepmath_repro_oldcode_20260628_075952/ckpt_step500.pth
+file	2.9G	/root/autodl-tmp/logs/gsm8k_grpo_vs_opd02_500_20260614/opd_coef_0p2/train/ckpt_step100.pth
+file	2.9G	/root/autodl-tmp/logs/gsm8k_grpo_vs_opd02_500_20260614/opd_coef_0p2_resume_lowmem/train/ckpt_step100.pth
+file	2.9G	/root/autodl-tmp/logs/gsm8k_grpo_vs_opd02_500_20260614/opd_coef_0p2_resume_lowmem/train/ckpt_step200.pth
+file	2.9G	/root/autodl-tmp/logs/gsm8k_grpo_vs_opd02_500_20260614/opd_coef_0p2_resume_lowmem/train/ckpt_step300.pth
+file	2.9G	/root/autodl-tmp/logs/gsm8k_grpo_vs_opd02_500_20260614/opd_coef_0p2_resume_lowmem/train/ckpt_step400.pth
+file	2.9G	/root/autodl-tmp/logs/gsm8k_grpo_vs_opd02_500_20260614/pure_grpo/train/ckpt_step100.pth
+file	2.9G	/root/autodl-tmp/logs/gsm8k_grpo_vs_opd02_500_20260614/pure_grpo/train/ckpt_step200.pth
+file	2.9G	/root/autodl-tmp/logs/gsm8k_grpo_vs_opd02_500_20260614/pure_grpo/train/ckpt_step300.pth
+file	2.9G	/root/autodl-tmp/logs/gsm8k_grpo_vs_opd02_500_20260614/pure_grpo/train/ckpt_step400.pth
+file	2.9G	/root/autodl-tmp/logs/gsm8k_grpo_vs_opd02_500_20260614/pure_grpo/train/ckpt_step500.pth
+file	2.9G	/root/autodl-tmp/logs/gsm8k_recent_grpo_config_g1f_base_100_20260614_005832/train/ckpt_step100.pth
+file	2.9G	/root/autodl-tmp/logs/gsm8k_recent_grpo_opd1_100_noeval_20260614_053915/train/ckpt_step100.pth
+file	2.9G	/root/autodl-tmp/logs/gsm8k_rlcsd_100step_20260615_223816/train/ckpt_step100.pth
+file	2.9G	/root/autodl-tmp/logs/gsm8k_rlcsd_aligned8q_100step_20260616_015105/train/ckpt_step100.pth
+file	2.9G	/root/autodl-tmp/logs/gsm8k_rlcsd_cont100_from_step100_20260615_232514/train/ckpt_step100.pth
+file	2.9G	/root/autodl-tmp/logs/gsm8k_teacher_sft_grpo_20260613_033345/grpo/ckpt_step100.pth
+file	2.9G	/root/autodl-tmp/logs/gsm8k_teacher_sft_grpo_20260613_033345/sft/ckpt_step200.pth
+file	2.9G	/root/autodl-tmp/logs/math500_align_puregrpo_20260607_211348/ckpt_step100.pth
+file	2.9G	/root/autodl-tmp/logs/math500_opd7b_coef1_t08_100_20260609_173607/train/ckpt_step100.pth
+file	2.9G	/root/autodl-tmp/logs/math500_opd7b_coef_sweep_opdtemp1_20260609_230232/coef0p02_t1p0/train/ckpt_step100.pth
+file	2.9G	/root/autodl-tmp/logs/math500_opd7b_coef_sweep_opdtemp1_20260609_230232/coef0p05_t1p0/train/ckpt_step100.pth
+file	2.9G	/root/autodl-tmp/logs/math500_opd7b_coef_sweep_opdtemp1_20260609_230232/coef0p10_t1p0/train/ckpt_step100.pth
+file	2.9G	/root/autodl-tmp/logs/math500_opd7b_coef_temp_sweep_20260609_202953/coef0p05_t1p5/train/ckpt_step100.pth
+file	2.9G	/root/autodl-tmp/logs/math500_opd7b_coef_temp_sweep_20260609_202953/coef0p10_t1p5/train/ckpt_step100.pth
+file	2.9G	/root/autodl-tmp/logs/math500_opd_coef0_noteacher_control_20260610_022618/train/ckpt_step100.pth
+file	2.9G	/root/autodl-tmp/logs/math500_opd_coef_sweep_chunk128_20260611_031905/coef_0p0005/train/ckpt_step100.pth
+file	2.9G	/root/autodl-tmp/logs/math500_opd_coef_sweep_chunk128_20260611_031905/coef_0p001/train/ckpt_step100.pth
+file	2.9G	/root/autodl-tmp/logs/math500_opd_coef_sweep_chunk128_20260611_031905/coef_0p002/train/ckpt_step100.pth
+file	2.9G	/root/autodl-tmp/logs/math500_opd_coef_sweep_chunk128_20260611_031905/coef_0p005/train/ckpt_step100.pth
+file	2.9G	/root/autodl-tmp/logs/math500_opd_coef_sweep_chunk128_20260611_031905/coef_0p01/train/ckpt_step100.pth
+file	2.9G	/root/autodl-tmp/logs/math500_opd_coef_sweep_chunk128_20260611_031905/coef_0p02/train/ckpt_step100.pth
+file	2.9G	/root/autodl-tmp/logs/math500_opd_masked_topk64_sweep_20260611_114002/coef_0p0005/train/ckpt_step100.pth
+file	2.9G	/root/autodl-tmp/logs/math500_opd_masked_topk64_sweep_20260611_114002/coef_0p001/train/ckpt_step100.pth
+file	2.9G	/root/autodl-tmp/logs/math500_opd_masked_topk64_sweep_20260611_114002/coef_0p002/train/ckpt_step100.pth
+file	2.9G	/root/autodl-tmp/logs/math500_opd_masked_topk64_sweep_20260611_114002/coef_0p005/train/ckpt_step100.pth
+file	2.9G	/root/autodl-tmp/logs/math500_opd_masked_topk64_sweep_20260611_114002/coef_0p01/train/ckpt_step100.pth
+file	2.9G	/root/autodl-tmp/logs/math500_opd_train_100step_fixpost_20260608_030341/ckpt_step100.pth
+file	2.9G	/root/autodl-tmp/logs/math500_opdcode_pure_grpo_repro_20260611_020500/rep1_seed42/train/ckpt_step100.pth
+file	2.9G	/root/autodl-tmp/logs/math500_opsd_sweep_20260611_172710/opsd_0p005/train/ckpt_step100.pth
+file	2.9G	/root/autodl-tmp/logs/math500_opsd_sweep_20260611_172710/opsd_0p02/train/ckpt_step100.pth
+file	2.9G	/root/autodl-tmp/logs/math500_opsd_sweep_20260611_172710/opsd_0p05/train/ckpt_step100.pth
+file	2.9G	/root/autodl-tmp/logs/math500_opsd_sweep_20260611_172710/opsd_0p1/train/ckpt_step100.pth
+file	2.9G	/root/autodl-tmp/logs/math500_pure_grpo_exact_temp0p8_repro_20260610_085756/train/ckpt_step100.pth
+file	2.9G	/root/autodl-tmp/logs/math500_teacher_sft_then_grpo_20260613_022752/train/ckpt_step100.pth
+file	2.9G	/root/autodl-tmp/logs/math500_teacher_trace_sft_20260613_004936/train/ckpt_step100.pth
+file	2.9G	/root/autodl-tmp/logs/math500_temp_sweep_grpo_20260608_041511/temp_0p20/train/ckpt_step100.pth
+file	2.9G	/root/autodl-tmp/math500_fullft_repro_20260607_lr2e7/ckpt_step100.pth
+file	2.9G	/root/autodl-tmp/mmlupro_oldcode_rwkv_20260628_203830/ckpt_step100.pth
+file	2.9G	/root/autodl-tmp/mmlupro_oldcode_rwkv_20260628_203830/ckpt_step150.pth
+file	2.9G	/root/autodl-tmp/mmlupro_oldcode_rwkv_20260628_203830/ckpt_step200.pth
+file	2.9G	/root/autodl-tmp/rl_other_datasets/suite_20260627_100936/deepmath103k/ckpt_step100.pth
+file	2.9G	/root/autodl-tmp/rl_other_datasets/suite_20260627_100936/openmath_gsm8k_13k/ckpt_step100.pth
+file	2.9G	/root/autodl-tmp/stem-rlvr-repro/outputs/rwkv_g1f1p5b_mmlupro_stem_boxedfmt_noboxstop_max1024_20260626_0000/ckpt_step100.pth
+file	2.9G	/root/autodl-tmp/stem-rlvr-repro/outputs/rwkv_g1f1p5b_mmlupro_stem_boxedfmt_reward100_fix_20260625_1738/ckpt_step100.pth
+file	2.9G	/root/autodl-tmp/stem-rlvr-repro/outputs/rwkv_g1f1p5b_mmlupro_stem_boxedfmt_reward100_max1024_20260625_1748/ckpt_step100.pth
+file	2.9G	/root/autodl-tmp/stem-rlvr-repro/outputs/rwkv_g1f1p5b_mmlupro_stem_boxedslot200_topk32_20260626_191036/ckpt_step100.pth
+file	2.9G	/root/autodl-tmp/stem-rlvr-repro/outputs/rwkv_g1f1p5b_mmlupro_stem_boxedslot200_topk32_20260626_191036/ckpt_step150.pth
+file	2.9G	/root/autodl-tmp/stem-rlvr-repro/outputs/rwkv_g1f1p5b_mmlupro_stem_boxedslot200_topk32_20260626_191036/ckpt_step200.pth
+file	2.9G	/root/autodl-tmp/stem-rlvr-repro/outputs/rwkv_g1f1p5b_mmlupro_stem_boxprefix_grpo_100_20260624_061955/ckpt_step100.pth
+file	2.9G	/root/autodl-tmp/stem-rlvr-repro/outputs/rwkv_g1f1p5b_mmlupro_stem_boxprefix_grpo_continue500_20260624_132808/ckpt_step100.pth
+file	2.9G	/root/autodl-tmp/stem-rlvr-repro/outputs/rwkv_g1f1p5b_mmlupro_stem_boxprefix_grpo_continue500_20260624_132808/ckpt_step200.pth
+file	2.9G	/root/autodl-tmp/stem-rlvr-repro/outputs/rwkv_g1f1p5b_mmlupro_stem_boxprefix_grpo_continue500_20260624_132808/ckpt_step300.pth
+file	2.9G	/root/autodl-tmp/stem-rlvr-repro/outputs/rwkv_g1f1p5b_mmlupro_stem_boxprefix_grpo_continue500_20260624_132808/ckpt_step400.pth
+file	2.9G	/root/autodl-tmp/stem-rlvr-repro/outputs/rwkv_g1f1p5b_mmlupro_stem_boxprefix_grpo_continue500_20260624_132808/ckpt_step500.pth
+file	2.9G	/root/autodl-tmp/stem-rlvr-repro/outputs/rwkv_g1f1p5b_mmlupro_stem_initialprompt_maxnew512_grpo100_20260625_055624/ckpt_step100.pth
+file	2.9G	/root/autodl-tmp/stem-rlvr-repro/outputs/rwkv_g1f1p5b_mmlupro_stem_noboxstop_lenreward_max1024_20260626_0935/ckpt_step100.pth
+file	2.9G	/root/autodl-tmp/stem-rlvr-repro/outputs/rwkv_g1f1p5b_mmlupro_stem_raw_rwkvboxed_maxnew512_grpo100_20260625_085014/ckpt_step100.pth
+### df after
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/md0        400G   82G  319G  21% /root/autodl-tmp
+### top dirs after
+82G	/root/autodl-tmp
+33G	/root/autodl-tmp/rwkv_models
+18G	/root/autodl-tmp/logs
+12G	/root/autodl-tmp/stem-rlvr-repro
+4.9G	/root/autodl-tmp/.hf_cache
+4.8G	/root/autodl-tmp/hf_cache
+3.4G	/root/autodl-tmp/pip-cache
+3.0G	/root/autodl-tmp/models
+2.3G	/root/autodl-tmp/official_repro_assets
+504M	/root/autodl-tmp/tmp
+310M	/root/autodl-tmp/ext
+300M	/root/autodl-tmp/g1e_dynamic_rescreen_20260426_020719
+193M	/root/autodl-tmp/trl-grpo-repro
+137M	/root/autodl-tmp/log
+62M	/root/autodl-tmp/data
+42M	/root/autodl-tmp/Albatross_ref_tmp
+23M	/root/autodl-tmp/torch_ext
+23M	/root/autodl-tmp/RWKV7-deepmath_trl_doc_g1f1p5b_fp32kernel_20260522_211632
+12M	/root/autodl-tmp/rwkv-rl-good-experiments-github
+12M	/root/autodl-tmp/overnight_lr_sweep_20260417_3x10_20260417_001810
+7.8M	/root/autodl-tmp/math500_fullft_lr_sweep_100_20260419
+6.9M	/root/autodl-tmp/verl_deepmath
+6.3M	/root/autodl-tmp/math500_trl_doc_g1f1p5b_rollout_align_reward_fix_1000
+6.1M	/root/autodl-tmp/gsm8k_dual_eval_500_20260423_032200
+5.6M	/root/autodl-tmp/math500_g1e1p5b_purehard_reward_lr_sweep_scaled50_20260428_093730
+5.0M	/root/autodl-tmp/rl_other_datasets
+4.4M	/root/autodl-tmp/albatross_math500_run6
+4.1M	/root/autodl-tmp/deepmath_repro_oldcode_20260628_075952
+3.7M	/root/autodl-tmp/math500_rlm_repl_solution_sft200_grpo20_sandbox_20260622_105756
+3.5M	/root/autodl-tmp/lr_sweep_g1f1p5b_deepmath_100_20260523_155617
+3.5M	/root/autodl-tmp/.autodl
+2.9M	/root/autodl-tmp/math500_trl_doc_g1f1p5b_max2048_albatross_style_20260526_205444
+2.9M	/root/autodl-tmp/math500_trl_doc_g1f1p5b_albatross_toppk_20260527_000001
+2.9M	/root/autodl-tmp/baseline_hardbuffer_kl005_bestcfg_20260422_194041
+2.8M	/root/autodl-tmp/rlm_official_tmp
+2.6M	/root/autodl-tmp/baseline_hardbuffer_kl005_noextra_20260423_001234
+2.5M	/root/autodl-tmp/tokenkl_deepmath20_g1g_20260629
+2.5M	/root/autodl-tmp/poweropd_deepmath20_g1g_20260629
+2.5M	/root/autodl-tmp/General-Reasoner
+2.4M	/root/autodl-tmp/g1f_purehard_gsm8k_20260424_0001

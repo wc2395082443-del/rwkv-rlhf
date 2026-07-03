@@ -1,0 +1,131 @@
+[build-system]
+requires = ["setuptools>=77.0.3", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "helicopter"
+version = "0.1.0"
+requires-python = ">=3.12,<3.13"
+dependencies = []
+
+[project.scripts]
+helicopter = "helicopter_cli.__main__:main"
+
+[dependency-groups]
+rwkv = [
+  "accelerate",
+  "aiohttp>=3.13.3",
+  "anthropic>=0.71.0",
+  "apache-tvm-ffi==0.1.9",
+  "blake3",
+  "cachetools",
+  "cbor2",
+  "cloudpickle",
+  "cmake>=3.26.1",
+  "codetiming",
+  "compressed-tensors==0.17.0",
+  "datasets",
+  "deepspeed",
+  "depyf==0.20.0",
+  "dill",
+  "einops",
+  "fastapi[standard]>=0.133.0,<0.137.0",
+  "fastsafetensors>=0.3.2",
+  "filelock>=3.16.1",
+  "flashinfer-cubin==0.6.12",
+  "flashinfer-python==0.6.12",
+  "humming-kernels[cu13]==0.1.6",
+  "huggingface-hub",
+  "hydra-core",
+  "ijson",
+  "jinja2",
+  "jsonschema>=4.23.0",
+  "diskcache==5.6.3",
+  "lark==1.2.2",
+  "llguidance>=1.7.0,<1.8.0",
+  "lm-format-enforcer==0.11.3",
+  "mcp",
+  "mistral_common[image]>=1.11.5",
+  "model-hosting-container-standards>=0.1.14,<1.0.0",
+  "msgspec",
+  "ninja",
+  "numba==0.65.0",
+  "numpy>=2.0.0",
+  "nvidia-cudnn-frontend>=1.19.1",
+  "nvidia-cutlass-dsl[cu13]==4.5.2",
+  "opencv-python-headless>=4.13.0",
+  "openai>=2.0.0",
+  "openai-harmony>=0.0.3",
+  "opentelemetry-api>=1.27.0",
+  "opentelemetry-exporter-otlp>=1.27.0",
+  "opentelemetry-sdk>=1.27.0",
+  "opentelemetry-semantic-conventions-ai>=0.4.1",
+  "outlines-core==0.2.14",
+  "packaging>=24.2",
+  "pandas",
+  "partial-json-parser",
+  "peft",
+  "pillow",
+  "prometheus-client>=0.18.0",
+  "prometheus-fastapi-instrumentator>=8.0.0",
+  "protobuf>=5.29.6,!=6.30.*,!=6.31.*,!=6.32.*,!=6.33.0.*,!=6.33.1.*,!=6.33.2.*,!=6.33.3.*,!=6.33.4.*",
+  "pybase64",
+  "psutil",
+  "py-cpuinfo",
+  "pyarrow>=19.0.0",
+  "pybind11",
+  "pydantic>=2.12.0",
+  "pylatexenc",
+  "pynvvideocodec==2.0.4",
+  "pytest",
+  "pytorch-lightning==1.9.5",
+  "pyyaml",
+  "python-json-logger",
+  "pyzmq>=25.0.0",
+  "quack-kernels>=0.3.3",
+  "ray[default]>=2.41.0",
+  "regex",
+  "requests>=2.26.0",
+  "safetensors>=0.6.2",
+  "sentencepiece",
+  "setproctitle",
+  "setuptools>=77.0.3,<81.0.0",
+  "setuptools-rust>=1.9.0",
+  "setuptools-scm>=8.0",
+  "six>=1.16.0",
+  "starlette>=1.0.1",
+  "tensorboard",
+  "tensordict>=0.8.0,<=0.10.0,!=0.9.0",
+  "tblib",
+  "tilelang==0.1.9",
+  "tiktoken>=0.6.0",
+  "tokenizers>=0.21.1",
+  "tokenspeed-mla==0.1.2",
+  "torch==2.11.0",
+  "torchaudio==2.11.0",
+  "torchdata",
+  "torchvision==0.26.0",
+  "tqdm",
+  "transferqueue==0.1.8",
+  "transformers>=5.5.3,!=5.6.0",
+  "typing-extensions>=4.10",
+  "uvicorn",
+  "wandb",
+  "watchfiles",
+  "wheel",
+  "xgrammar>=0.2.1,<1.0.0",
+]
+
+full = [
+  "latex2sympy2-extended",
+  "liger-kernel",
+  "math-verify",
+  "pre-commit",
+]
+
+[tool.uv]
+package = true
+
+[tool.setuptools.packages.find]
+where = ["src/cli"]
+include = ["helicopter_cli*"]

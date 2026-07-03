@@ -1,0 +1,34 @@
+master tasks=500 rollout=4 total_generations=2000
+master launching workers on GPUs=['0']
+worker=0/1 tasks=500 work_items=2000 bsz=256 cuda_visible=0
+[rwkv7_fast_v3a] loading CUDA extensions v3a_ops + fast_ops + wkv=fp32io16
+Process SpawnProcess-1:
+Traceback (most recent call last):
+  File "/root/miniconda3/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/root/miniconda3/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/root/Albatross/faster3a_2605/eval_math500.py", line 377, in run_worker_process
+    run_worker(args, result_queue)
+  File "/root/Albatross/faster3a_2605/eval_math500.py", line 358, in run_worker
+    v3a.load_extensions(v3a.WKV_MODE)
+  File "/root/Albatross/faster3a_2605/rwkv7_fast_v3a.py", line 221, in load_extensions
+    load(name="rwkv7_v3a_ops", sources=[str(CUDA_DIR / "rwkv7_v3a_ops.cpp"), str(CUDA_DIR / "rwkv7_v3a_ops.cu")], is_python_module=False, verbose=False, extra_cflags=["-O3"], extra_cuda_cflags=cuda_flags)
+  File "/root/miniconda3/lib/python3.12/site-packages/torch/utils/cpp_extension.py", line 1681, in load
+    return _jit_compile(
+           ^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/torch/utils/cpp_extension.py", line 2138, in _jit_compile
+    _write_ninja_file_and_build_library(
+  File "/root/miniconda3/lib/python3.12/site-packages/torch/utils/cpp_extension.py", line 2248, in _write_ninja_file_and_build_library
+    verify_ninja_availability()
+  File "/root/miniconda3/lib/python3.12/site-packages/torch/utils/cpp_extension.py", line 2309, in verify_ninja_availability
+    raise RuntimeError("Ninja is required to load C++ extensions (pip install ninja to get it)")
+RuntimeError: Ninja is required to load C++ extensions (pip install ninja to get it)
+Traceback (most recent call last):
+  File "/root/Albatross/faster3a_2605/eval_math500.py", line 542, in <module>
+    main()
+  File "/root/Albatross/faster3a_2605/eval_math500.py", line 538, in main
+    run_master(args)
+  File "/root/Albatross/faster3a_2605/eval_math500.py", line 475, in run_master
+    raise RuntimeError(f"worker errors: {worker_errors[:3]}")
+RuntimeError: worker errors: [{'type': 'error', 'worker_rank': 0, 'gpu': '0', 'error': 'RuntimeError: Ninja is required to load C++ extensions (pip install ninja to get it)'}]
