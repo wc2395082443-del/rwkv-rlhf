@@ -1,3 +1,11 @@
+# Project Note: `root_RWKV-LM/`
+
+This directory is the local RWKV-LM source tree used as the main RWKV backend for the RLVR experiments. It includes RWKV-7 code, training/evaluation utilities, and Albatross-related components referenced during GSM8K, MATH500, DeepMath, OPD, RLM, and STEM experiments.
+
+The original upstream README follows after this project note.
+
+---
+
 # RWKV: Parallelizable RNN with Transformer-level LLM Performance (pronounced as "RwaKuv" (rʌkuv in IPA), from 4 major params: R W K V)
 
 RWKV website: https://rwkv.com (with 150+ papers training various RWKV models)

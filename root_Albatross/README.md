@@ -1,3 +1,11 @@
+# Project Note: `root_Albatross/`
+
+This directory contains the Albatross reference code used to align fast RWKV rollout and MATH500 evaluation. The most important reference point for this project is the `faster3a_2605/eval_math500.py`口径: fake-think prompt, `math_verify`, rollout-based accuracy, pass@rollout, top-p/top-k sampling, and no stop-on-boxed shortcut.
+
+The original upstream README follows after this project note.
+
+---
+
 # Albatross : efficient RWKV inference engine
 
 UPDATE: faster3_2605 can reach 17000+ tps prefill (B1T1024), 15000+ tps decode (B1024T1), 21000+ tps batch prefill (B32T32), on single 5090.

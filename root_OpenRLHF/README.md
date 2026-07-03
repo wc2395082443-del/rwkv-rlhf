@@ -1,3 +1,11 @@
+# Project Note: `root_OpenRLHF/`
+
+This directory is the OpenRLHF framework snapshot used during early PPO/RLHF and MATH500 reproduction attempts. It is kept to preserve the implementation context for older experiments and launch scripts.
+
+The original upstream README follows after this project note.
+
+---
+
 <div align="center">
     <img alt="OpenRLHF logo" src="./docs/logo.png" style="height: 140px;" />
 </div>

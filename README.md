@@ -1,55 +1,124 @@
 # RWKV RLHF Experiments
 
-This repository is a cleaned code export from the RWKV/RLHF experiment server. It preserves the code, launch scripts, configs, evaluation utilities, and framework snapshots used across the RWKV-7 math RLVR experiments.
+This repository is a code archive for the RWKV reinforcement-learning and reasoning experiments run on the server. The project focuses on making RWKV-7 models work under RLVR/GRPO-style training, then comparing the behavior against Qwen/TRL reference recipes and Albatross evaluation standards.
 
-## What Is Included
+The repository is code-only. Model weights, datasets, checkpoints, generated responses, large logs, caches, and virtual environments are intentionally excluded.
 
-| Path | Contents |
+## Project Goals
+
+- Reproduce public GRPO/RLVR recipes on small reasoning models, especially the TRL GRPO documentation and Qwen baselines.
+- Port the same training and evaluation ideas to RWKV-7 models, mainly G1D/G1E/G1F/G1G variants around 0.4B, 1.5B, 3B, and 7B.
+- Understand why RWKV math RL differs from Qwen: truncation, stop-token behavior, verifier mismatch, rollout sampling, KL spikes, entropy, length drift, and all0/all1 group collapse.
+- Test data-engineering and curriculum ideas: hard buffer, pure hard, dynamic re-screening by pass@8, staged schedules, mixed datasets, and larger DeepMath/OpenMath-style training sets.
+- Explore teacher-guided variants: OPD, OPSD/self-distillation, 7B-to-1.5B distillation, token-level teacher loss, and pure teacher-SFT baselines.
+- Extend beyond math-only tasks into STEM-style benchmarks such as MMLU-Pro STEM and MMMU text-only experiments.
+
+## Repository Layout
+
+| Path | Role |
 | --- | --- |
-| `autodl-tmp_code/` | Experiment-specific scripts and configs from `/root/autodl-tmp`, including GSM8K, MATH500, DeepMath, OPD/OPSD, RLM, MaxRL-related helpers, and sweep launchers. |
-| `root_RWKV-LM/` | Local RWKV-LM tree and RWKV-7/Albatross-related model code. |
-| `root_Albatross/` | Albatross reference implementation used to align MATH500 prompt, verifier, sampling, and stop behavior. |
-| `root_OpenRLHF/` | OpenRLHF framework snapshot used for early PPO/GRPO/RLHF reproduction attempts. |
-| `root_verl/` | veRL framework snapshot used as a reference for GRPO/RLVR algorithm implementations. |
-| `root_top_level/` | Top-level server helper scripts for evaluation, inspection, cleanup, patching, and reporting. |
+| `autodl-tmp_code/` | Main experiment workspace copied from `/root/autodl-tmp`: launch scripts, one-off patches, evaluation tools, sweep scripts, and per-run code snapshots. |
+| `root_RWKV-LM/` | Local RWKV-LM source tree and RWKV-7/Albatross-related model code used as the main backend. |
+| `root_Albatross/` | Albatross reference implementation used to align RWKV inference, fast rollout, and MATH500 evaluation behavior. |
+| `root_OpenRLHF/` | OpenRLHF framework snapshot used during early PPO/RLHF reproduction attempts. |
+| `root_verl/` | veRL framework snapshot used as a reference for GRPO-style RL implementations and advantage estimators. |
+| `root_top_level/` | Top-level server helper scripts for evaluation, cleanup, inspection, patching, and reporting. |
+| `CODE_INDEX.md` | Generated file-level index for code/config/script files. |
 
-## What Is Not Included
+Each major directory also has a local README describing how it fits into the experiment history.
 
-Large or sensitive runtime artifacts were intentionally excluded:
+## Main Experiment Lines
 
-- model weights: `*.pth`, `*.pt`, `*.ckpt`, `*.bin`, `*.safetensors`
-- datasets, HF cache, conda/venv/cache directories
-- checkpoint/model/output/response directories
-- generated rollout/eval response files
-- large logs and temporary generated artifacts
+### 1. GSM8K RWKV Full-Parameter RLVR
 
-## Code Index
+The earliest stable line used GSM8K with full-parameter RWKV training. The experiments compared no-buffer, hard-buffer, pure-hard, KL-regularized hard-buffer, mixed-extra-data, and dynamic re-screening variants. The key diagnostics were full eval accuracy, small eval accuracy, pass@1, pass@8, all0/all1 proportions, group `num_correct`, KL, entropy, zstd, average length, and truncation rate.
 
-GitHub does not support arbitrary per-file descriptions in the repository file list. The text shown next to a filename is the latest commit message for that file. For maintainable file-level descriptions, use:
+Important themes in this line:
 
-- [`CODE_INDEX.md`](CODE_INDEX.md) - generated index of code/config/script files with short descriptions.
+- full-parameter tuning rather than state-only tuning;
+- hard examples can help, but persistent hard-buffer pressure can cause mid-training regression;
+- pass@8-based filtering is only useful when enough groups are mixed instead of all0/all1;
+- reward details such as k3 loss, zstd reward, length reward, and KL coefficient materially changed behavior;
+- checkpoint saving policy became important because many promising runs were only visible after full eval.
 
-## Main Experiment Areas
+### 2. MATH500 RWKV RLVR
 
-- **RWKV GRPO/RLVR on GSM8K and MATH500**: full-parameter RL training, hard-buffer variants, dynamic resampling, pass@k analysis, and full-eval scripts.
-- **DeepMath/TRl document reproduction**: Qwen/RWKV-aligned GRPO runs, reward/verifier fixes, and rollout parameter sweeps.
-- **OPD / OPSD / teacher distillation**: online policy distillation and self-distillation experiments using RWKV 1.5B/7B teacher-student variants.
-- **RLM / REPL-style experiments**: recursive-language-model inspired prompt/protocol experiments for short-chain and long-chain reasoning.
-- **Evaluation alignment**: MATH500 evaluation aligned with BlinkDL Albatross settings, including fake-think prompt style, `math_verify`, rollout accuracy, and pass@rollout metrics.
-- **Framework references**: OpenRLHF, veRL, Helicopter, and Albatross snapshots kept to preserve implementation context.
+The MATH500 line moved the same GRPO/RLVR machinery to harder math. This exposed RWKV-specific problems: high truncation, poor stop behavior, repeated reasoning after solving, verifier sensitivity, and much lower pass@8 than Qwen under comparable prompts.
 
-## Reproducing From This Export
+The evaluation standard was later aligned to BlinkDL Albatross `faster3a_2605/eval_math500.py`:
 
-This repository is code-only. To rerun experiments, restore the corresponding external assets manually:
+- prompt style:
 
-1. Download or mount the required RWKV/Qwen model weights.
-2. Restore datasets such as GSM8K, MATH500, DeepMath, MMLU-Pro, or MMMU to the expected local paths.
-3. Install the matching Python/CUDA environment for the selected experiment stack.
-4. Use the launch scripts under `autodl-tmp_code/` as the source of truth for historical hyperparameters.
-5. Use `autodl-tmp_code/eval/` and Albatross-aligned evaluation scripts for comparable metrics.
+```text
+User: {problem}\n\nAssistant: <think></think
+```
+- rollout count: 4 for evaluation
+- max new tokens: 1500
+- temperature: 1.0
+- top-p: 0.28
+- top-k: 32
+- verifier: `math_verify.parse` plus `math_verify.verify(strict=False)`
+- no stop-on-boxed shortcut
 
-## Notes
+Any result produced with older regex/last-number verification or different sampling should be treated as a separate evaluation protocol.
 
-- Some paths inside scripts still reflect the original server layout, e.g. `/root/autodl-tmp/...`.
-- This is an experiment archive, not a polished package. Many scripts are one-off debugging, patching, or sweep utilities.
-- Prefer reading the launch script and matching evaluation script together; prompt, verifier, sampling temperature/top-p/top-k, and max-new-token settings materially change results.
+### 3. TRL / Qwen GRPO Reproduction
+
+Several runs reproduced the Hugging Face TRL GRPO documentation and Qwen small-model behavior before porting the method to RWKV. This line was used to debug reward curves, verifier parsing, rollout length, `math_verify` behavior, and the gap between Qwen and RWKV on MATH500-style reasoning.
+
+The main engineering lesson was that prompt, verifier, and sampling alignment matter as much as the optimizer: small changes in max-new-tokens, stop logic, top-p/top-k, and boxed-answer parsing can dominate the apparent RL gain.
+
+### 4. DeepMath / OpenMath / GSM8K Mixed Data
+
+The DeepMath/OpenMath line tested larger and more diverse math data against the smaller GSM8K-only setup. These experiments include reward-on/off variants, length reward ablations, microbatch changes for memory fitting, max-new-token changes, and attempts to reproduce stronger public small-model math RL curves.
+
+This line is useful for studying whether RWKV benefits from broader math data or whether the bottleneck is model/prompt/rollout behavior rather than data volume.
+
+### 5. OPD / OPSD / Teacher-Guided Training
+
+The OPD line tested teacher-guided RL using RWKV teacher/student variants, including 7B teacher to 1.5B student attempts, token-level distillation ideas, chunked teacher forward, reduced max-new-tokens, and pure-GRPO parity checks inside the OPD codepath.
+
+The main debugging target was making `distill_coef=0` reproduce pure GRPO. Without that parity check, OPD gains cannot be interpreted. Related scripts also explore OPSD/self-distillation and teacher-trace SFT baselines.
+
+### 6. RLM / REPL-Style Reasoning
+
+The RLM line explored recursive or REPL-style reasoning protocols inspired by Recursive Language Models and related long-context/compressed-memory papers. The purpose was to see whether RWKV's short-chain strengths could be converted into iterative reasoning behavior instead of relying on very long uninterrupted CoT generations.
+
+### 7. STEM Benchmarks Outside Math500
+
+Additional experiments targeted MMLU-Pro STEM and MMMU text-only evaluation/training. These runs tested prompt formats, boxed-slot variants, CoT vs direct-answer behavior, truncation, and verifier consistency outside the math-only RLVR setup.
+
+## Evaluation Discipline
+
+When comparing experiments, keep these fields fixed or explicitly label them as changed:
+
+- dataset split and whether eval is full or subset;
+- prompt template and answer format;
+- verifier/parser implementation;
+- rollout count and sampling parameters;
+- max-new-token limit and stop logic;
+- reward scale: `0/1` vs `-1/+1`;
+- trainable scope: full-parameter, state tuning, LoRA, or SFT-only;
+- checkpoint step and whether the metric is moving average, small eval, or full eval.
+
+For pass-k analysis, the most important group buckets are all0, mixed, and all1. Methods like hard-buffer re-screening or MaxRL-style advantages only have useful learning signal in mixed groups.
+
+## What Is Excluded
+
+The following files were not committed:
+
+- RWKV/Qwen/Llama model weights and checkpoints;
+- datasets and HF cache;
+- generated response JSONL files and rollout dumps;
+- large logs, temporary directories, and environment folders;
+- conda/venv/cache directories.
+
+Most launch scripts still contain absolute server paths such as `/root/autodl-tmp/...`. To rerun an experiment, restore the required external assets and either recreate those paths or edit the script paths.
+
+## Recommended Navigation
+
+1. Start with `autodl-tmp_code/README.md` for the experiment map.
+2. Use `CODE_INDEX.md` to locate a specific training/eval/patch script.
+3. For MATH500 evaluation, inspect `autodl-tmp_code/eval/` and the Albatross reference under `root_Albatross/` or `autodl-tmp_code/Albatross_ref_tmp/`.
+4. For old GSM8K/RWKV training variants, search `autodl-tmp_code/` for `gsm8k`, `hardbuffer`, `pass8`, `purehard`, and `dynamic`.
+5. For OPD/OPSD work, search `autodl-tmp_code/` for `opd`, `opsd`, `teacher`, and `distill`.
