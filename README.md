@@ -4,6 +4,10 @@ This repository is a code archive for the RWKV reinforcement-learning and reason
 
 The repository is code-only. Model weights, datasets, checkpoints, generated responses, large logs, caches, and virtual environments are intentionally excluded.
 
+## Latest Report
+
+- [2026-07-15 weekly experiment report](reports/2026-07-15-weekly-report.md)
+
 ## Project Goals
 
 - Reproduce public GRPO/RLVR recipes on small reasoning models, especially the TRL GRPO documentation and Qwen baselines.
