@@ -37,31 +37,25 @@ Following the data-split recommendation, DeepMath was partitioned with seed 42:
 | Validation | 5,092 |
 | Test | 5,145 |
 
-The main MaxRL-inspired GRPO baseline used:
+The current `neg_adv_weight=1.0` GRPO branch used:
 
 - 8 questions per rollout step and 8 samples per question;
 - `max_new_tokens=1024`;
 - rollout sampling `temperature=1`, `top_p=0.6`, `top_k=0`;
 - learning rate `5e-7`, PPO1, K3 KL loss with coefficient `0.05`;
+- `neg_adv_weight=1.0`;
 - full-parameter BF16 ZeRO-3 offload;
 - no hard buffer, length reward, zstd reward, or n-gram penalty.
 
-The clean validation curve was:
+The clean base-model pre-evaluation was `8.936%`. The selected `negw=1` continuation produced:
 
-| Step | Full validation accuracy |
-| ---: | ---: |
-| 0 | 8.936% |
-| 100 | 20.974% |
-| 200 | 25.432% |
-| 300 | 26.984% |
-| 400 | 27.121% |
-| 500 | 28.358% |
+| Configuration | Full validation accuracy |
+| --- | ---: |
+| PPO4 continuation, `neg_adv_weight=1.0` | 28.123% |
 
-This is a substantial in-domain improvement of `+19.423` percentage points.
+The `28.123%` result is therefore an ablation result from the `negw=1` branch, not a direct base-to-post measurement.
 
 ### Standard-GRPO Ablation
-
-The supplied `28.123%` number is retained as an ablation result, but it is not the fresh baseline: it came from a `neg_adv_weight=1.0` PPO4 continuation from the step-500 checkpoint. The fresh `neg_adv_weight=0.6` main run reached `28.358%` at step 500.
 
 We then removed the MaxRL-inspired group-correct-count scaling, used ordinary group reward standardization, and set `neg_adv_weight=1.0`:
 
@@ -80,5 +74,5 @@ A follow-up run with the same standard-GRPO design and `lr=2e-7` is in progress.
 1. Progress Advantage produced an isolated gain but no stable final-checkpoint improvement.
 2. AntiDoom reduced truncation at a modest accuracy cost.
 3. DeepMath gives a much larger in-domain RL signal than the earlier GSM8K and MATH500 runs.
-4. Removing the MaxRL-inspired scaling requires a lower learning rate; `5e-7` is too aggressive for the standard-GRPO formulation.
+4. The `negw=1` branch needs a lower learning rate after removing the MaxRL-inspired scaling; `5e-7` is too aggressive for the standard-GRPO formulation.
 5. The next controlled comparison is standard GRPO at `2e-7`, followed by full validation at steps 100 and 200.
