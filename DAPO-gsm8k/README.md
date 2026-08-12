@@ -73,23 +73,6 @@ A further fixed 50-step continuation from step105 reached:
 
 These continuation numbers are sample evals, not full evals.
 
-
-## Full 1-155 Step Training Curve
-
-![GSM8K global 1-155 curves](results/g1i_gsm8k_global_1_155_curves.png)
-
-Summary JSON: `results/g1i_gsm8k_global_1_155_summary.json`.
-
-
-
-## Flip Examples
-
-A 5-up / 5-down qualitative comparison is available at `results/flip_examples_5up_5down.md`. It includes 5 examples where Base was wrong and Step85 became correct, plus 5 examples where Base was correct and Step85 became wrong.
-
-## Qualitative Base vs Step85 Comparison
-
-A fixed 10-sample comparison table is available at `results/base_vs_step85_compare10.md`, with structured data in `results/base_vs_step85_compare10.json`.
-
 ## Files
 
 - `train_rl_thinking_cot_strict_boxedprompt_schedopt_earlystop.py`: main training script used for the successful run.
@@ -103,3 +86,7 @@ A fixed 10-sample comparison table is available at `results/base_vs_step85_compa
 ## Notes
 
 Checkpoints, base weights, data files, GPU monitor CSVs, logs, and full eval response files are intentionally not included. The full response files were kept on the training server during the experiment, but are too large/noisy for the cleaned code branch.
+
+## Results
+
+- [10 wrong-to-right qualitative examples](results/wrong_to_right_10.md): base failed strict eval, step85 passed strict eval.
