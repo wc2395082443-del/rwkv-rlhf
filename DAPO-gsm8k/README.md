@@ -112,9 +112,9 @@ The full-eval summary is in `results/base_vs_step85_full_eval_summary.json`.
 
 The following figure combines the 155 training steps into one global view. It shows training metrics only; small/sample eval markers are intentionally removed from the public report.
 
-![GSM8K DAPO training curves](results/g1i_gsm8k_global_1_155_curves.png)
+![GSM8K DAPO training curves](results/g1i_gsm8k_global_1_155_train_metrics_only.png)
 
-Curve summary is available in `results/g1i_gsm8k_global_1_155_summary.json`; it retains only the full-eval points for base and step85.
+Curve summary is available in `results/g1i_gsm8k_global_1_155_summary_full_eval_only.json`; it retains only full-eval points and contains no small/sample eval results.
 
 
 ## Files
