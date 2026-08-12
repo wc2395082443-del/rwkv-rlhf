@@ -43,10 +43,14 @@ $$
 
 where $\ell^{new}_t$ and $\ell^{old}_t$ are the token log-probabilities from the current policy and rollout policy.
 
-The clipped RL objective used by the training code is:
+The clipped RL objective uses an asymmetric higher clip bound (`0.8` to `1.28` in code):
 
 $$
-L_{RL} = -\mathrm{mean}\left[\min\left(\rho_t A_i,\ \mathrm{clip}(\rho_t, 1-\epsilon_c, 1+\epsilon_c) A_i\right)\right]
+ho_t^{clip}=\mathrm{clip}(ho_t, 0.8, 1.28)
+$$
+
+$$
+L_{RL} = -\mathrm{mean}\left[\min\left(ho_t A_i,\ ho_t^{clip} A_iight)ight]
 $$
 
 This run uses no KL penalty and no length reward, so the effective training loss is:
@@ -68,6 +72,7 @@ $$
 - `micro_batch=3`
 - `lr=2e-7`
 - `kl_coef=0`
+- clip range: `0.8` to `1.28` (`clip higher` setting)
 - `length_weight=0`
 - train responses are not saved; eval responses are saved by `eval_gsm8k_boxed_strict_reward.py`.
 
