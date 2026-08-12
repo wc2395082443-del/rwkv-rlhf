@@ -27,36 +27,33 @@ Loose accuracy only checks final-answer correctness.
 
 ## RL Algorithm
 
-For each question `q`, the current policy samples a group of responses `y_1 ... y_G`. Each response receives a binary strict reward `r_i` from the verifier. DAPO-style dynamic sampling keeps groups that contain both positive and negative samples, so the update is computed on informative groups instead of all-0/all-1 groups.
+For each question $q$, the current policy samples a group of responses $y_1, \ldots, y_G$. Each response receives a binary strict reward $r_i \in [0,1]$ from the verifier. DAPO-style dynamic sampling keeps groups that contain both positive and negative samples, so the update is computed on informative groups instead of all-0/all-1 groups.
 
 The group-normalized advantage is:
 
-```text
-A_i = (r_i - mean(r_1 ... r_G)) / (std(r_1 ... r_G) + eps)
-```
+$$
+A_i = \frac{r_i - \mathrm{mean}(r_1, \ldots, r_G)}{\mathrm{std}(r_1, \ldots, r_G) + \epsilon}
+$$
 
-For every generated token `t`, the policy ratio is computed from the new-policy log-prob and the old-policy log-prob:
+For every generated token $t$, the policy ratio is:
 
-```text
-rho_i_t = exp(logp_new_i_t - logp_old_i_t)
-```
+$$
+\rho_t = \exp(\ell^{new}_t - \ell^{old}_t)
+$$
 
-The clipped RL loss used by the training code is:
+where $\ell^{new}_t$ and $\ell^{old}_t$ are the token log-probabilities from the current policy and rollout policy.
 
-```text
-loss_rl = - mean_over_generated_tokens(
-    min(
-        rho_i_t * A_i,
-        clip(rho_i_t, 1 - clip_eps, 1 + clip_eps) * A_i
-    )
-)
-```
+The clipped RL objective used by the training code is:
+
+$$
+L_{RL} = -\mathrm{mean}\left[\min\left(\rho_t A_i,\ \mathrm{clip}(\rho_t, 1-\epsilon_c, 1+\epsilon_c) A_i\right)\right]
+$$
 
 This run uses no KL penalty and no length reward, so the effective training loss is:
 
-```text
-loss_total = loss_rl
-```
+$$
+L_{total}=L_{RL}
+$$
 
 ## Main Training Setup
 
