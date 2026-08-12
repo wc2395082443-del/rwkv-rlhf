@@ -10,44 +10,7 @@
   "best_raw_reward_step": 153,
   "best_ma10_reward": 0.67734375,
   "best_ma10_reward_step": 147,
-  "eval_points": [
-    [
-      85,
-      0.6628787878787878,
-      "pre_eval"
-    ],
-    [
-      100,
-      0.6856060606060606,
-      "eval"
-    ],
-    [
-      105,
-      0.6893939393939394,
-      "post_eval"
-    ],
-    [
-      105,
-      0.6931818181818182,
-      "pre_eval"
-    ],
-    [
-      125,
-      0.7045454545454546,
-      "eval"
-    ],
-    [
-      150,
-      0.7083333333333334,
-      "eval"
-    ],
-    [
-      155,
-      0.696969696969697,
-      "post_eval"
-    ]
-  ],
-  "full_points": [
+  "full_eval_points": [
     [
       0,
       0.5314632297194845,
@@ -58,5 +21,6 @@
       0.6724791508718726,
       "step85 full"
     ]
-  ]
+  ],
+  "note": "Small/sample eval points removed from the public report; only full eval points are retained."
 }
