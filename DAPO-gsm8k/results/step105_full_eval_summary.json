@@ -1,0 +1,20 @@
+{
+  "model": "/hy-tmp/runs/g1i_gsm8k_boxed_strictcot_continue_from_step85_maxnew2048_micro3_dyn512_q32_r16_100_20260812_082824/final_step_105.pth",
+  "eval_jsonl": "/hy-tmp/data/gsm8k/gsm8k_test_albatross.jsonl",
+  "num_tasks": 1319,
+  "loose_accuracy": 0.6664139499620925,
+  "strict_accuracy": 0.6664139499620925,
+  "strict_format_rate": 0.954510993176649,
+  "eod_rate": 0.954510993176649,
+  "truncated_rate": 0.003032600454890068,
+  "repeat_rate": 0.0,
+  "multilingual_rate": 0.0,
+  "degeneration_rate": 0.0,
+  "mean_generated_tokens": 480.4442759666414,
+  "max_new_tokens": 2048,
+  "temperature": 0.3,
+  "top_p": 0.4,
+  "top_k": 500,
+  "elapsed_sec": 710.6904776096344,
+  "responses_path": "/hy-tmp/runs/eval_g1i_gsm8k_step105_full_batch128_20260813_025157/step105_full/responses.jsonl"
+}
