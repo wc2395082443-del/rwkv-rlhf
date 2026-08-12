@@ -1,0 +1,26 @@
+{
+  "n_steps": 155,
+  "first_step": 1,
+  "last_step": 155,
+  "last10_reward": 0.647265625,
+  "last10_selected_strict": 0.602919757945144,
+  "last10_trunc": 0.0318359375,
+  "last10_eod": 0.9681640625,
+  "best_raw_reward": 0.7578125,
+  "best_raw_reward_step": 153,
+  "best_ma10_reward": 0.67734375,
+  "best_ma10_reward_step": 147,
+  "full_eval_points": [
+    [
+      0,
+      0.5314632297194845,
+      "base full"
+    ],
+    [
+      85,
+      0.6724791508718726,
+      "step85 full"
+    ]
+  ],
+  "note": "Small/sample eval points removed from the public report; only full eval points are retained."
+}
