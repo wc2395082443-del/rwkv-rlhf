@@ -1,0 +1,53 @@
+{
+  "base": {
+    "model": "/hy-tmp/models/rwkv7-g1i_preview5445-1.5b-20260729-ctx16384.pth",
+    "eval_jsonl": "/hy-tmp/data/gsm8k/gsm8k_test_albatross.jsonl",
+    "num_tasks": 1319,
+    "loose_accuracy": 0.5322213798332069,
+    "strict_accuracy": 0.5314632297194845,
+    "strict_format_rate": 0.6815769522365428,
+    "eod_rate": 0.6846095526914329,
+    "truncated_rate": 0.016679302501895376,
+    "repeat_rate": 0.0,
+    "multilingual_rate": 0.0,
+    "degeneration_rate": 0.0,
+    "mean_generated_tokens": 792.2570128885519,
+    "max_new_tokens": 2048,
+    "temperature": 0.3,
+    "top_p": 0.4,
+    "top_k": 500,
+    "elapsed_sec": 1214.460350036621,
+    "responses_path": "/hy-tmp/runs/eval_g1i_gsm8k_base_vs_step85_with_responses_20260812_073500/base_full/responses.jsonl"
+  },
+  "checkpoint": {
+    "model": "/hy-tmp/runs/g1i_gsm8k_boxed_strictcot_maxnew2048_micro3_dyn512_q32_r16_200_earlystop_20260811_212644/final_step_85.pth",
+    "eval_jsonl": "/hy-tmp/data/gsm8k/gsm8k_test_albatross.jsonl",
+    "num_tasks": 1319,
+    "loose_accuracy": 0.6732373009855952,
+    "strict_accuracy": 0.6724791508718726,
+    "strict_format_rate": 0.9613343442001516,
+    "eod_rate": 0.9620924943138741,
+    "truncated_rate": 0.000758150113722517,
+    "repeat_rate": 0.0,
+    "multilingual_rate": 0.0,
+    "degeneration_rate": 0.0,
+    "mean_generated_tokens": 466.69219105382865,
+    "max_new_tokens": 2048,
+    "temperature": 0.3,
+    "top_p": 0.4,
+    "top_k": 500,
+    "elapsed_sec": 908.3520703315735,
+    "responses_path": "/hy-tmp/runs/eval_g1i_gsm8k_base_vs_step85_with_responses_20260812_073500/step85_full/responses.jsonl"
+  },
+  "gain": {
+    "loose_accuracy": 0.14101592115238826,
+    "strict_accuracy": 0.14101592115238815,
+    "strict_format_rate": 0.2797573919636088,
+    "eod_rate": 0.27748294162244125,
+    "truncated_rate": -0.01592115238817286,
+    "repeat_rate": 0.0,
+    "multilingual_rate": 0.0,
+    "degeneration_rate": 0.0,
+    "mean_generated_tokens": -325.56482183472326
+  }
+}

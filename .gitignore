@@ -1,0 +1,15 @@
+*.pth
+*.pt
+*.safetensors
+*.bin
+__pycache__/
+*.pyc
+responses.jsonl
+responses_by_step/
+*.log
+stdout.log
+nohup.log
+gpu_monitor.csv
+/hf_home/
+/models/
+/data/

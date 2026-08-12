@@ -1,0 +1,7 @@
+bitsandbytes
+deepspeed
+einops
+transformers
+datasets
+jsonlines
+wandb
