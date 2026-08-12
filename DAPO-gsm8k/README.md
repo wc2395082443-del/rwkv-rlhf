@@ -73,6 +73,13 @@ A further fixed 50-step continuation from step105 reached:
 
 These continuation numbers are sample evals, not full evals.
 
+
+## Full 1-155 Step Training Curve
+
+![GSM8K global 1-155 curves](results/g1i_gsm8k_global_1_155_curves.png)
+
+Summary JSON: `results/g1i_gsm8k_global_1_155_summary.json`.
+
 ## Files
 
 - `train_rl_thinking_cot_strict_boxedprompt_schedopt_earlystop.py`: main training script used for the successful run.
