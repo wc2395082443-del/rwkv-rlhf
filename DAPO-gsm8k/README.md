@@ -104,12 +104,17 @@ Full eval uses all 1319 GSM8K test questions and pass@1 generation.
 |---|---:|---:|---:|---:|---:|---:|
 | Base g1i 1.5B | 53.15% | 53.22% | 68.16% | 68.46% | 1.67% | 792.3 |
 | Step85 RL checkpoint | 67.25% | 67.32% | 96.13% | 96.21% | 0.08% | 466.7 |
+| Step105 RL checkpoint | 66.64% | 66.64% | 95.45% | 95.45% | 0.30% | 480.4 |
 | Step155 RL checkpoint | 67.70% | 67.70% | 96.06% | 96.06% | 0.38% | 506.5 |
 | Gain: Step85 vs Base | +14.10 pp | +14.10 pp | +27.98 pp | +27.75 pp | -1.59 pp | -325.6 |
+| Gain: Step105 vs Base | +13.49 pp | +13.42 pp | +27.29 pp | +27.00 pp | -1.36 pp | -311.8 |
 | Gain: Step155 vs Base | +14.56 pp | +14.48 pp | +27.90 pp | +27.60 pp | -1.29 pp | -285.8 |
-| Gain: Step155 vs Step85 | +0.45 pp | +0.38 pp | -0.08 pp | -0.15 pp | +0.30 pp | +39.8 |
 
-The full-eval summaries are in `results/base_vs_step85_full_eval_summary.json`, `results/step155_full_eval_summary.json`, and `results/g1i_gsm8k_global_1_155_summary_full_eval_only.json`.
+The full-eval summaries are in `results/base_vs_step85_full_eval_summary.json`, `results/step105_full_eval_summary.json`, `results/step155_full_eval_summary.json`, and `results/g1i_gsm8k_global_1_155_summary_full_eval_only.json`.
+### Full Eval Runtime Note
+
+Step105 was evaluated with the newer `batch=128` setting and finished in `710.7s` (`11.8 min`), about `111.4` questions/min. During this run the stable GPU utilization averaged about `57.4%`, with stable VRAM usage around `11.6GB` on the L40S.
+
 
 ## Training Curves
 
