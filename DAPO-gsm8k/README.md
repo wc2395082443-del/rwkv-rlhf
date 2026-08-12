@@ -27,33 +27,45 @@ Loose accuracy only checks final-answer correctness.
 
 ## RL Algorithm
 
-For each question $q$, the current policy samples a group of responses $y_1, \ldots, y_G$. Each response receives a binary strict reward $r_i \in [0,1]$ from the verifier. DAPO-style dynamic sampling keeps groups that contain both positive and negative samples, so the update is computed on informative groups instead of all-0/all-1 groups.
+For each question $q$, the current policy samples a group of responses $y_1, \ldots, y_G$. Each response receives a scalar strict reward $r_i$ from the verifier. In this run the configured reward is binary, so $r_i \in \{0,1\}$.
 
-The group-normalized advantage is:
+DAPO-style dynamic sampling first generates candidate groups and keeps only informative groups, i.e. groups containing at least one positive and one negative response. Uniform all-0/all-1 groups are skipped before optimization.
 
-$$
-A_i = \frac{r_i - \mathrm{mean}(r_1, \ldots, r_G)}{\mathrm{std}(r_1, \ldots, r_G) + \epsilon}
-$$
-
-For every generated token $t$, the policy ratio is:
+For each kept group, the group-normalized advantage is computed as:
 
 $$
-\rho_t = \exp(\ell^{new}_t - \ell^{old}_t)
+A_i = \frac{r_i - \mathrm{mean}(r_1, \ldots, r_G)}{\mathrm{std}(r_1, \ldots, r_G)}
 $$
 
-where $\ell^{new}_t$ and $\ell^{old}_t$ are the token log-probabilities from the current policy and rollout policy.
+If the group reward variance is nearly zero, the group is skipped. In the reported run `neg_adv_weight=1.0`, so negative advantages are not down-weighted.
 
-The clipped RL objective uses an asymmetric higher clip bound (`0.8` to `1.28` in code):
-
-$$
-\rho_t^{clip}=\mathrm{clip}(\rho_t, 0.8, 1.28)
-$$
+For every generated token $t$, the code computes the policy ratio from current-policy and rollout-policy token log-probabilities:
 
 $$
-L_{RL} = -\mathrm{mean}\left[\min\left(\rho_t A_i,\ \rho_t^{clip} A_i\right)\right]
+\rho_{i,t} = \exp(\ell^{new}_{i,t} - \ell^{old}_{i,t})
 $$
 
-This run uses no KL penalty and no length reward, so the effective training loss is:
+The implemented clip-higher rule is asymmetric and hard-coded in the loss as `torch.clamp(ratio, 0.8, 1.28)`:
+
+$$
+\rho^{clip}_{i,t}=\mathrm{clip}(\rho_{i,t}, 0.8, 1.28)
+$$
+
+The implemented policy loss is summed over generated tokens and normalized by `valid_tokens`:
+
+$$
+L_{RL} = -\frac{1}{N_{valid}}\sum_i\sum_t \min\left(\rho_{i,t} A_i,\ \rho^{clip}_{i,t} A_i\right)
+$$
+
+where:
+
+$$
+N_{valid}=N_{pos}+w_{neg}N_{neg}
+$$
+
+For this run, $w_{neg}=1.0$, so $N_{valid}$ is the total number of selected generated tokens. The script passes `--dapo_dual_clip_c=10.0`, but the current training code does not use that value inside the loss; the effective clip bounds are `0.8` and `1.28`.
+
+This run uses `kl_coef=0` and `length_weight=0`, so the effective optimized loss is:
 
 $$
 L_{total}=L_{RL}
