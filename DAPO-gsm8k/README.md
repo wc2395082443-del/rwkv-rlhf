@@ -37,7 +37,7 @@ $$
 A_i = \frac{r_i - \mathrm{mean}(r_1, \ldots, r_G)}{\mathrm{std}(r_1, \ldots, r_G)}
 $$
 
-If the group reward variance is nearly zero, the group is skipped. In the reported run `neg_adv_weight=1.0`, so negative advantages are not down-weighted.
+If the group reward variance is nearly zero, the group is skipped.
 
 For every generated token $t$, the code computes the policy ratio from current-policy and rollout-policy token log-probabilities:
 
@@ -51,19 +51,13 @@ $$
 \rho^{clip}_{i,t}=\mathrm{clip}(\rho_{i,t}, 0.8, 1.28)
 $$
 
-The implemented policy loss is summed over generated tokens and normalized by `valid_tokens`:
+The implemented policy loss is summed over selected generated tokens and normalized by their token count:
 
 $$
 L_{RL} = -\frac{1}{N_{valid}}\sum_i\sum_t \min\left(\rho_{i,t} A_i,\ \rho^{clip}_{i,t} A_i\right)
 $$
 
-where:
-
-$$
-N_{valid}=N_{pos}+w_{neg}N_{neg}
-$$
-
-For this run, $w_{neg}=1.0$, so $N_{valid}$ is the total number of selected generated tokens. The script passes `--dapo_dual_clip_c=10.0`, but the current training code does not use that value inside the loss; the effective clip bounds are `0.8` and `1.28`.
+Here $N_{valid}$ is the number of selected generated tokens. The script passes `--dapo_dual_clip_c=10.0`, but the current training code does not use that value inside the loss; the effective clip bounds are `0.8` and `1.28`.
 
 This run uses `kl_coef=0` and `length_weight=0`, so the effective optimized loss is:
 
@@ -116,31 +110,12 @@ The full-eval summary is in `results/base_vs_step85_full_eval_summary.json`.
 
 ## Training Curves
 
-The following figure combines the base-to-step85 run and the two continuation runs into one global step 1-155 view.
+The following figure combines the 155 training steps into one global view. It shows training metrics only; small/sample eval markers are intentionally removed from the public report.
 
 ![GSM8K DAPO training curves](results/g1i_gsm8k_global_1_155_curves.png)
 
-Curve summary is available in `results/g1i_gsm8k_global_1_155_summary.json`.
+Curve summary is available in `results/g1i_gsm8k_global_1_155_summary.json`; it retains only the full-eval points for base and step85.
 
-
-## Continuation Runs
-
-Continuation from Step85 for 20 steps stopped early at global step 105:
-
-- sample pre-eval at step85 checkpoint: strict `66.29%` on 264 questions;
-- eval at step100: strict `68.56%` on 264 questions;
-- post-eval at step105: strict `68.94%` on 264 questions;
-- final checkpoint: `final_step_105.pth` (not uploaded).
-
-A further fixed 50-step continuation from step105 reached:
-
-- pre-eval at step105 checkpoint: strict `69.32%` on 264 questions;
-- eval at step125: strict `70.45%` on 264 questions;
-- eval at step150: strict `70.83%` on 264 questions;
-- post-eval at step155: strict `69.70%` on 264 questions;
-- final checkpoint: `final_step_155.pth` (not uploaded).
-
-These continuation numbers are sample evals, not full evals.
 
 ## Files
 
@@ -148,7 +123,7 @@ These continuation numbers are sample evals, not full evals.
 - `eval_gsm8k_boxed_strict_reward.py`: eval script; saves full `responses.jsonl` for eval runs.
 - `reward.py`: format, answer extraction, degeneration gates.
 - `infer_gpu_buffered_compact.py`: batched RWKV rollout/inference helper.
-- `scripts/`: launch scripts for base-to-step85, continuations, and full eval.
+- `scripts/`: launch scripts for training and full eval.
 - `results/`: lightweight metrics and validation summaries.
 - `examples/step85_random10_responses.json`: 10 sampled Step85 eval responses for qualitative inspection.
 
