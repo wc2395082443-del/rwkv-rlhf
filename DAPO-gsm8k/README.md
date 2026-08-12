@@ -46,11 +46,11 @@ where $\ell^{new}_t$ and $\ell^{old}_t$ are the token log-probabilities from the
 The clipped RL objective uses an asymmetric higher clip bound (`0.8` to `1.28` in code):
 
 $$
-ho_t^{clip}=\mathrm{clip}(ho_t, 0.8, 1.28)
+\rho_t^{clip}=\mathrm{clip}(\rho_t, 0.8, 1.28)
 $$
 
 $$
-L_{RL} = -\mathrm{mean}\left[\min\left(ho_t A_i,\ ho_t^{clip} A_iight)ight]
+L_{RL} = -\mathrm{mean}\left[\min\left(\rho_t A_i,\ \rho_t^{clip} A_i\right)\right]
 $$
 
 This run uses no KL penalty and no length reward, so the effective training loss is:
