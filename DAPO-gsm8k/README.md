@@ -104,9 +104,12 @@ Full eval uses all 1319 GSM8K test questions and pass@1 generation.
 |---|---:|---:|---:|---:|---:|---:|
 | Base g1i 1.5B | 53.15% | 53.22% | 68.16% | 68.46% | 1.67% | 792.3 |
 | Step85 RL checkpoint | 67.25% | 67.32% | 96.13% | 96.21% | 0.08% | 466.7 |
-| Gain | +14.10 pp | +14.10 pp | +27.98 pp | +27.75 pp | -1.59 pp | -325.6 |
+| Step155 RL checkpoint | 67.70% | 67.70% | 96.06% | 96.06% | 0.38% | 506.5 |
+| Gain: Step85 vs Base | +14.10 pp | +14.10 pp | +27.98 pp | +27.75 pp | -1.59 pp | -325.6 |
+| Gain: Step155 vs Base | +14.56 pp | +14.48 pp | +27.90 pp | +27.60 pp | -1.29 pp | -285.8 |
+| Gain: Step155 vs Step85 | +0.45 pp | +0.38 pp | -0.08 pp | -0.15 pp | +0.30 pp | +39.8 |
 
-The full-eval summary is in `results/base_vs_step85_full_eval_summary.json`.
+The full-eval summaries are in `results/base_vs_step85_full_eval_summary.json`, `results/step155_full_eval_summary.json`, and `results/g1i_gsm8k_global_1_155_summary_full_eval_only.json`.
 
 ## Training Curves
 
