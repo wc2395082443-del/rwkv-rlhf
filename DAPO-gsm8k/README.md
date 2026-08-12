@@ -59,6 +59,7 @@ $$
 
 - Base model: `rwkv7-g1i_preview5445-1.5b-20260729-ctx16384.pth`
 - Dataset: GSM8K train / GSM8K test
+- Random seed: `42`
 - `max_new_tokens=2048`
 - rollout: `temperature=1.0`, `top_p=1.0`, `top_k=0`
 - eval: `temperature=0.3`, `top_p=0.4`, `top_k=500`
@@ -69,6 +70,20 @@ $$
 - `kl_coef=0`
 - `length_weight=0`
 - train responses are not saved; eval responses are saved by `eval_gsm8k_boxed_strict_reward.py`.
+
+
+## Hardware and Runtime
+
+The reported run was trained on a single NVIDIA L40S GPU.
+
+| Stage | Steps | GPU | Wall Time | Avg Step Time | Notes |
+|---|---:|---|---:|---:|---|
+| Base -> Step85 | 85 | 1x NVIDIA L40S 46GB | 3.66 h | 152.7 s/step | stopped by early-stop rule |
+| Step85 -> Step105 | 20 | 1x NVIDIA L40S 46GB | 0.80 h | 123.9 s/step | continuation, early-stopped |
+| Step105 -> Step155 | 50 | 1x NVIDIA L40S 46GB | 1.84 h | 121.4 s/step | fixed 50-step continuation |
+| Total | 155 | 1x NVIDIA L40S 46GB | 6.30 h | 146.4 s/step | training time only, excluding separate full eval |
+
+GPU details from the training server: `NVIDIA L40S`, `46068 MiB` VRAM, driver `550.144.03`.
 
 ## Key Result: Full GSM8K Eval
 
