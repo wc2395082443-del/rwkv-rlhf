@@ -82,6 +82,15 @@ Full eval uses all 1319 GSM8K test questions and pass@1 generation.
 
 The full-eval summary is in `results/base_vs_step85_full_eval_summary.json`.
 
+## Training Curves
+
+The following figure combines the base-to-step85 run and the two continuation runs into one global step 1-155 view.
+
+![GSM8K DAPO training curves](results/g1i_gsm8k_global_1_155_curves.png)
+
+Curve summary is available in `results/g1i_gsm8k_global_1_155_summary.json`.
+
+
 ## Continuation Runs
 
 Continuation from Step85 for 20 steps stopped early at global step 105:
