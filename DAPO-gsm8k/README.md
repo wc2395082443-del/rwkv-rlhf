@@ -81,6 +81,11 @@ These continuation numbers are sample evals, not full evals.
 Summary JSON: `results/g1i_gsm8k_global_1_155_summary.json`.
 
 
+
+## Flip Examples
+
+A 5-up / 5-down qualitative comparison is available at `results/flip_examples_5up_5down.md`. It includes 5 examples where Base was wrong and Step85 became correct, plus 5 examples where Base was correct and Step85 became wrong.
+
 ## Qualitative Base vs Step85 Comparison
 
 A fixed 10-sample comparison table is available at `results/base_vs_step85_compare10.md`, with structured data in `results/base_vs_step85_compare10.json`.
