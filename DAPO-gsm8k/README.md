@@ -27,28 +27,25 @@ Loose accuracy only checks final-answer correctness.
 
 ## RL Algorithm
 
-For each question $q$, the current policy samples a group of responses $\{y_i\}_{i=1}^{G}$. Each response receives a binary strict reward $r_i \in \{0,1\}$ from the verifier. DAPO-style dynamic sampling keeps groups that contain both positive and negative samples, so the update is computed on informative groups instead of all-0/all-1 groups.
+For each question $q$, the current policy samples a group of responses $y_1, \ldots, y_G$. Each response receives a binary strict reward $r_i \in [0,1]$ from the verifier. DAPO-style dynamic sampling keeps groups that contain both positive and negative samples, so the update is computed on informative groups instead of all-0/all-1 groups.
 
 The group-normalized advantage is:
 
 $$
-A_i = \frac{r_i - \operatorname{mean}(\{r_j\}_{j=1}^{G})}{\operatorname{std}(\{r_j\}_{j=1}^{G}) + \epsilon}
+A_i = \frac{r_i - \mathrm{mean}(r_1, \ldots, r_G)}{\mathrm{std}(r_1, \ldots, r_G) + \epsilon}
 $$
 
 For every generated token $t$, the policy ratio is:
 
 $$
-\rho_{i,t}(\theta) = \exp\left(\log \pi_\theta(y_{i,t}\mid q,y_{i,<t}) - \log \pi_{\theta_{old}}(y_{i,t}\mid q,y_{i,<t})\right)
+\rho_{i,t}(\theta) = \exp\bigl(\log \pi_\theta(y_{i,t} \mid q, y_{i,<t}) - \log \pi_{\theta_{old}}(y_{i,t} \mid q, y_{i,<t})\bigr)
 $$
 
 The clipped RL objective used by the training code is:
 
 $$
 \mathcal{L}_{RL}(\theta) = -\frac{1}{\sum_i |y_i|}\sum_i\sum_{t=1}^{|y_i|}
-\min\left(
-\rho_{i,t}(\theta) A_i,
-\operatorname{clip}(\rho_{i,t}(\theta), 1-\epsilon_{clip}, 1+\epsilon_{clip}) A_i
-\right)
+\min\bigl(\rho_{i,t}(\theta) A_i, \mathrm{clip}(\rho_{i,t}(\theta), 1-\epsilon_{clip}, 1+\epsilon_{clip}) A_i\bigr)
 $$
 
 This run uses no KL penalty and no length reward, so the effective training loss is:
