@@ -1,4 +1,4 @@
-﻿# DAPO-gsm8k: Boxed Strict-CoT RL for RWKV7 g1i 1.5B
+﻿﻿# DAPO-gsm8k: Boxed Strict-CoT RL for RWKV7 g1i 1.5B
 
 This project contains the cleaned code and lightweight result logs for a GSM8K RL run on RWKV7 g1i 1.5B. The experiment trains a boxed strict-CoT output format with a binary verifier reward.
 
@@ -71,7 +71,7 @@ $$
 - Dataset: GSM8K train / GSM8K test
 - Random seed: `42`
 - `max_new_tokens=2048`
-- rollout: `temperature=1.0`, `top_p=1.0`, `top_k=0`
+- rollout: `temperature=1.0`, `top_p=1.0`, `top_k=-1`
 - eval: `temperature=0.3`, `top_p=0.4`, `top_k=500`
 - dynamic sampling: `32` candidate questions, `16` rollouts/question
 - `rollout_forward_batch=512`
