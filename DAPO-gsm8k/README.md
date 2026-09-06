@@ -6,6 +6,8 @@ This project contains the cleaned code and lightweight result logs for a GSM8K R
 
 The extended experiment starts from the GSM8K-trained `step155` checkpoint and continues DAPO training on the processed `MATH17K` dataset. It uses the official RWKV flower prompt and runs through global `step1300`.
 
+**Update date: 2026-09-06.** This extended-run section is separate from the earlier GSM8K `step155` result report. The source metrics contain every training step from `step1` through `step1300`, including `step600`.
+
 ### Configuration
 
 - Starting checkpoint: GSM8K RL `step155`
@@ -29,6 +31,8 @@ The curve below combines the complete continuous training record from global `st
 The one-stage/raw benchmark results use `step0` for the original g1i baseline. `step105` is excluded from the plotted checkpoint sequence. `avg@k` and `pass@k` remain separate.
 
 See the complete table and curve here:
+
+![One-stage benchmark curves](https://raw.githubusercontent.com/wc2395082443-del/rwkv-rlhf/DAPO-gsm8k/results/benchmark_curves_one_stage_step0_compact.jpg)
 
 - [One-stage benchmark results](../results/benchmark_results_one_stage.md)
 - [Benchmark curves](../results/benchmark_curves_one_stage_step0_compact.jpg)
