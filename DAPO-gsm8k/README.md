@@ -2,6 +2,12 @@
 
 This project contains the cleaned code and lightweight result logs for a GSM8K RL run on RWKV7 g1i 1.5B. The experiment trains a boxed strict-CoT output format with a binary verifier reward.
 
+## RL Principle
+
+This experiment applies DAPO-style group-relative policy optimization to mathematical reasoning. For each question, the rollout policy samples a group of candidate solutions. A strict verifier assigns binary rewards based on answer correctness, valid `<think>...</think>` structure, boxed final-answer formatting, EOS completion, non-truncation, and degeneration checks. Groups containing both positive and negative samples provide the learning signal; all-correct and all-wrong groups are skipped.
+
+The policy is updated with group-normalized advantages and a clipped probability ratio. This lets the model increase the likelihood of correct, complete reasoning trajectories while suppressing malformed or truncated trajectories. The training objective uses the strict verifier reward; KL and length regularization are disabled for this run.
+
 ## Extended DAPO Run
 
 The extended experiment starts from the GSM8K-trained `step155` checkpoint and continues DAPO training on the processed `MATH17K` dataset. It uses the official RWKV flower prompt and runs through global `step1300`.
@@ -60,7 +66,7 @@ Strict reward is binary. A response receives `1` only if all conditions hold:
 
 Loose accuracy only checks final-answer correctness.
 
-## RL Algorithm
+## RL Algorithm Details
 
 For each question $q$, the current policy samples a group of responses $y_1, \ldots, y_G$. Each response receives a scalar strict reward $r_i$ from the verifier. In this run the configured reward is binary, so $r_i \in \{0,1\}$.
 
