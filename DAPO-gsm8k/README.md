@@ -22,7 +22,7 @@ The extended experiment starts from the GSM8K-trained `step155` checkpoint and c
 
 The curve below combines the complete continuous training record from global `step1` through `step1300`. It uses the established six-panel format: raw series, `MA10`, evaluation markers, and the metrics `avg_reward`, `accuracy`, `selected_acc`, `selected_strict`, `repeat_rate`, and `trunc_rate`.
 
-![DAPO global training curves](results/g1i_dapo_global_1_1300_sixpanel.jpg)
+![DAPO global training curves](https://raw.githubusercontent.com/wc2395082443-del/rwkv-rlhf/DAPO-gsm8k/DAPO-gsm8k/results/g1i_dapo_global_1_1300_sixpanel.jpg)
 
 ### Benchmark Results
 
