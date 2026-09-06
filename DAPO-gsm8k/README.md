@@ -2,6 +2,37 @@
 
 This project contains the cleaned code and lightweight result logs for a GSM8K RL run on RWKV7 g1i 1.5B. The experiment trains a boxed strict-CoT output format with a binary verifier reward.
 
+## Extended DAPO Run
+
+The extended experiment starts from the GSM8K-trained `step155` checkpoint and continues DAPO training on the processed `MATH17K` dataset. It uses the official RWKV flower prompt and runs through global `step1300`.
+
+### Configuration
+
+- Starting checkpoint: GSM8K RL `step155`
+- Training data: processed `MATH17K`
+- Prompt: official RWKV flower prompt
+- DAPO questions / rollouts: `32 x 16`
+- Candidate questions: `64`
+- `max_new_tokens=6144`
+- Overlong buffer: `512`
+- Evaluation batch: `384`
+- Checkpoint evaluation: GSM8K `avg@4/pass@4`, MATH500 `avg@8/pass@8`, AIME24/AIME25/AMC23 `avg@64/pass@64`
+
+### Extended Training Curve
+
+The curve below combines the complete continuous training record from global `step1` through `step1300`. It uses the established six-panel format: raw series, `MA10`, evaluation markers, and the metrics `avg_reward`, `accuracy`, `selected_acc`, `selected_strict`, `repeat_rate`, and `trunc_rate`.
+
+![DAPO global training curves](results/g1i_dapo_global_1_1300_sixpanel.jpg)
+
+### Benchmark Results
+
+The one-stage/raw benchmark results use `step0` for the original g1i baseline. `step105` is excluded from the plotted checkpoint sequence. `avg@k` and `pass@k` remain separate.
+
+See the complete table and curve here:
+
+- [One-stage benchmark results](../results/benchmark_results_one_stage.md)
+- [Benchmark curves](../results/benchmark_curves_one_stage_step0_compact.jpg)
+
 ## Prompt
 
 ```text
