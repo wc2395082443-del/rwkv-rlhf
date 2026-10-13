@@ -1,0 +1,148 @@
+{
+  "release_id": 411745472,
+  "tag": "g1k-step1000-backup-20261013-v1",
+  "branch": "g1k-step1000-backup-20261013",
+  "complete": true,
+  "verified_assets": 19,
+  "expected_assets": 19,
+  "verified_bytes": 10701997123,
+  "expected_bytes": 10701997123,
+  "pending": [],
+  "assets": [
+    {
+      "id": 637237638,
+      "name": "g1k-current-code.tar.gz",
+      "size": 1037642,
+      "digest": "sha256:1c8dfec7838300c76abd2852ffd33351b28fa985e46d1e2d60628037b8f2fb84",
+      "browser_download_url": "https://github.com/wc2395082443-del/rwkv-rlhf/releases/download/g1k-step1000-backup-20261013-v1/g1k-current-code.tar.gz"
+    },
+    {
+      "id": 637254480,
+      "name": "server-code-history.tar.gz",
+      "size": 243399985,
+      "digest": "sha256:01c1c14d7bd275052dfaa667c855f9693fe24f4f674fdbffbc10dd185e4242b8",
+      "browser_download_url": "https://github.com/wc2395082443-del/rwkv-rlhf/releases/download/g1k-step1000-backup-20261013-v1/server-code-history.tar.gz"
+    },
+    {
+      "id": 637237752,
+      "name": "datasets-and-selection.tar.gz",
+      "size": 100545153,
+      "digest": "sha256:a3dbbeedb197a6e302898eff986b1778546cb8eeb7b680f6ff857a537585ffc3",
+      "browser_download_url": "https://github.com/wc2395082443-del/rwkv-rlhf/releases/download/g1k-step1000-backup-20261013-v1/datasets-and-selection.tar.gz"
+    },
+    {
+      "id": 637238349,
+      "name": "training-originals.tar.gz",
+      "size": 317828570,
+      "digest": "sha256:e37d7bd34f0f58f15a5b968b74689f955df28bb8c9ff8b56e83e699a3e292835",
+      "browser_download_url": "https://github.com/wc2395082443-del/rwkv-rlhf/releases/download/g1k-step1000-backup-20261013-v1/training-originals.tar.gz"
+    },
+    {
+      "id": 637239625,
+      "name": "evaluation-originals.tar.gz",
+      "size": 858497996,
+      "digest": "sha256:720f843273d61f392d568d674cca50499e457cf2652cb5b3e0392c005d0498c4",
+      "browser_download_url": "https://github.com/wc2395082443-del/rwkv-rlhf/releases/download/g1k-step1000-backup-20261013-v1/evaluation-originals.tar.gz"
+    },
+    {
+      "id": 637255632,
+      "name": "g1k-baseline.pth.part0001",
+      "size": 1073741824,
+      "digest": "sha256:564d6e77901447c1686a624ee8f9c0599557340ee921a768dec9ccb5c6291eea",
+      "browser_download_url": "https://github.com/wc2395082443-del/rwkv-rlhf/releases/download/g1k-step1000-backup-20261013-v1/g1k-baseline.pth.part0001"
+    },
+    {
+      "id": 637255725,
+      "name": "g1k-baseline.pth.part0002",
+      "size": 1073741824,
+      "digest": "sha256:69e5fd6127781db5676d3d2b3456bd56fc4b4d81611afff084d771010f9f435f",
+      "browser_download_url": "https://github.com/wc2395082443-del/rwkv-rlhf/releases/download/g1k-step1000-backup-20261013-v1/g1k-baseline.pth.part0002"
+    },
+    {
+      "id": 637242571,
+      "name": "g1k-baseline.pth.part0003",
+      "size": 907960957,
+      "digest": "sha256:69d1277892eca4885395d14e74a61b0fce7f49b32ab5c2f4cf2843fee31195bc",
+      "browser_download_url": "https://github.com/wc2395082443-del/rwkv-rlhf/releases/download/g1k-step1000-backup-20261013-v1/g1k-baseline.pth.part0003"
+    },
+    {
+      "id": 637268674,
+      "name": "g1k-gsm8k-step155.pth.part0001",
+      "size": 1073741824,
+      "digest": "sha256:55237d53402b0f58ae709035942633fd4f6a643d7397cdfd49c59f13bc7e5275",
+      "browser_download_url": "https://github.com/wc2395082443-del/rwkv-rlhf/releases/download/g1k-step1000-backup-20261013-v1/g1k-gsm8k-step155.pth.part0001"
+    },
+    {
+      "id": 637264115,
+      "name": "g1k-gsm8k-step155.pth.part0002",
+      "size": 1073741824,
+      "digest": "sha256:7ddb4c49db38ea2fb3952c08402876d389dc1a86bef5b02f331ad2ec8fabced8",
+      "browser_download_url": "https://github.com/wc2395082443-del/rwkv-rlhf/releases/download/g1k-step1000-backup-20261013-v1/g1k-gsm8k-step155.pth.part0002"
+    },
+    {
+      "id": 637245935,
+      "name": "g1k-gsm8k-step155.pth.part0003",
+      "size": 908101548,
+      "digest": "sha256:467ef8745bdbd081d9fe47660d87123b09749078d97e875a3ec47956f687b657",
+      "browser_download_url": "https://github.com/wc2395082443-del/rwkv-rlhf/releases/download/g1k-step1000-backup-20261013-v1/g1k-gsm8k-step155.pth.part0003"
+    },
+    {
+      "id": 637269970,
+      "name": "g1k-dapo-step1000.pth.part0001",
+      "size": 1073741824,
+      "digest": "sha256:f8d24efca04c9ccb7e192aa3aebedcd488b7b58df1bef88ac4f73516477c6e87",
+      "browser_download_url": "https://github.com/wc2395082443-del/rwkv-rlhf/releases/download/g1k-step1000-backup-20261013-v1/g1k-dapo-step1000.pth.part0001"
+    },
+    {
+      "id": 637273495,
+      "name": "g1k-dapo-step1000.pth.part0002",
+      "size": 1073741824,
+      "digest": "sha256:95cb76f76c0530126d07776cf7af6835afa6178b2b545e996c946ccfce91d391",
+      "browser_download_url": "https://github.com/wc2395082443-del/rwkv-rlhf/releases/download/g1k-step1000-backup-20261013-v1/g1k-dapo-step1000.pth.part0002"
+    },
+    {
+      "id": 637249307,
+      "name": "g1k-dapo-step1000.pth.part0003",
+      "size": 908102350,
+      "digest": "sha256:4ced9f6db3b02775607b33f7c20ec803be01eb4ab75d4a6540677c175fe9a5bd",
+      "browser_download_url": "https://github.com/wc2395082443-del/rwkv-rlhf/releases/download/g1k-step1000-backup-20261013-v1/g1k-dapo-step1000.pth.part0003"
+    },
+    {
+      "id": 637237739,
+      "name": "file_manifest.json",
+      "size": 14009438,
+      "digest": "sha256:93134acb2886e846cd2fa8e2b2ad6ab45186b049e87411477fc56390c10e4544",
+      "browser_download_url": "https://github.com/wc2395082443-del/rwkv-rlhf/releases/download/g1k-step1000-backup-20261013-v1/file_manifest.json"
+    },
+    {
+      "id": 637237536,
+      "name": "publication_safety.json",
+      "size": 11731,
+      "digest": "sha256:a29fb473051fc2b91e30a733745fc7a068abe8bbd51c22a3af31e782c21b9393",
+      "browser_download_url": "https://github.com/wc2395082443-del/rwkv-rlhf/releases/download/g1k-step1000-backup-20261013-v1/publication_safety.json"
+    },
+    {
+      "id": 637237650,
+      "name": "environment_and_git.json",
+      "size": 43336,
+      "digest": "sha256:18f35dd1320b6edefe58d8b1a2b4f172da04fbe3710430770c19953d32dda89c",
+      "browser_download_url": "https://github.com/wc2395082443-del/rwkv-rlhf/releases/download/g1k-step1000-backup-20261013-v1/environment_and_git.json"
+    },
+    {
+      "id": 637237506,
+      "name": "backup_manifest.json",
+      "size": 5797,
+      "digest": "sha256:e0d3747e51014e3a833eaada1a20312fedd698cac34ecedabf6c7d489b1e172b",
+      "browser_download_url": "https://github.com/wc2395082443-del/rwkv-rlhf/releases/download/g1k-step1000-backup-20261013-v1/backup_manifest.json"
+    },
+    {
+      "id": 637237415,
+      "name": "SHA256SUMS",
+      "size": 1676,
+      "digest": "sha256:29ebf3984c40d77432f8cb1c6d6fe1d0b366129dffe1021fc38fd392843c54a2",
+      "browser_download_url": "https://github.com/wc2395082443-del/rwkv-rlhf/releases/download/g1k-step1000-backup-20261013-v1/SHA256SUMS"
+    }
+  ],
+  "draft": false,
+  "release_url": "https://github.com/wc2395082443-del/rwkv-rlhf/releases/tag/g1k-step1000-backup-20261013-v1"
+}

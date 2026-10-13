@@ -12,7 +12,14 @@
 - [环境与原始仓库状态](metadata/environment_and_git.json)
 - [完整备份Release](https://github.com/wc2395082443-del/rwkv-rlhf/releases/tag/g1k-step1000-backup-20261013-v1)
 
-Release上传和校验完成前，请勿释放原服务器。最终完成状态见 metadata/upload_receipt.json。
+**状态：已完成上传并发布。19个附件，共10,701,997,123字节，全部通过GitHub返回的SHA256与大小核验。**
+
+- [逐附件下载索引](ASSETS.md)
+- [云端校验记录](metadata/upload_receipt.json)
+- [训练/评测/数据文件覆盖核验](metadata/coverage_verification.json)：2987份非权重原始文件，missing_count=0；不含17份Jupyter自动保存副本。
+
+本次只上传原始baseline、GSM8K step155和DAPO step1000三个权重，其他checkpoint不在本Release内。
+备份完成不代表新服务器环境已验证；建议恢复后确认模型可加载，再释放旧实例。
 
 ## 三个模型不要混淆
 
