@@ -1,0 +1,15 @@
+{
+  "approved_for_publication": true,
+  "reviewed_at": "2026-10-13",
+  "scope": "Independent G1K backup branch and its release assets",
+  "rules": [
+    "Excluded private-key and credential file paths, Git object/config directories, virtual environments, and opaque source archives",
+    "Scanned recognized text formats for GitHub, Hugging Face, API token and private-key patterns plus credential assignments",
+    "Re-scanned all 257 browsable code files for high-confidence token and private-key patterns",
+    "Reviewed all nine redaction events; five affected third-party documentation/test files",
+    "Training/evaluation originals, datasets and selected model weights were not redacted"
+  ],
+  "redaction_events": 9,
+  "redacted_files": 5,
+  "residual_risk": "Heuristic scanning is not a guarantee that every possible secret encoding is detected. Upstream terms remain applicable."
+}

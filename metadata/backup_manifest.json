@@ -1,0 +1,171 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-13T22:09:28.653124+08:00",
+  "repository": "wc2395082443-del/rwkv-rlhf",
+  "branch": "g1k-step1000-backup-20261013",
+  "packages": [
+    {
+      "name": "g1k-current-code.tar.gz",
+      "bytes": 1037642,
+      "sha256": "1c8dfec7838300c76abd2852ffd33351b28fa985e46d1e2d60628037b8f2fb84",
+      "parts": [
+        {
+          "name": "g1k-current-code.tar.gz",
+          "bytes": 1037642,
+          "sha256": "1c8dfec7838300c76abd2852ffd33351b28fa985e46d1e2d60628037b8f2fb84"
+        }
+      ],
+      "kind": "tar.gz",
+      "file_count": 257
+    },
+    {
+      "name": "server-code-history.tar.gz",
+      "bytes": 243399985,
+      "sha256": "01c1c14d7bd275052dfaa667c855f9693fe24f4f674fdbffbc10dd185e4242b8",
+      "parts": [
+        {
+          "name": "server-code-history.tar.gz",
+          "bytes": 243399985,
+          "sha256": "01c1c14d7bd275052dfaa667c855f9693fe24f4f674fdbffbc10dd185e4242b8"
+        }
+      ],
+      "kind": "tar.gz",
+      "file_count": 42317
+    },
+    {
+      "name": "datasets-and-selection.tar.gz",
+      "bytes": 100545153,
+      "sha256": "a3dbbeedb197a6e302898eff986b1778546cb8eeb7b680f6ff857a537585ffc3",
+      "parts": [
+        {
+          "name": "datasets-and-selection.tar.gz",
+          "bytes": 100545153,
+          "sha256": "a3dbbeedb197a6e302898eff986b1778546cb8eeb7b680f6ff857a537585ffc3"
+        }
+      ],
+      "kind": "tar.gz",
+      "file_count": 99
+    },
+    {
+      "name": "training-originals.tar.gz",
+      "bytes": 317828570,
+      "sha256": "e37d7bd34f0f58f15a5b968b74689f955df28bb8c9ff8b56e83e699a3e292835",
+      "parts": [
+        {
+          "name": "training-originals.tar.gz",
+          "bytes": 317828570,
+          "sha256": "e37d7bd34f0f58f15a5b968b74689f955df28bb8c9ff8b56e83e699a3e292835"
+        }
+      ],
+      "kind": "tar.gz",
+      "file_count": 1344
+    },
+    {
+      "name": "evaluation-originals.tar.gz",
+      "bytes": 858497996,
+      "sha256": "720f843273d61f392d568d674cca50499e457cf2652cb5b3e0392c005d0498c4",
+      "parts": [
+        {
+          "name": "evaluation-originals.tar.gz",
+          "bytes": 858497996,
+          "sha256": "720f843273d61f392d568d674cca50499e457cf2652cb5b3e0392c005d0498c4"
+        }
+      ],
+      "kind": "tar.gz",
+      "file_count": 1639
+    },
+    {
+      "name": "g1k-baseline.pth",
+      "bytes": 3055444605,
+      "sha256": "c08acb7778ec6bed779a934b07e2295f5e5d2417bb855cd7065805bc9c4a3973",
+      "parts": [
+        {
+          "name": "g1k-baseline.pth.part0001",
+          "bytes": 1073741824,
+          "sha256": "564d6e77901447c1686a624ee8f9c0599557340ee921a768dec9ccb5c6291eea"
+        },
+        {
+          "name": "g1k-baseline.pth.part0002",
+          "bytes": 1073741824,
+          "sha256": "69e5fd6127781db5676d3d2b3456bd56fc4b4d81611afff084d771010f9f435f"
+        },
+        {
+          "name": "g1k-baseline.pth.part0003",
+          "bytes": 907960957,
+          "sha256": "69d1277892eca4885395d14e74a61b0fce7f49b32ab5c2f4cf2843fee31195bc"
+        }
+      ],
+      "kind": "checkpoint",
+      "source_path": "/hy-tmp/runs/rwkv-g1k-1b-temp-6003.pth"
+    },
+    {
+      "name": "g1k-gsm8k-step155.pth",
+      "bytes": 3055585196,
+      "sha256": "f39ee21be25e3c20c2dd52f3df7baef4fae64a748d9131d24f5a5e5150656937",
+      "parts": [
+        {
+          "name": "g1k-gsm8k-step155.pth.part0001",
+          "bytes": 1073741824,
+          "sha256": "55237d53402b0f58ae709035942633fd4f6a643d7397cdfd49c59f13bc7e5275"
+        },
+        {
+          "name": "g1k-gsm8k-step155.pth.part0002",
+          "bytes": 1073741824,
+          "sha256": "7ddb4c49db38ea2fb3952c08402876d389dc1a86bef5b02f331ad2ec8fabced8"
+        },
+        {
+          "name": "g1k-gsm8k-step155.pth.part0003",
+          "bytes": 908101548,
+          "sha256": "467ef8745bdbd081d9fe47660d87123b09749078d97e875a3ec47956f687b657"
+        }
+      ],
+      "kind": "checkpoint",
+      "source_path": "/hy-tmp/runs/g1k_temp6003_gsm8k_boxed_strictcot_q8x16_cand32_max2048_step0to155_20260917_020430/final_step_155.pth"
+    },
+    {
+      "name": "g1k-dapo-step1000.pth",
+      "bytes": 3055585998,
+      "sha256": "214acadc6aa5278a9dd52ec06577a914c915c4a849ac529514649f8b30b95fbf",
+      "parts": [
+        {
+          "name": "g1k-dapo-step1000.pth.part0001",
+          "bytes": 1073741824,
+          "sha256": "f8d24efca04c9ccb7e192aa3aebedcd488b7b58df1bef88ac4f73516477c6e87"
+        },
+        {
+          "name": "g1k-dapo-step1000.pth.part0002",
+          "bytes": 1073741824,
+          "sha256": "95cb76f76c0530126d07776cf7af6835afa6178b2b545e996c946ccfce91d391"
+        },
+        {
+          "name": "g1k-dapo-step1000.pth.part0003",
+          "bytes": 908102350,
+          "sha256": "4ced9f6db3b02775607b33f7c20ec803be01eb4ab75d4a6540677c175fe9a5bd"
+        }
+      ],
+      "kind": "checkpoint",
+      "source_path": "/hy-tmp/runs/g1k_dapo_pass1_31_officialprompt_q32x16_cand64_max6144_ob512_step900to1000_20261001_014411/final_step_1000.pth"
+    }
+  ],
+  "metadata": [
+    {
+      "name": "file_manifest.json",
+      "bytes": 14009438,
+      "sha256": "93134acb2886e846cd2fa8e2b2ad6ab45186b049e87411477fc56390c10e4544"
+    },
+    {
+      "name": "publication_safety.json",
+      "bytes": 11731,
+      "sha256": "a29fb473051fc2b91e30a733745fc7a068abe8bbd51c22a3af31e782c21b9393"
+    },
+    {
+      "name": "environment_and_git.json",
+      "bytes": 43336,
+      "sha256": "18f35dd1320b6edefe58d8b1a2b4f172da04fbe3710430770c19953d32dda89c"
+    }
+  ],
+  "scope": "G1K baseline, GSM8K155, DAPO1000; source snapshots; all remaining training/evaluation originals and processed data",
+  "weight_resume_warning": "Model weights do not contain complete optimizer, scheduler, and RNG state",
+  "security_review_required": true,
+  "redaction_count": 9
+}

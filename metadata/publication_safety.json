@@ -1,0 +1,278 @@
+{
+  "redactions": [
+    {
+      "path": "/hy-tmp/rwkv-skills-official/vendor/vllm-rwkv/docs/assets/contributing/vllm_bench_serve_timeline.html",
+      "rule": "credential_assignment",
+      "matches": 1
+    },
+    {
+      "path": "/hy-tmp/rwkv-skills-official/vendor/vllm-rwkv/docs/assets/contributing/vllm_bench_serve_timeline.html",
+      "rule": "credential_assignment",
+      "matches": 1
+    },
+    {
+      "path": "/hy-tmp/rwkv-skills-official/vendor/vllm-rwkv/docs/assets/contributing/vllm_bench_serve_timeline.html",
+      "rule": "credential_assignment",
+      "matches": 1
+    },
+    {
+      "path": "/hy-tmp/rwkv-skills-official/vendor/vllm-rwkv-torch/docs/assets/contributing/vllm_bench_serve_timeline.html",
+      "rule": "credential_assignment",
+      "matches": 1
+    },
+    {
+      "path": "/hy-tmp/rwkv-skills-official/vendor/vllm-rwkv-torch/docs/assets/contributing/vllm_bench_serve_timeline.html",
+      "rule": "credential_assignment",
+      "matches": 1
+    },
+    {
+      "path": "/hy-tmp/rwkv-skills-official/vendor/vllm-rwkv-torch/docs/assets/contributing/vllm_bench_serve_timeline.html",
+      "rule": "credential_assignment",
+      "matches": 1
+    },
+    {
+      "path": "/hy-tmp/vendor-cache/transformers-rwkv/src/transformers/testing_utils.py",
+      "rule": "hf_token",
+      "matches": 1
+    },
+    {
+      "path": "/hy-tmp/vendor-cache/transformers-rwkv-src/build/lib/transformers/testing_utils.py",
+      "rule": "hf_token",
+      "matches": 1
+    },
+    {
+      "path": "/hy-tmp/vendor-cache/transformers-rwkv-src/src/transformers/testing_utils.py",
+      "rule": "hf_token",
+      "matches": 1
+    }
+  ],
+  "exclusions": [
+    {
+      "path": "/hy-tmp/rwkv-skills-official/.env",
+      "reason": "credential_file"
+    },
+    {
+      "path": "/hy-tmp/rwkv-skills-official/vendor/vllm-rwkv-torch/vllm/_C.abi3.so",
+      "reason": "opaque_archive_or_build_artifact"
+    },
+    {
+      "path": "/hy-tmp/rwkv-skills-official/vendor/vllm-rwkv-torch/vllm/_C_stable_libtorch.abi3.so",
+      "reason": "opaque_archive_or_build_artifact"
+    },
+    {
+      "path": "/hy-tmp/rwkv-skills-official/vendor/vllm-rwkv-torch/vllm/_rapid_sampling.cpython-312-x86_64-linux-gnu.so",
+      "reason": "opaque_archive_or_build_artifact"
+    },
+    {
+      "path": "/hy-tmp/rwkv-skills-official/vendor/vllm-rwkv-torch/vllm/cumem_allocator.abi3.so",
+      "reason": "opaque_archive_or_build_artifact"
+    },
+    {
+      "path": "/hy-tmp/rwkv-skills-official/vendor/vllm-rwkv-torch/vllm/rwkv7_ops.abi3.so",
+      "reason": "opaque_archive_or_build_artifact"
+    },
+    {
+      "path": "/hy-tmp/vendor-cache/transformers-rwkv-07dcea.zip",
+      "reason": "opaque_archive_or_build_artifact"
+    },
+    {
+      "path": "/hy-tmp/runs/rwkv-g1k-1b-temp-6003.pth",
+      "reason": "weight_not_in_this_bundle"
+    },
+    {
+      "path": "/hy-tmp/runs/g1i_gsm8k_boxed_strictcot_continue_from_step105_fixed50_maxnew2048_micro3_dyn512_q32_r16_20260812_142929/final_step_155.pth",
+      "reason": "weight_not_in_this_bundle"
+    },
+    {
+      "path": "/hy-tmp/runs/g1i_step800_to_dapo_math17k_officialprompt_q32x16_cand64_max6144_ob512_continue800to1000_eval384_ckpt50_20260829_1810/final_step_1000.pth",
+      "reason": "weight_not_in_this_bundle"
+    },
+    {
+      "path": "/hy-tmp/runs/g1k_dapo_pass1_31_officialprompt_q32x16_cand64_max6144_ob512_step100to200_20260921_062417/best_full_eval.pth",
+      "reason": "weight_not_in_this_bundle"
+    },
+    {
+      "path": "/hy-tmp/runs/g1k_dapo_pass1_31_officialprompt_q32x16_cand64_max6144_ob512_step100to200_20260921_062417/final_step_200.pth",
+      "reason": "weight_not_in_this_bundle"
+    },
+    {
+      "path": "/hy-tmp/runs/g1k_dapo_pass1_31_officialprompt_q32x16_cand64_max6144_ob512_step200to300_20260922_093913/best_full_eval.pth",
+      "reason": "weight_not_in_this_bundle"
+    },
+    {
+      "path": "/hy-tmp/runs/g1k_dapo_pass1_31_officialprompt_q32x16_cand64_max6144_ob512_step200to300_20260922_093913/final_step_300.pth",
+      "reason": "weight_not_in_this_bundle"
+    },
+    {
+      "path": "/hy-tmp/runs/g1k_dapo_pass1_31_officialprompt_q32x16_cand64_max6144_ob512_step300to400_20260923_070337/best_full_eval.pth",
+      "reason": "weight_not_in_this_bundle"
+    },
+    {
+      "path": "/hy-tmp/runs/g1k_dapo_pass1_31_officialprompt_q32x16_cand64_max6144_ob512_step300to400_20260923_070337/final_step_400.pth",
+      "reason": "weight_not_in_this_bundle"
+    },
+    {
+      "path": "/hy-tmp/runs/g1k_dapo_pass1_31_officialprompt_q32x16_cand64_max6144_ob512_step400to500_20260924_051022/best_full_eval.pth",
+      "reason": "weight_not_in_this_bundle"
+    },
+    {
+      "path": "/hy-tmp/runs/g1k_dapo_pass1_31_officialprompt_q32x16_cand64_max6144_ob512_step400to500_20260924_051022/final_step_500.pth",
+      "reason": "weight_not_in_this_bundle"
+    },
+    {
+      "path": "/hy-tmp/runs/g1k_dapo_pass1_31_officialprompt_q32x16_cand64_max6144_ob512_step500to600_20260925_211542/best_full_eval.pth",
+      "reason": "weight_not_in_this_bundle"
+    },
+    {
+      "path": "/hy-tmp/runs/g1k_dapo_pass1_31_officialprompt_q32x16_cand64_max6144_ob512_step500to600_20260925_211542/final_step_600.pth",
+      "reason": "weight_not_in_this_bundle"
+    },
+    {
+      "path": "/hy-tmp/runs/g1k_dapo_pass1_31_officialprompt_q32x16_cand64_max6144_ob512_step600to700_20260926_224314/best_full_eval.pth",
+      "reason": "weight_not_in_this_bundle"
+    },
+    {
+      "path": "/hy-tmp/runs/g1k_dapo_pass1_31_officialprompt_q32x16_cand64_max6144_ob512_step600to700_20260926_224314/final_step_700.pth",
+      "reason": "weight_not_in_this_bundle"
+    },
+    {
+      "path": "/hy-tmp/runs/g1k_dapo_pass1_31_officialprompt_q32x16_cand64_max6144_ob512_step700to800_20260928_071906/best_full_eval.pth",
+      "reason": "weight_not_in_this_bundle"
+    },
+    {
+      "path": "/hy-tmp/runs/g1k_dapo_pass1_31_officialprompt_q32x16_cand64_max6144_ob512_step700to800_20260928_071906/final_step_800.pth",
+      "reason": "weight_not_in_this_bundle"
+    },
+    {
+      "path": "/hy-tmp/runs/g1k_dapo_pass1_31_officialprompt_q32x16_cand64_max6144_ob512_step800to900_20260929_172737/best_full_eval.pth",
+      "reason": "weight_not_in_this_bundle"
+    },
+    {
+      "path": "/hy-tmp/runs/g1k_dapo_pass1_31_officialprompt_q32x16_cand64_max6144_ob512_step800to900_20260929_172737/final_step_900.pth",
+      "reason": "weight_not_in_this_bundle"
+    },
+    {
+      "path": "/hy-tmp/runs/g1k_dapo_pass1_31_officialprompt_q32x16_cand64_max6144_ob512_step900to1000_20261001_014411/best_full_eval.pth",
+      "reason": "weight_not_in_this_bundle"
+    },
+    {
+      "path": "/hy-tmp/runs/g1k_dapo_pass1_31_officialprompt_q32x16_cand64_max6144_ob512_step900to1000_20261001_014411/final_step_1000.pth",
+      "reason": "weight_not_in_this_bundle"
+    },
+    {
+      "path": "/hy-tmp/runs/g1k_rl1000_openmath7752_sft_lr2e6_cosine_1ep_20261005/ckpt_step3682.pth",
+      "reason": "weight_not_in_this_bundle"
+    },
+    {
+      "path": "/hy-tmp/runs/g1k_rl1000_openmath7752_sft_lr2e6_cosine_1ep_20261005/model_step3682_infer.pth",
+      "reason": "weight_not_in_this_bundle"
+    },
+    {
+      "path": "/hy-tmp/runs/g1k_rl1000_teacher259_sft_lr2e6_s100_20261005/ckpt_step100.pth",
+      "reason": "weight_not_in_this_bundle"
+    },
+    {
+      "path": "/hy-tmp/runs/g1k_rl1000_teacher259_sft_lr2e6_s100_20261005/ckpt_step50.pth",
+      "reason": "weight_not_in_this_bundle"
+    },
+    {
+      "path": "/hy-tmp/runs/g1k_step1000_teacher_distill_pilot259_lr2e7_b2_s20_20261005/ckpt_step20.pth",
+      "reason": "weight_not_in_this_bundle"
+    },
+    {
+      "path": "/hy-tmp/runs/g1k_step1000_teacher_distill_pilot259_lr2e7_b2_s20_20261005/step20_infer.pth",
+      "reason": "weight_not_in_this_bundle"
+    },
+    {
+      "path": "/hy-tmp/runs/g1k_step1000_teacher_distill_pilot259_lr2e7_b2_s20_20261005/step20_model.pth",
+      "reason": "weight_not_in_this_bundle"
+    },
+    {
+      "path": "/hy-tmp/runs/g1k_step155_dapo_pass1_31_officialprompt_q32x16_cand64_max6144_ob512_step0to100_20260920_113659/best_full_eval.pth",
+      "reason": "weight_not_in_this_bundle"
+    },
+    {
+      "path": "/hy-tmp/runs/g1k_step155_dapo_pass1_31_officialprompt_q32x16_cand64_max6144_ob512_step0to100_20260920_113659/final_step_100.pth",
+      "reason": "weight_not_in_this_bundle"
+    },
+    {
+      "path": "/hy-tmp/runs/g1k_temp6003_gsm8k_boxed_strictcot_q8x16_cand32_max2048_step0to155_20260917_020430/best_full_eval.pth",
+      "reason": "weight_not_in_this_bundle"
+    },
+    {
+      "path": "/hy-tmp/runs/g1k_temp6003_gsm8k_boxed_strictcot_q8x16_cand32_max2048_step0to155_20260917_020430/checkpoint_step_100.pth",
+      "reason": "weight_not_in_this_bundle"
+    },
+    {
+      "path": "/hy-tmp/runs/g1k_temp6003_gsm8k_boxed_strictcot_q8x16_cand32_max2048_step0to155_20260917_020430/checkpoint_step_150.pth",
+      "reason": "weight_not_in_this_bundle"
+    },
+    {
+      "path": "/hy-tmp/runs/g1k_temp6003_gsm8k_boxed_strictcot_q8x16_cand32_max2048_step0to155_20260917_020430/checkpoint_step_50.pth",
+      "reason": "weight_not_in_this_bundle"
+    },
+    {
+      "path": "/hy-tmp/runs/g1k_temp6003_gsm8k_boxed_strictcot_q8x16_cand32_max2048_step0to155_20260917_020430/final_step_155.pth",
+      "reason": "weight_not_in_this_bundle"
+    },
+    {
+      "path": "/root/eval_transfer/models/best_full_eval.pth",
+      "reason": "weight_not_in_this_bundle"
+    },
+    {
+      "path": "/root/eval_transfer/models/rwkv7-g1i_preview5445-1.5b-20260729-ctx16384.pth",
+      "reason": "weight_not_in_this_bundle"
+    }
+  ],
+  "symlinks": [
+    {
+      "path": "/hy-tmp/vendor-cache/transformers-rwkv/AGENTS.md",
+      "target": ".ai/AGENTS.md"
+    },
+    {
+      "path": "/hy-tmp/vendor-cache/transformers-rwkv/CLAUDE.md",
+      "target": ".ai/AGENTS.md"
+    },
+    {
+      "path": "/hy-tmp/vendor-cache/transformers-rwkv/docs/source/en/contributing.md",
+      "target": "../../../CONTRIBUTING.md"
+    },
+    {
+      "path": "/hy-tmp/vendor-cache/transformers-rwkv/docs/source/en/notebooks.md",
+      "target": "../../../notebooks/README.md"
+    },
+    {
+      "path": "/hy-tmp/runs/latest_eval_g1i_gsm8k_with_responses",
+      "target": "/hy-tmp/runs/eval_g1i_gsm8k_base_vs_step85_with_responses_20260812_073500"
+    },
+    {
+      "path": "/hy-tmp/runs/latest_g1i_gsm8k_continue_step105_fixed50",
+      "target": "/hy-tmp/runs/g1i_gsm8k_boxed_strictcot_continue_from_step105_fixed50_maxnew2048_micro3_dyn512_q32_r16_20260812_142929"
+    },
+    {
+      "path": "/hy-tmp/runs/latest_g1i_gsm8k_continue_step85",
+      "target": "/hy-tmp/runs/g1i_gsm8k_boxed_strictcot_continue_from_step85_maxnew2048_micro3_dyn512_q32_r16_100_20260812_082824"
+    },
+    {
+      "path": "/hy-tmp/runs/latest_g1i_step85_to_dapo",
+      "target": "/hy-tmp/runs/g1i_step85_to_dapo_boxed_strictcot_maxnew2048_micro3_dyn512_q32_r16_200_20260812_023404"
+    },
+    {
+      "path": "/hy-tmp/runs/latest_eval_g1i_gsm8k_with_responses",
+      "target": "/hy-tmp/runs/eval_g1i_gsm8k_base_vs_step85_with_responses_20260812_073500"
+    },
+    {
+      "path": "/hy-tmp/runs/latest_g1i_gsm8k_continue_step105_fixed50",
+      "target": "/hy-tmp/runs/g1i_gsm8k_boxed_strictcot_continue_from_step105_fixed50_maxnew2048_micro3_dyn512_q32_r16_20260812_142929"
+    },
+    {
+      "path": "/hy-tmp/runs/latest_g1i_gsm8k_continue_step85",
+      "target": "/hy-tmp/runs/g1i_gsm8k_boxed_strictcot_continue_from_step85_maxnew2048_micro3_dyn512_q32_r16_100_20260812_082824"
+    },
+    {
+      "path": "/hy-tmp/runs/latest_g1i_step85_to_dapo",
+      "target": "/hy-tmp/runs/g1i_step85_to_dapo_boxed_strictcot_maxnew2048_micro3_dyn512_q32_r16_200_20260812_023404"
+    }
+  ],
+  "note": "Sensitive values are not recorded. Original server files were not changed."
+}
