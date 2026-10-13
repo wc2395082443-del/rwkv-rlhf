@@ -1,0 +1,2 @@
+cd "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810"
+python3 eval_gsm8k_rwkvskills_twostage.py --model "/hy-tmp/runs/g1i_gsm8k_boxed_strictcot_continue_from_step105_fixed50_maxnew2048_micro3_dyn512_q32_r16_20260812_142929/final_step_155.pth" --tokenizer "/hy-tmp/RWKV-v7/rwkv_vocab_v20230424.txt" --eval_jsonl "/hy-tmp/data/gsm8k/gsm8k_test_formatted.jsonl" --out_dir "/hy-tmp/runs/eval_gsm8k_rwkvskills_twostage_base_vs_step155_20260814_035533/step155" --batch 128 --cot_max_tokens 4096 --final_max_tokens 128

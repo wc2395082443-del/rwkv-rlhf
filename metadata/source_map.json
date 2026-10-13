@@ -1,0 +1,1544 @@
+[
+  {
+    "repository_path": "code/rl/cuda/wkv7_cuda.cu",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/cuda/wkv7_cuda.cu",
+    "bytes": 4559,
+    "sha256": "fbcab19d8e74cf7677cdcd70d5843806a0c3016fd9d795a6b87820d22ba21208"
+  },
+  {
+    "repository_path": "code/rl/cuda/wkv7_op.cpp",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/cuda/wkv7_op.cpp",
+    "bytes": 2013,
+    "sha256": "6c782f172503a2463196ce92e3d32ce291996702127d980c0adb2aa457bdad23"
+  },
+  {
+    "repository_path": "code/rl/cuda/wkv7state_cuda.cu",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/cuda/wkv7state_cuda.cu",
+    "bytes": 6262,
+    "sha256": "bfcfc358c9f32df4388f5ae08d205bd199277b8a01ef740994c1235569a66b6b"
+  },
+  {
+    "repository_path": "code/rl/cuda/wkv7state_op.cpp",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/cuda/wkv7state_op.cpp",
+    "bytes": 2360,
+    "sha256": "40c7c327791c80e02caa0c80fc40217c2e9bc658ef579f6f7dfe157f8073fda8"
+  },
+  {
+    "repository_path": "code/rl/eval_gsm8k_boxed_strict_reward.py",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/eval_gsm8k_boxed_strict_reward.py",
+    "bytes": 8316,
+    "sha256": "2b00dd4d4978eab5bb36f9c6fcc81f662bf37a4328cc2fd8eae7014f14e61c98"
+  },
+  {
+    "repository_path": "code/rl/eval_gsm8k_rwkvskills_twostage.py",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/eval_gsm8k_rwkvskills_twostage.py",
+    "bytes": 7191,
+    "sha256": "8df17e6b58a9894ab07c8977d3e82aefd9936f47f1066c1914d589c8fdee0da8"
+  },
+  {
+    "repository_path": "code/rl/eval_thinking_cot_no_bos_diagnostic.py",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/eval_thinking_cot_no_bos_diagnostic.py",
+    "bytes": 27222,
+    "sha256": "f13cec9f794a48a16ee8cc18bd4c5f265862d6964028c5a30a5e75c42e152aae"
+  },
+  {
+    "repository_path": "code/rl/eval_thinking_cot_officialprompt.py",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/eval_thinking_cot_officialprompt.py",
+    "bytes": 27903,
+    "sha256": "83aaa5c6417625760bea5911022629bbdad15373d34996a3308f30b9f7eea3b1"
+  },
+  {
+    "repository_path": "code/rl/eval_thinking_cot_strict.py",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/eval_thinking_cot_strict.py",
+    "bytes": 27147,
+    "sha256": "ac562d9dd1920f5975bb36bf98d9c4ce45574fa248402e17519501ab2640aab6"
+  },
+  {
+    "repository_path": "code/rl/eval_thinking_cot_strict_rollout_sampler.py",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/eval_thinking_cot_strict_rollout_sampler.py",
+    "bytes": 27515,
+    "sha256": "da3b36c404442bd47b59e5bd9d5033f41bfe4dee876351dbaa849246a4ee925e"
+  },
+  {
+    "repository_path": "code/rl/eval_thinking_cot_strict_topk0_fixed.py",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/eval_thinking_cot_strict_topk0_fixed.py",
+    "bytes": 27606,
+    "sha256": "cb45b33d6134cd34dc0eedf32bd26644399dc00418c2c9ef79300f9e0379b27a"
+  },
+  {
+    "repository_path": "code/rl/infer.py",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/infer.py",
+    "bytes": 22182,
+    "sha256": "62fb2af90addfec9aba3ddfc25ec24f2ffd5b0ba9932a1ef1360444f8dc15a3d"
+  },
+  {
+    "repository_path": "code/rl/infer_gpu_buffered_compact.py",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/infer_gpu_buffered_compact.py",
+    "bytes": 30484,
+    "sha256": "8c587532c500640f6bb07720afbfa17309f891991e5f4345788819544d0722df"
+  },
+  {
+    "repository_path": "code/rl/offline_pass32_screen.py",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/offline_pass32_screen.py",
+    "bytes": 10442,
+    "sha256": "a31d9c818dbe68254e4d68bdbc11c4ca2f3053eecc02809f7d6c45c055c10890"
+  },
+  {
+    "repository_path": "code/rl/plot_metrics.py",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/plot_metrics.py",
+    "bytes": 10764,
+    "sha256": "c3ff78522a785063980e4a34d7011b4cbbcb7561edb74dd542e6c35c43515340"
+  },
+  {
+    "repository_path": "code/rl/reference/rwkv7.py",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/reference/rwkv7.py",
+    "bytes": 22246,
+    "sha256": "abb45c79de09f995f999fbebee62caac49899c7e9caf15ca9c77b1a6c33f4134"
+  },
+  {
+    "repository_path": "code/rl/reference/rwkv7_gpu_tokens_dtype_aligned.py",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/reference/rwkv7_gpu_tokens_dtype_aligned.py",
+    "bytes": 23134,
+    "sha256": "eb6ed7a012b3b4f8e3166962a550b01079f1ec6cddd0a6cec3da963376dd46a0"
+  },
+  {
+    "repository_path": "code/rl/reference/utils.py",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/reference/utils.py",
+    "bytes": 5410,
+    "sha256": "b08aa9580696c2baa58de483ae61e074a4c08ab62441ce439c2f6759871d5f45"
+  },
+  {
+    "repository_path": "code/rl/requirements.txt",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/requirements.txt",
+    "bytes": 73,
+    "sha256": "295bd5fb4540b475c69d7f4ad4a97f52fabf679a1cb81977e3ee99a7322ecdb6"
+  },
+  {
+    "repository_path": "code/rl/reward.py",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/reward.py",
+    "bytes": 22803,
+    "sha256": "4be735bbbf51403eb502b85f9593a351b5193520cb0c533968852a72764d4b97"
+  },
+  {
+    "repository_path": "code/rl/rl_profile_detailed.py",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/rl_profile_detailed.py",
+    "bytes": 118316,
+    "sha256": "6ef6fa967c3bd13d560a9d72b777e58fa4873f0a487d2a53c516d5fb2aa3fbf9"
+  },
+  {
+    "repository_path": "code/rl/rl_profile_step.py",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/rl_profile_step.py",
+    "bytes": 116999,
+    "sha256": "2710150bf8a31b0a8d9252c534da0f1d827247b0b980ce8a61b144b047fa4fd4"
+  },
+  {
+    "repository_path": "code/rl/run_g1h_gsm8k.sh",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/run_g1h_gsm8k.sh",
+    "bytes": 4418,
+    "sha256": "a0891edf3bc7583488903d24c48e1e689e066c59754746abd986c5289d00f6a4"
+  },
+  {
+    "repository_path": "code/rl/run_gsm8k_strict_quality_gate_nokl_100.sh",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/run_gsm8k_strict_quality_gate_nokl_100.sh",
+    "bytes": 2972,
+    "sha256": "df2d1b2767629a7fbd76e1a9cbc3ea66f33030adeb30d92227246c30fbe395f7"
+  },
+  {
+    "repository_path": "code/rl/run_gsm8k_strict_quality_gate_nokl_topp1_100.sh",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/run_gsm8k_strict_quality_gate_nokl_topp1_100.sh",
+    "bytes": 2971,
+    "sha256": "dedea4d603edc77f9184398742c6209d273fb92891d53b44de83a5a695149ee8"
+  },
+  {
+    "repository_path": "code/rl/run_strict_quality_gate_20.sh",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/run_strict_quality_gate_20.sh",
+    "bytes": 2983,
+    "sha256": "284f7adb3a9dc1e722186ba38b46ec9cf35d3e518cee7a90f7b9fd04f90597c3"
+  },
+  {
+    "repository_path": "code/rl/run_strict_quality_gate_continue_200.sh",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/run_strict_quality_gate_continue_200.sh",
+    "bytes": 2973,
+    "sha256": "982152d027ed80bbe62347464869871adb8f8739a1ab200783c5e083833506ac"
+  },
+  {
+    "repository_path": "code/rl/run_t1_topp06_gate.sh",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/run_t1_topp06_gate.sh",
+    "bytes": 4320,
+    "sha256": "3c41d5ef52d3d93854917a9e8c568b2d486292c9a4e746e990bde5a0f30a21b7"
+  },
+  {
+    "repository_path": "code/rl/run_t1_topp095_gate.sh",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/run_t1_topp095_gate.sh",
+    "bytes": 4322,
+    "sha256": "0fa26d9c624a889f54bc608d162cc40d670357cb8ef1afc0a9dcaf0abb6ff1e7"
+  },
+  {
+    "repository_path": "code/rl/rwkv7_trainable.py",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/rwkv7_trainable.py",
+    "bytes": 24987,
+    "sha256": "54c7ed59b17c9a8caf8737b579e80dc01fea40aa5be115bd1c6b671aab0e7ef9"
+  },
+  {
+    "repository_path": "code/rl/src/__init__.py",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/src/__init__.py",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "repository_path": "code/rl/src/binidx.py",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/src/binidx.py",
+    "bytes": 8872,
+    "sha256": "92f5ab622335e235fcb37be8191aeec10165b6ee8192827a681bd38e00a7978d"
+  },
+  {
+    "repository_path": "code/rl/src/dataset.py",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/src/dataset.py",
+    "bytes": 2609,
+    "sha256": "1aee7e31a8f139a693c587bedc654211f3e4c5e17e52e820da6e3e93b12399b7"
+  },
+  {
+    "repository_path": "code/rl/src/model.py",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/src/model.py",
+    "bytes": 18812,
+    "sha256": "b446483a5f898e3d7516501c06f8cbeca7d514b45472ff2874ad7cb415964dbd"
+  },
+  {
+    "repository_path": "code/rl/src/trainer.py",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/src/trainer.py",
+    "bytes": 8827,
+    "sha256": "fbf707d905509e0f7d4e2304a471a622f4f725e37718b703b4d4c835036ab539"
+  },
+  {
+    "repository_path": "code/rl/test_degeneration_gate.py",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/test_degeneration_gate.py",
+    "bytes": 1880,
+    "sha256": "1a63661538ba648b5fd50004eb3079b465788f344b0fa117b23dd902a9b6c531"
+  },
+  {
+    "repository_path": "code/rl/test_strict_cot.py",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/test_strict_cot.py",
+    "bytes": 4633,
+    "sha256": "3756e92599f5c938b32201a08c3857a66994e8d0ba9614e079640883eca399bc"
+  },
+  {
+    "repository_path": "code/rl/train.py",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/train.py",
+    "bytes": 56168,
+    "sha256": "0ecde3e030d4ebe29d749bf1bcfeb9af7be1de7c1ddbdd9c5de0c02b6c7defea"
+  },
+  {
+    "repository_path": "code/rl/train_rl_thinking_cot_officialprompt_eval512_schedopt_earlystop.py",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/train_rl_thinking_cot_officialprompt_eval512_schedopt_earlystop.py",
+    "bytes": 112840,
+    "sha256": "21286f281f7ce884d7f63e712199c9391859cf0b827e72e44d9489c45b21d7aa"
+  },
+  {
+    "repository_path": "code/rl/train_rl_thinking_cot_officialprompt_eval512_schedopt_earlystop_step201to300.py",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/train_rl_thinking_cot_officialprompt_eval512_schedopt_earlystop_step201to300.py",
+    "bytes": 112840,
+    "sha256": "174c9bda53b0a4ef19535e801103ad217f60a2d8e5c160d0502e1489e396815c"
+  },
+  {
+    "repository_path": "code/rl/train_rl_thinking_cot_officialprompt_eval512_schedopt_earlystop_step201to300.py.bak_evalbatch512_20260824_122110",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/train_rl_thinking_cot_officialprompt_eval512_schedopt_earlystop_step201to300.py.bak_evalbatch512_20260824_122110",
+    "bytes": 112840,
+    "sha256": "21286f281f7ce884d7f63e712199c9391859cf0b827e72e44d9489c45b21d7aa"
+  },
+  {
+    "repository_path": "code/rl/train_rl_thinking_cot_officialprompt_eval512_schedopt_earlystop_step201to300.py.bak_evalbatch512_20260824_122123",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/train_rl_thinking_cot_officialprompt_eval512_schedopt_earlystop_step201to300.py.bak_evalbatch512_20260824_122123",
+    "bytes": 112840,
+    "sha256": "21286f281f7ce884d7f63e712199c9391859cf0b827e72e44d9489c45b21d7aa"
+  },
+  {
+    "repository_path": "code/rl/train_rl_thinking_cot_officialprompt_schedopt_earlystop.py",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/train_rl_thinking_cot_officialprompt_schedopt_earlystop.py",
+    "bytes": 112839,
+    "sha256": "5dbf1611ad298bd77140306fe51eff47cbfd91341acfb76c0741374cdd431dfa"
+  },
+  {
+    "repository_path": "code/rl/train_rl_thinking_cot_strict.py",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/train_rl_thinking_cot_strict.py",
+    "bytes": 105676,
+    "sha256": "9ee23a6b65d41cffb6ab3d35bf246bb8730d7e4b9cc19948a3daba37baffe106"
+  },
+  {
+    "repository_path": "code/rl/train_rl_thinking_cot_strict.py.bak_before_fp32_master_",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/train_rl_thinking_cot_strict.py.bak_before_fp32_master_",
+    "bytes": 100905,
+    "sha256": "7ca7cde710787ce4ec6e85c3bab0abc2bf71182cc7564b3926332f55bb4e16d6"
+  },
+  {
+    "repository_path": "code/rl/train_rl_thinking_cot_strict.py.bak_before_fp32_master_20260810_071253",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/train_rl_thinking_cot_strict.py.bak_before_fp32_master_20260810_071253",
+    "bytes": 100905,
+    "sha256": "7ca7cde710787ce4ec6e85c3bab0abc2bf71182cc7564b3926332f55bb4e16d6"
+  },
+  {
+    "repository_path": "code/rl/train_rl_thinking_cot_strict.py.bak_before_no_entropy_graph",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/train_rl_thinking_cot_strict.py.bak_before_no_entropy_graph",
+    "bytes": 104140,
+    "sha256": "4bfeacf14ec6035580c1c566515ed225064850a52a57013417c536601a566b88"
+  },
+  {
+    "repository_path": "code/rl/train_rl_thinking_cot_strict.py.bak_before_skip_ref_kl0",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/train_rl_thinking_cot_strict.py.bak_before_skip_ref_kl0",
+    "bytes": 103876,
+    "sha256": "f530a630c6aef23c3fff907ce07b673498746f90fb2ef0abb7762a7a77ff265a"
+  },
+  {
+    "repository_path": "code/rl/train_rl_thinking_cot_strict.py.bak_before_streaming_fp32_adamw",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/train_rl_thinking_cot_strict.py.bak_before_streaming_fp32_adamw",
+    "bytes": 103218,
+    "sha256": "dfe9f05ac56359f781062e9fe0d4926988f3481178e62a1b374a8f30dd6e2779"
+  },
+  {
+    "repository_path": "code/rl/train_rl_thinking_cot_strict.py.bak_before_zero_after_step",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/train_rl_thinking_cot_strict.py.bak_before_zero_after_step",
+    "bytes": 105141,
+    "sha256": "79184b825e44cfb0a2ca913d5e780d77999106b27e0ea9fde8b9fb4ae740d349"
+  },
+  {
+    "repository_path": "code/rl/train_rl_thinking_cot_strict_boxedprompt_schedopt.py",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/train_rl_thinking_cot_strict_boxedprompt_schedopt.py",
+    "bytes": 108509,
+    "sha256": "7a41786429ad218a7cd31a7d1387ab82fef22911c977d06af6acdaf218c211f2"
+  },
+  {
+    "repository_path": "code/rl/train_rl_thinking_cot_strict_boxedprompt_schedopt_earlystop.py",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/train_rl_thinking_cot_strict_boxedprompt_schedopt_earlystop.py",
+    "bytes": 112369,
+    "sha256": "b5fd6a3129ba985e23d67b6e7c1aaa500a57543a032745e64d2a772c80dd27ee"
+  },
+  {
+    "repository_path": "code/rl/train_rl_thinking_cot_strict_phasebench.py",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/train_rl_thinking_cot_strict_phasebench.py",
+    "bytes": 106664,
+    "sha256": "bab1b17ef21980602d7310253372ad156eac72fec0bf1b41d91d3cc26e6f7eac"
+  },
+  {
+    "repository_path": "code/rl/train_rl_thinking_cot_strict_posthoc_repeat.py",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/train_rl_thinking_cot_strict_posthoc_repeat.py",
+    "bytes": 105786,
+    "sha256": "d0d0e6f258f2ed4ec8a5c73cb2c2bef03037a20f55195130a7053dc617ff2e5a"
+  },
+  {
+    "repository_path": "code/rl/train_rl_thinking_cot_strict_posthoc_repeat_schedopt.py",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/train_rl_thinking_cot_strict_posthoc_repeat_schedopt.py",
+    "bytes": 106841,
+    "sha256": "50b6ca118a425049ca8a6f8fabdf72c34406d0aad5905629a74093401f36b56b"
+  },
+  {
+    "repository_path": "code/rl/utils.py",
+    "server_path": "/hy-tmp/RWKV7-g1i-strict-quality-gate-adamw-nooffload-20260810/utils.py",
+    "bytes": 4694,
+    "sha256": "cbf2f881a29fe98d7280e22862d1998cc5ca3983af6da3df186b73a1a622902a"
+  },
+  {
+    "repository_path": "code/scripts/bench_ultramath_throughput.py",
+    "server_path": "/hy-tmp/bench_ultramath_throughput.py",
+    "bytes": 2341,
+    "sha256": "ea7ec81661db1558f342a46e97a6c4c7f427da14c43e93d4fec8df72c1d3eed1"
+  },
+  {
+    "repository_path": "code/scripts/combine_training_plot.py",
+    "server_path": "/hy-tmp/combine_training_plot.py",
+    "bytes": 4326,
+    "sha256": "5761823564672d5ded7b1ebc61c4f41dc9d961ab83d374e54e71ff317e1e8509"
+  },
+  {
+    "repository_path": "code/scripts/dapo_teacher_8k_compare.py",
+    "server_path": "/hy-tmp/dapo_teacher_8k_compare.py",
+    "bytes": 3924,
+    "sha256": "4db7828617cd9e13b560184f75a92fca7c3e16294556fd94cb26b90a97819a01"
+  },
+  {
+    "repository_path": "code/scripts/dapo_teacher_8k_compare_rwkvformat.py",
+    "server_path": "/hy-tmp/dapo_teacher_8k_compare_rwkvformat.py",
+    "bytes": 3918,
+    "sha256": "376617ca39d3acbf5f5dc792142af5f96871411e6aee2037adec04c3ef1ff517"
+  },
+  {
+    "repository_path": "code/scripts/download_g1k_parallel.sh",
+    "server_path": "/hy-tmp/download_g1k_parallel.sh",
+    "bytes": 1086,
+    "sha256": "d84670cf04ec8e81f37026732d8baba51bb2232c49dd7e963d384817ece4c195"
+  },
+  {
+    "repository_path": "code/scripts/download_math_teachers.sh",
+    "server_path": "/hy-tmp/download_math_teachers.sh",
+    "bytes": 616,
+    "sha256": "f3e762586476780d7c9da30a12c19b6cd0b6acdfb1d753ab40b4db26bfe70aa3"
+  },
+  {
+    "repository_path": "code/scripts/download_math_teachers_mirror.sh",
+    "server_path": "/hy-tmp/download_math_teachers_mirror.sh",
+    "bytes": 645,
+    "sha256": "7661e5e376e9a25c1becfa3a9b712deb08769766b1c9431043e79094391239cc"
+  },
+  {
+    "repository_path": "code/scripts/eval_ultramath_optimized.py",
+    "server_path": "/hy-tmp/eval_ultramath_optimized.py",
+    "bytes": 22061,
+    "sha256": "750840de8ee0d3092039e0b0ac8507fcb2bf14668125350996c15b8f28c0a3c7"
+  },
+  {
+    "repository_path": "code/scripts/evals/all_checkpoints_math500_gsm8k_20260827_1210/run_eval_all.sh",
+    "server_path": "/hy-tmp/evals/all_checkpoints_math500_gsm8k_20260827_1210/run_eval_all.sh",
+    "bytes": 2794,
+    "sha256": "4bffd7c7e914488b6dca8b477ad80d49b47dc579683251c31f05e6b64484dfed"
+  },
+  {
+    "repository_path": "code/scripts/evals/collect_benchmarks.py",
+    "server_path": "/hy-tmp/evals/collect_benchmarks.py",
+    "bytes": 2400,
+    "sha256": "744801aaff87e1234cea4d9f4ff9f975e2c9fe470c5d71a25398c58c3bd04f5d"
+  },
+  {
+    "repository_path": "code/scripts/evals/eval_rwkv_prompt.py",
+    "server_path": "/hy-tmp/evals/eval_rwkv_prompt.py",
+    "bytes": 23114,
+    "sha256": "8d88e244887fa97a92eb3d5d1baac5810c0cf679bdc69d0dd3ea1aa151025637"
+  },
+  {
+    "repository_path": "code/scripts/evals/g1k_temp6003_gsm8k_full_baseline_20260917/run.sh",
+    "server_path": "/hy-tmp/evals/g1k_temp6003_gsm8k_full_baseline_20260917/run.sh",
+    "bytes": 678,
+    "sha256": "5a1fce933c33cf4e8a08d071dc765359dddb48e97b77fe795718efc82a8ca159"
+  },
+  {
+    "repository_path": "code/scripts/evals/legacy_ckpt_eval_20260827/run_all.sh",
+    "server_path": "/hy-tmp/evals/legacy_ckpt_eval_20260827/run_all.sh",
+    "bytes": 3474,
+    "sha256": "7a0e953abd6cabe7225c0b54280c6d2fa030a1f1e58be83734b6129723152d2f"
+  },
+  {
+    "repository_path": "code/scripts/evals/legacy_math_eval/eval_thinking_cot_strict.py",
+    "server_path": "/hy-tmp/evals/legacy_math_eval/eval_thinking_cot_strict.py",
+    "bytes": 27006,
+    "sha256": "f5902dc6cdd6fe3666b97a39dffeb31a3ba80fe53abd5e245770f442ddf602dc"
+  },
+  {
+    "repository_path": "code/scripts/evals/legacy_math_eval/reward.py",
+    "server_path": "/hy-tmp/evals/legacy_math_eval/reward.py",
+    "bytes": 18470,
+    "sha256": "19eaaafbbf19be6a68af68e8bc508ab156ea2906b741e8a92dc18f2d324a62bb"
+  },
+  {
+    "repository_path": "code/scripts/evals/monitor_missing_five_20260905.py",
+    "server_path": "/hy-tmp/evals/monitor_missing_five_20260905.py",
+    "bytes": 10273,
+    "sha256": "39218c8ae37a5bf87892b834e859e034692be9fc83cd353ba3af62933a9b082e"
+  },
+  {
+    "repository_path": "code/scripts/evals/official_ckpt_eval_20260827/run.sh",
+    "server_path": "/hy-tmp/evals/official_ckpt_eval_20260827/run.sh",
+    "bytes": 3470,
+    "sha256": "7e3e0ace7517a2482e2c57e800472b107f633b657138adc80b6cc85520380fec"
+  },
+  {
+    "repository_path": "code/scripts/evals/official_flower_ckpt_eval_20260827/eval_math500_flower.py",
+    "server_path": "/hy-tmp/evals/official_flower_ckpt_eval_20260827/eval_math500_flower.py",
+    "bytes": 21982,
+    "sha256": "506a6593198387e9e6fd181167a1eaf093c3e229a3e6c105056969c1bd480e34"
+  },
+  {
+    "repository_path": "code/scripts/evals/official_flower_ckpt_eval_20260827/run.sh",
+    "server_path": "/hy-tmp/evals/official_flower_ckpt_eval_20260827/run.sh",
+    "bytes": 3494,
+    "sha256": "105d8d753e080a0d4ead210411cea8d2a76561ce83428825fd6a100a02c81201"
+  },
+  {
+    "repository_path": "code/scripts/evals/run_all_five_benchmarks_checkpoints_20260905.sh",
+    "server_path": "/hy-tmp/evals/run_all_five_benchmarks_checkpoints_20260905.sh",
+    "bytes": 5789,
+    "sha256": "9761e10c3df09ebcaa45e00327e352ac7103e55c8776b75a3eb386d89f3d5512"
+  },
+  {
+    "repository_path": "code/scripts/evals/run_g1i_baseline_eval_20260906.sh",
+    "server_path": "/hy-tmp/evals/run_g1i_baseline_eval_20260906.sh",
+    "bytes": 2217,
+    "sha256": "896081a9410c771f74b03d5870e8de67e71cb0a17fcb28a12ca08bd072cde2ef"
+  },
+  {
+    "repository_path": "code/scripts/evals/run_missing_five_20260905.sh",
+    "server_path": "/hy-tmp/evals/run_missing_five_20260905.sh",
+    "bytes": 4344,
+    "sha256": "ae6dc9229da73e71e6ae921fba86cf9451e2332754cd044f6af0379e44b48f6a"
+  },
+  {
+    "repository_path": "code/scripts/evals/run_openmath_sft_benchmarks_20261005.sh",
+    "server_path": "/hy-tmp/evals/run_openmath_sft_benchmarks_20261005.sh",
+    "bytes": 2082,
+    "sha256": "08023812f68b77a9e8858d0b097959ba1c5d38ee0d4e8a943b19a9dab06c6fc2"
+  },
+  {
+    "repository_path": "code/scripts/evals/run_rwkv_prompt_sft_compare_20261006.sh",
+    "server_path": "/hy-tmp/evals/run_rwkv_prompt_sft_compare_20261006.sh",
+    "bytes": 1491,
+    "sha256": "0d2c975221dee7fa51276c14e93c85f75f370d2c84d72388d688c4cc6ea0e5d5"
+  },
+  {
+    "repository_path": "code/scripts/evals/run_sft_rwkv_five_benchmarks_20261006.sh",
+    "server_path": "/hy-tmp/evals/run_sft_rwkv_five_benchmarks_20261006.sh",
+    "bytes": 1340,
+    "sha256": "22474dfa8a7d6f2c0af547ca9ac617737ff877a1760ed28450ee263694a59a1a"
+  },
+  {
+    "repository_path": "code/scripts/evals/run_sft_rwkv_remaining_bsz512_20261006.sh",
+    "server_path": "/hy-tmp/evals/run_sft_rwkv_remaining_bsz512_20261006.sh",
+    "bytes": 1285,
+    "sha256": "53656d4d5421f8434d1fd3ee7d002b19b05ac856edd7ad5aaea13931bb263b78"
+  },
+  {
+    "repository_path": "code/scripts/evals/run_step1000_train_prompt_20261007.sh",
+    "server_path": "/hy-tmp/evals/run_step1000_train_prompt_20261007.sh",
+    "bytes": 1614,
+    "sha256": "582701c34ba3c83327919d7b5e3d1e8f6c90986c789b493812afee2005f46a22"
+  },
+  {
+    "repository_path": "code/scripts/evals/run_step1300_official_flower.sh",
+    "server_path": "/hy-tmp/evals/run_step1300_official_flower.sh",
+    "bytes": 1453,
+    "sha256": "4b353e43276de17faf1aae2cdd14ac4d685466378ac9addc10685f93e173ccab"
+  },
+  {
+    "repository_path": "code/scripts/evals/run_step800_official_flower_eval.sh",
+    "server_path": "/hy-tmp/evals/run_step800_official_flower_eval.sh",
+    "bytes": 1649,
+    "sha256": "c0bd8d6675161265b1e60eebc49b68d61eb2f10fb5bc960f4cb6ab73c303e347"
+  },
+  {
+    "repository_path": "code/scripts/evals/ultramath_step1000_pass16_20260910/eval_math500_flower.py",
+    "server_path": "/hy-tmp/evals/ultramath_step1000_pass16_20260910/eval_math500_flower.py",
+    "bytes": 21982,
+    "sha256": "506a6593198387e9e6fd181167a1eaf093c3e229a3e6c105056969c1bd480e34"
+  },
+  {
+    "repository_path": "code/scripts/evals/ultramath_step1000_pass16_20260910/eval_math500_flower_optimized.py",
+    "server_path": "/hy-tmp/evals/ultramath_step1000_pass16_20260910/eval_math500_flower_optimized.py",
+    "bytes": 22061,
+    "sha256": "750840de8ee0d3092039e0b0ac8507fcb2bf14668125350996c15b8f28c0a3c7"
+  },
+  {
+    "repository_path": "code/scripts/handoff_ultramath.py",
+    "server_path": "/hy-tmp/handoff_ultramath.py",
+    "bytes": 2012,
+    "sha256": "0a419be2ae5c6ec893ef15a83fe7f996421f638668febb038c1b22f4dd818509"
+  },
+  {
+    "repository_path": "code/scripts/launch_g1k_dapo_pass1_31_stage1_0to100.sh",
+    "server_path": "/hy-tmp/launch_g1k_dapo_pass1_31_stage1_0to100.sh",
+    "bytes": 3147,
+    "sha256": "1e3f25e87a027ca0413e2470bee795f48e48b6f7c6358a50704942ca38ca9fdc"
+  },
+  {
+    "repository_path": "code/scripts/launch_g1k_dapo_pass1_31_stage2_100to200.sh",
+    "server_path": "/hy-tmp/launch_g1k_dapo_pass1_31_stage2_100to200.sh",
+    "bytes": 3151,
+    "sha256": "e3a60127aa98a105f9ccf114984428820c63a6dca0201bd22af3713e2306e1d6"
+  },
+  {
+    "repository_path": "code/scripts/launch_g1k_dapo_pass1_31_stage3_200to300.sh",
+    "server_path": "/hy-tmp/launch_g1k_dapo_pass1_31_stage3_200to300.sh",
+    "bytes": 3145,
+    "sha256": "62623c56a5373e8c0df4377237588e2bec67b15359437e21f475ec645000a2da"
+  },
+  {
+    "repository_path": "code/scripts/launch_g1k_dapo_pass1_31_stage4_300to400.sh",
+    "server_path": "/hy-tmp/launch_g1k_dapo_pass1_31_stage4_300to400.sh",
+    "bytes": 3145,
+    "sha256": "f20dd6a1db8ad6b3a8411c7014e31c600f39137efbd1ddd96219571a95983f90"
+  },
+  {
+    "repository_path": "code/scripts/launch_g1k_dapo_stage1_0to100.sh",
+    "server_path": "/hy-tmp/launch_g1k_dapo_stage1_0to100.sh",
+    "bytes": 3140,
+    "sha256": "6e94f81a8593dbf617dcd62085e1902097d1c27f3908bd753340b22313f87cc7"
+  },
+  {
+    "repository_path": "code/scripts/launch_g1k_pass32zero_rl.sh",
+    "server_path": "/hy-tmp/launch_g1k_pass32zero_rl.sh",
+    "bytes": 3232,
+    "sha256": "0401e31b51568e0a9a4a3157a10ca65fec0b46e7ab3f6461d403b5f31e897b7e"
+  },
+  {
+    "repository_path": "code/scripts/launch_g1k_stage5_after400.sh",
+    "server_path": "/hy-tmp/launch_g1k_stage5_after400.sh",
+    "bytes": 3160,
+    "sha256": "1cfba367e6c446194b42a62faaf6764ae3ff99a764d788ba00e731998a252bcc"
+  },
+  {
+    "repository_path": "code/scripts/launch_g1k_step500to600.sh",
+    "server_path": "/hy-tmp/launch_g1k_step500to600.sh",
+    "bytes": 3024,
+    "sha256": "88ab2c9693b19b4a487a6c835828443173498d0ab9551ea346d0113539798f54"
+  },
+  {
+    "repository_path": "code/scripts/launch_g1k_step600to700_wait.sh",
+    "server_path": "/hy-tmp/launch_g1k_step600to700_wait.sh",
+    "bytes": 3158,
+    "sha256": "93e3053c958090daf0b56f09fb6495e84768db7a2f86b271618319db06635db6"
+  },
+  {
+    "repository_path": "code/scripts/launch_g1k_step700to800.sh",
+    "server_path": "/hy-tmp/launch_g1k_step700to800.sh",
+    "bytes": 2979,
+    "sha256": "5f721b33d48cc2311447517008219e86f84b90a6935fdfaa7e5bd82d8c2b3d4c"
+  },
+  {
+    "repository_path": "code/scripts/launch_g1k_step800to900.sh",
+    "server_path": "/hy-tmp/launch_g1k_step800to900.sh",
+    "bytes": 2979,
+    "sha256": "21e758c280287c1ddbbe0235010e849534da02f8fd34ad7d8f6de7fa46ce6a42"
+  },
+  {
+    "repository_path": "code/scripts/launch_g1k_step900to1000.sh",
+    "server_path": "/hy-tmp/launch_g1k_step900to1000.sh",
+    "bytes": 2980,
+    "sha256": "1983056062803fd68bc37637c81b0c8f24dff2671bb58b88f8c05a8771d0da5f"
+  },
+  {
+    "repository_path": "code/scripts/launch_openmath_dapo_rollout.sh",
+    "server_path": "/hy-tmp/launch_openmath_dapo_rollout.sh",
+    "bytes": 1006,
+    "sha256": "bd87d29d8eb03fb04a2295545c0b2cdf8e60fe56a229cb929540563de40f709f"
+  },
+  {
+    "repository_path": "code/scripts/launch_pass32zero_full.sh",
+    "server_path": "/hy-tmp/launch_pass32zero_full.sh",
+    "bytes": 3056,
+    "sha256": "f33b43b92c4409c545f4af263cb9a873db4a5d856e83ffc6ac24e2cf3f18b8cd"
+  },
+  {
+    "repository_path": "code/scripts/launch_rl_profile.sh",
+    "server_path": "/hy-tmp/launch_rl_profile.sh",
+    "bytes": 2171,
+    "sha256": "beba2b52e28dc7cc0f969ae204aed5f69300a8baeb1e68a8930ccc05c6245ba9"
+  },
+  {
+    "repository_path": "code/scripts/launch_rwkv7_g1i_math_instruct_v1.sh",
+    "server_path": "/hy-tmp/launch_rwkv7_g1i_math_instruct_v1.sh",
+    "bytes": 2949,
+    "sha256": "5841e311a086c5adf471d821c6433f154f77a3d217d7d1a1f21550e07b89f73d"
+  },
+  {
+    "repository_path": "code/scripts/offline_pass32_inspect_g1k.py",
+    "server_path": "/hy-tmp/offline_pass32_inspect_g1k.py",
+    "bytes": 10953,
+    "sha256": "d49ec66ff14a7b97d791f65d1b536b681bf1284323a95463f6edc049490da1cd"
+  },
+  {
+    "repository_path": "code/scripts/openmath_dapo_rollout.py",
+    "server_path": "/hy-tmp/openmath_dapo_rollout.py",
+    "bytes": 9550,
+    "sha256": "c0a62eeb814bfb5d076f38a33bbe8c7c4098ac2614a753cd6f4321967ed81e63"
+  },
+  {
+    "repository_path": "code/scripts/openmath_dapo_rollout_vllm.py",
+    "server_path": "/hy-tmp/openmath_dapo_rollout_vllm.py",
+    "bytes": 9136,
+    "sha256": "182f4112f4465430fa6ea33b6e95321535341faac7b0838d265072edf2925b15"
+  },
+  {
+    "repository_path": "code/scripts/plot_dapo_progress.py",
+    "server_path": "/hy-tmp/plot_dapo_progress.py",
+    "bytes": 7435,
+    "sha256": "1ecb6ec2f7b54a17ad9aa88a661b59563db41bc35eab71c6908c4635dbfa1718"
+  },
+  {
+    "repository_path": "code/scripts/plot_dapo_progress_step1211.py",
+    "server_path": "/hy-tmp/plot_dapo_progress_step1211.py",
+    "bytes": 7575,
+    "sha256": "dc29f75b66e60cc07b7ff8a50989c5801eaac25edbfdbebfb5d1bf1ffe70f278"
+  },
+  {
+    "repository_path": "code/scripts/queue_g1k_missing_benchmarks.sh",
+    "server_path": "/hy-tmp/queue_g1k_missing_benchmarks.sh",
+    "bytes": 3278,
+    "sha256": "b96420e2bdcf7bd14db59dcbc09739bb22f6dcb7bd5ff2103f670be5e780ffeb"
+  },
+  {
+    "repository_path": "code/scripts/rl_profile_step.py",
+    "server_path": "/hy-tmp/rl_profile_step.py",
+    "bytes": 116999,
+    "sha256": "2710150bf8a31b0a8d9252c534da0f1d827247b0b980ce8a61b144b047fa4fd4"
+  },
+  {
+    "repository_path": "code/scripts/run_bench_g1i_1050_1200.sh",
+    "server_path": "/hy-tmp/run_bench_g1i_1050_1200.sh",
+    "bytes": 1830,
+    "sha256": "6616fc6c7c26b32e2ee54289545e3a6180a01e41007fb3acdea543a6d226c88c"
+  },
+  {
+    "repository_path": "code/scripts/run_benchmark_step1200_avg4_20260903.sh",
+    "server_path": "/hy-tmp/run_benchmark_step1200_avg4_20260903.sh",
+    "bytes": 1652,
+    "sha256": "183daeaa6a32bcd84cd18238be57670d3ed74949df321789777dd668e357c73e"
+  },
+  {
+    "repository_path": "code/scripts/run_benchmark_step1200_single_20260903.sh",
+    "server_path": "/hy-tmp/run_benchmark_step1200_single_20260903.sh",
+    "bytes": 1820,
+    "sha256": "40067417b45329e89c1e8fbce821f3248058318103eb51aa11c8071c43a2996b"
+  },
+  {
+    "repository_path": "code/scripts/run_benchmark_step1200_unified_20260903.sh",
+    "server_path": "/hy-tmp/run_benchmark_step1200_unified_20260903.sh",
+    "bytes": 1822,
+    "sha256": "5696f723086234eaacb6ca5376442b245b3bf304702976f897b17f3d973c45a2"
+  },
+  {
+    "repository_path": "code/scripts/run_dapo_teacher_8k_compare.sh",
+    "server_path": "/hy-tmp/run_dapo_teacher_8k_compare.sh",
+    "bytes": 943,
+    "sha256": "1b106e9b1f029f2746bb0acb4aa8b9ea58744c29908d9e6415e4c43c6929812b"
+  },
+  {
+    "repository_path": "code/scripts/run_extra_math_step850_1000_20260831.sh",
+    "server_path": "/hy-tmp/run_extra_math_step850_1000_20260831.sh",
+    "bytes": 2295,
+    "sha256": "5fce616d792f2e5a261c556b64982c5ae51d9d9aeeaa42ac2e982f39e81cd99d"
+  },
+  {
+    "repository_path": "code/scripts/run_g1k_ctx32k_aime24x8_math500x4_20261003.sh",
+    "server_path": "/hy-tmp/run_g1k_ctx32k_aime24x8_math500x4_20261003.sh",
+    "bytes": 1872,
+    "sha256": "a0788f29dcbad86b83675d955233eeb9a022674764a311a9ff83bffb70201de9"
+  },
+  {
+    "repository_path": "code/scripts/run_g1k_gsm8k_avg4_20261002.sh",
+    "server_path": "/hy-tmp/run_g1k_gsm8k_avg4_20261002.sh",
+    "bytes": 2972,
+    "sha256": "9268ed624b30836c1f6ad91d56849bbe130b1318b50da1b390fa144c2f2ab201"
+  },
+  {
+    "repository_path": "code/scripts/run_g1k_math500_avg8_20261002.sh",
+    "server_path": "/hy-tmp/run_g1k_math500_avg8_20261002.sh",
+    "bytes": 3048,
+    "sha256": "ae44a5061972a28598b4aba7c944b02c86f566ef6aa8c80e5bb60e7e769a1c4c"
+  },
+  {
+    "repository_path": "code/scripts/run_g1k_pass1_31_all_benchmarks.sh",
+    "server_path": "/hy-tmp/run_g1k_pass1_31_all_benchmarks.sh",
+    "bytes": 4340,
+    "sha256": "f5c35430d930a157aa2e5091837716759cd554da3f98df42ad5b27a326fb9437"
+  },
+  {
+    "repository_path": "code/scripts/run_pass32_zero_step1200.sh",
+    "server_path": "/hy-tmp/run_pass32_zero_step1200.sh",
+    "bytes": 1192,
+    "sha256": "a385a3bd229b5b0254622ee336c81b5ad97cb1eb399755802427ee766698cdfa"
+  },
+  {
+    "repository_path": "code/scripts/run_pass32_zero_step1200_1000.sh",
+    "server_path": "/hy-tmp/run_pass32_zero_step1200_1000.sh",
+    "bytes": 2372,
+    "sha256": "6e6ddc0a3ef9cdbfbdae020aa414d9fb1216b08a8fd73996c45e931b185c898d"
+  },
+  {
+    "repository_path": "code/scripts/run_pass32_zero_step1200_chunked.sh",
+    "server_path": "/hy-tmp/run_pass32_zero_step1200_chunked.sh",
+    "bytes": 2367,
+    "sha256": "f73838839f1b920bfd6beef7b64a568cd487dce9055e3b4d9a1111ffd9d69162"
+  },
+  {
+    "repository_path": "code/scripts/run_shared_intersection_eval_after_training.sh",
+    "server_path": "/hy-tmp/run_shared_intersection_eval_after_training.sh",
+    "bytes": 3386,
+    "sha256": "2ddc86276eedf4919581e085b84fd77d6a983334cf2dda974014ad3ac41c0a63"
+  },
+  {
+    "repository_path": "code/scripts/run_step850_1000_official_flower_benchmarks.sh",
+    "server_path": "/hy-tmp/run_step850_1000_official_flower_benchmarks.sh",
+    "bytes": 2750,
+    "sha256": "16c77c7df8f2b3c051e9c1d4eb29a6fad446282bfe896b8ee4b896d22e556ea5"
+  },
+  {
+    "repository_path": "code/scripts/run_ultramath_pass16.py",
+    "server_path": "/hy-tmp/run_ultramath_pass16.py",
+    "bytes": 6301,
+    "sha256": "be19ad3a71632dd696ecf51c8d2c96f2d2a287da2da6356dc3897aa81b6e08f1"
+  },
+  {
+    "repository_path": "code/scripts/runs/eval_g1i_gsm8k_base_vs_step85_with_responses_20260812_073500/run_eval_with_responses.sh",
+    "server_path": "/hy-tmp/runs/eval_g1i_gsm8k_base_vs_step85_with_responses_20260812_073500/run_eval_with_responses.sh",
+    "bytes": 1777,
+    "sha256": "9cb102f52f27ca0ba8fe640d56e84608aa887d39eb9264b6954eec7f850a8d48"
+  },
+  {
+    "repository_path": "code/scripts/runs/eval_g1i_gsm8k_boxed_base_vs_step85_20260812_013007/run_full_compare.sh",
+    "server_path": "/hy-tmp/runs/eval_g1i_gsm8k_boxed_base_vs_step85_20260812_013007/run_full_compare.sh",
+    "bytes": 1653,
+    "sha256": "f5fc563f5782e7745cba94fe1c2f53cec1c1c442ba697be0a48b3d8684c1277c"
+  },
+  {
+    "repository_path": "code/scripts/runs/eval_g1i_gsm8k_step105_full_batch128_20260813_025157/run.sh",
+    "server_path": "/hy-tmp/runs/eval_g1i_gsm8k_step105_full_batch128_20260813_025157/run.sh",
+    "bytes": 1214,
+    "sha256": "af0af3d30e35c52870e0a9edc5aacf81ffa9b0fe7e091f986dc8fca8dc3d9d24"
+  },
+  {
+    "repository_path": "code/scripts/runs/eval_g1i_gsm8k_step155_full_with_responses_20260813_021510/run_after_train.sh",
+    "server_path": "/hy-tmp/runs/eval_g1i_gsm8k_step155_full_with_responses_20260813_021510/run_after_train.sh",
+    "bytes": 1163,
+    "sha256": "f7e2645e07634b5c774c7d7e999cd915c267a3f9e115b0780abb62ba2bf5d73f"
+  },
+  {
+    "repository_path": "code/scripts/runs/eval_gsm8k_rwkvskills_official_avg4_base_vs_step155_20260814_223739/gpu_monitor.sh",
+    "server_path": "/hy-tmp/runs/eval_gsm8k_rwkvskills_official_avg4_base_vs_step155_20260814_223739/gpu_monitor.sh",
+    "bytes": 247,
+    "sha256": "7738c1b29aa0a9cc51dedc4e2f9981dc41db422bc4de9c954c168f8fbd74206e"
+  },
+  {
+    "repository_path": "code/scripts/runs/eval_gsm8k_rwkvskills_official_avg4_base_vs_step155_20260814_223739/run_eval.sh",
+    "server_path": "/hy-tmp/runs/eval_gsm8k_rwkvskills_official_avg4_base_vs_step155_20260814_223739/run_eval.sh",
+    "bytes": 2454,
+    "sha256": "9b9ca912bd396af1062cddde250931e71556eb3fa87ff8fd9242c2a714b6212d"
+  },
+  {
+    "repository_path": "code/scripts/runs/eval_gsm8k_rwkvskills_twostage_base_vs_step155_20260814_035533/run_base.sh",
+    "server_path": "/hy-tmp/runs/eval_gsm8k_rwkvskills_twostage_base_vs_step155_20260814_035533/run_base.sh",
+    "bytes": 450,
+    "sha256": "a548a2e77235992f5e5da16de2007c8f0133121bb13918a01bff3401ef3275af"
+  },
+  {
+    "repository_path": "code/scripts/runs/eval_gsm8k_rwkvskills_twostage_base_vs_step155_20260814_035533/run_step155.sh",
+    "server_path": "/hy-tmp/runs/eval_gsm8k_rwkvskills_twostage_base_vs_step155_20260814_035533/run_step155.sh",
+    "bytes": 526,
+    "sha256": "74e8efa908d36802cc9d72a1fd619121b2ecf2f67c5d2b879308ed9591e52f98"
+  },
+  {
+    "repository_path": "code/scripts/runs/eval_gsm8k_rwkvskills_twostage_base_vs_step155_20260814_154638/gpu_monitor.sh",
+    "server_path": "/hy-tmp/runs/eval_gsm8k_rwkvskills_twostage_base_vs_step155_20260814_154638/gpu_monitor.sh",
+    "bytes": 179,
+    "sha256": "2deea5845af7f812ee3ab1c1fbb52258e285426f22d8df20856071b2b3a90bf1"
+  },
+  {
+    "repository_path": "code/scripts/runs/eval_gsm8k_rwkvskills_twostage_base_vs_step155_20260814_154638/run_eval.sh",
+    "server_path": "/hy-tmp/runs/eval_gsm8k_rwkvskills_twostage_base_vs_step155_20260814_154638/run_eval.sh",
+    "bytes": 851,
+    "sha256": "2f62efd1f258c1a5d89ff9e7d50a7784ceb53ab34a58e0d386cb73185b408738"
+  },
+  {
+    "repository_path": "code/scripts/runs/eval_gsm8k_rwkvskills_twostage_base_vs_step155_fixedgold_20260814_164228/gpu_monitor.sh",
+    "server_path": "/hy-tmp/runs/eval_gsm8k_rwkvskills_twostage_base_vs_step155_fixedgold_20260814_164228/gpu_monitor.sh",
+    "bytes": 192,
+    "sha256": "84360d959460ad09ee01291eec7e6678bc96e405aa208af29c92e644eda0f4b2"
+  },
+  {
+    "repository_path": "code/scripts/runs/eval_gsm8k_rwkvskills_twostage_base_vs_step155_fixedgold_20260814_164228/run_eval.sh",
+    "server_path": "/hy-tmp/runs/eval_gsm8k_rwkvskills_twostage_base_vs_step155_fixedgold_20260814_164228/run_eval.sh",
+    "bytes": 851,
+    "sha256": "2f62efd1f258c1a5d89ff9e7d50a7784ceb53ab34a58e0d386cb73185b408738"
+  },
+  {
+    "repository_path": "code/scripts/runs/eval_gsm8k_rwkvskills_twostage_base_vs_step155_fixedgold_bs512_20260814_164950/gpu_monitor.sh",
+    "server_path": "/hy-tmp/runs/eval_gsm8k_rwkvskills_twostage_base_vs_step155_fixedgold_bs512_20260814_164950/gpu_monitor.sh",
+    "bytes": 192,
+    "sha256": "84360d959460ad09ee01291eec7e6678bc96e405aa208af29c92e644eda0f4b2"
+  },
+  {
+    "repository_path": "code/scripts/runs/eval_gsm8k_rwkvskills_twostage_base_vs_step155_fixedgold_bs512_20260814_164950/run_eval.sh",
+    "server_path": "/hy-tmp/runs/eval_gsm8k_rwkvskills_twostage_base_vs_step155_fixedgold_bs512_20260814_164950/run_eval.sh",
+    "bytes": 851,
+    "sha256": "fcea92efa7e207df969f53e883019844fa3f31bfd9c04e88031cc1a2f194a6f8"
+  },
+  {
+    "repository_path": "code/scripts/runs/eval_gsm8k_rwkvskills_twostage_base_vs_step155_fixedgold_bs512_clean_20260814_182554/gpu_monitor.sh",
+    "server_path": "/hy-tmp/runs/eval_gsm8k_rwkvskills_twostage_base_vs_step155_fixedgold_bs512_clean_20260814_182554/gpu_monitor.sh",
+    "bytes": 192,
+    "sha256": "84360d959460ad09ee01291eec7e6678bc96e405aa208af29c92e644eda0f4b2"
+  },
+  {
+    "repository_path": "code/scripts/runs/eval_gsm8k_rwkvskills_twostage_base_vs_step155_fixedgold_bs512_clean_20260814_182554/run_eval.sh",
+    "server_path": "/hy-tmp/runs/eval_gsm8k_rwkvskills_twostage_base_vs_step155_fixedgold_bs512_clean_20260814_182554/run_eval.sh",
+    "bytes": 907,
+    "sha256": "e4be95a8bb885def89199a589c7449b046746b719b610d0fb4e26ddc72920f93"
+  },
+  {
+    "repository_path": "code/scripts/runs/eval_gsm8k_rwkvskills_twostage_base_vs_step155_fixedgold_bs512_star_20260814_191207/gpu_monitor.sh",
+    "server_path": "/hy-tmp/runs/eval_gsm8k_rwkvskills_twostage_base_vs_step155_fixedgold_bs512_star_20260814_191207/gpu_monitor.sh",
+    "bytes": 192,
+    "sha256": "84360d959460ad09ee01291eec7e6678bc96e405aa208af29c92e644eda0f4b2"
+  },
+  {
+    "repository_path": "code/scripts/runs/eval_gsm8k_rwkvskills_twostage_base_vs_step155_fixedgold_bs512_star_20260814_191207/run_eval.sh",
+    "server_path": "/hy-tmp/runs/eval_gsm8k_rwkvskills_twostage_base_vs_step155_fixedgold_bs512_star_20260814_191207/run_eval.sh",
+    "bytes": 907,
+    "sha256": "e4be95a8bb885def89199a589c7449b046746b719b610d0fb4e26ddc72920f93"
+  },
+  {
+    "repository_path": "code/scripts/runs/eval_gsm8k_rwkvskills_twostage_base_vs_step155_officialprompt_bs512_20260814_211214/gpu_monitor.sh",
+    "server_path": "/hy-tmp/runs/eval_gsm8k_rwkvskills_twostage_base_vs_step155_officialprompt_bs512_20260814_211214/gpu_monitor.sh",
+    "bytes": 192,
+    "sha256": "84360d959460ad09ee01291eec7e6678bc96e405aa208af29c92e644eda0f4b2"
+  },
+  {
+    "repository_path": "code/scripts/runs/eval_gsm8k_rwkvskills_twostage_base_vs_step155_officialprompt_bs512_20260814_211214/run_eval.sh",
+    "server_path": "/hy-tmp/runs/eval_gsm8k_rwkvskills_twostage_base_vs_step155_officialprompt_bs512_20260814_211214/run_eval.sh",
+    "bytes": 907,
+    "sha256": "e4be95a8bb885def89199a589c7449b046746b719b610d0fb4e26ddc72920f93"
+  },
+  {
+    "repository_path": "code/scripts/runs/eval_math500_g1i_checkpoints_20260820.sh",
+    "server_path": "/hy-tmp/runs/eval_math500_g1i_checkpoints_20260820.sh",
+    "bytes": 1715,
+    "sha256": "52d8d8c817408daac63590ffca366f16f0e2686eeacbeda8cced1a2aaa75f5ae"
+  },
+  {
+    "repository_path": "code/scripts/runs/eval_math500_g1i_step200_only_20260820.sh",
+    "server_path": "/hy-tmp/runs/eval_math500_g1i_step200_only_20260820.sh",
+    "bytes": 1308,
+    "sha256": "93e4b21a677dc6ad0b3e4ee5d513b3472db14363caf7257cf4a5a4b7b33ed7c1"
+  },
+  {
+    "repository_path": "code/scripts/runs/extra_math_dapo_ckpt_sweep_ctx12k_max8192_20260823_090821/run_extra_math_ctx12k.sh",
+    "server_path": "/hy-tmp/runs/extra_math_dapo_ckpt_sweep_ctx12k_max8192_20260823_090821/run_extra_math_ctx12k.sh",
+    "bytes": 2168,
+    "sha256": "f6708bbe5cbaed7235a6e627097feefb1434f8656bb795285a7db64c69e7a4dc"
+  },
+  {
+    "repository_path": "code/scripts/runs/extra_math_dapo_ckpt_sweep_ctx12k_max8192_rollout64_20260823_091052/run_extra_math_ctx12k_r64.sh",
+    "server_path": "/hy-tmp/runs/extra_math_dapo_ckpt_sweep_ctx12k_max8192_rollout64_20260823_091052/run_extra_math_ctx12k_r64.sh",
+    "bytes": 2169,
+    "sha256": "33305a0030a1019883b04c25e77014ed60d5bcdb9bb0cda8b1c98da98218711f"
+  },
+  {
+    "repository_path": "code/scripts/runs/extra_math_dapo_ckpt_sweep_ctx12k_max8192_rollout64_tail128_20260823_155810/run_extra_math_ctx12k_r64_tail128.sh",
+    "server_path": "/hy-tmp/runs/extra_math_dapo_ckpt_sweep_ctx12k_max8192_rollout64_tail128_20260823_155810/run_extra_math_ctx12k_r64_tail128.sh",
+    "bytes": 2237,
+    "sha256": "6d5a0b3ccb75d73eb06562886ea7dc79a175a8f6931a612cbba3ab122b7befb6"
+  },
+  {
+    "repository_path": "code/scripts/runs/extra_math_dapo_ckpt_sweep_officialcot_strict_20260823_020109/run_extra_math_after_gsm8k.sh",
+    "server_path": "/hy-tmp/runs/extra_math_dapo_ckpt_sweep_officialcot_strict_20260823_020109/run_extra_math_after_gsm8k.sh",
+    "bytes": 3982,
+    "sha256": "149616cf3f1632fb46b839ab6e6a93867c2226d26dd4e303beb05356e92f9893"
+  },
+  {
+    "repository_path": "code/scripts/runs/g1i_gsm8k_dapo_strictcot_rerun_20260813_002503/run.sh",
+    "server_path": "/hy-tmp/runs/g1i_gsm8k_dapo_strictcot_rerun_20260813_002503/run.sh",
+    "bytes": 2713,
+    "sha256": "94de6311b04999eac19700baad988b629dca6af9a4faf3d8f48d1258c96e0fbc"
+  },
+  {
+    "repository_path": "code/scripts/runs/g1i_openr1_dapo_math17k_processed_maxnew6144_micro1_20260813_032405/run.sh",
+    "server_path": "/hy-tmp/runs/g1i_openr1_dapo_math17k_processed_maxnew6144_micro1_20260813_032405/run.sh",
+    "bytes": 2802,
+    "sha256": "ceb471d5ffbd17e49ea2cdbe16803cae1b19a1275e7315ea7205f9ca72719de4"
+  },
+  {
+    "repository_path": "code/scripts/runs/g1i_step1000_to_dapo_math17k_officialprompt_q32x16_cand64_max6144_ob512_continue1000to1200_eval384_ckpt50_20260901_1100/run.sh",
+    "server_path": "/hy-tmp/runs/g1i_step1000_to_dapo_math17k_officialprompt_q32x16_cand64_max6144_ob512_continue1000to1200_eval384_ckpt50_20260901_1100/run.sh",
+    "bytes": 3128,
+    "sha256": "bfc2537fd3fb8805315b299095715059f2a084209f25281a9d791b094f365e17"
+  },
+  {
+    "repository_path": "code/scripts/runs/g1i_step1200_to_dapo_math17k_officialprompt_q32x16_cand64_max6144_ob512_continue1200to1300_eval384_ckpt50_20260903_1600/run.sh",
+    "server_path": "/hy-tmp/runs/g1i_step1200_to_dapo_math17k_officialprompt_q32x16_cand64_max6144_ob512_continue1200to1300_eval384_ckpt50_20260903_1600/run.sh",
+    "bytes": 3129,
+    "sha256": "d1fa21a28d835b25f8f2c75f3135e0876cc6240a99313ed4667d2c233b49276e"
+  },
+  {
+    "repository_path": "code/scripts/runs/g1i_step155_to_dapo_math17k_officialprompt_q32x16_cand64_max6144_ob512_100_20260820_154937/run.sh",
+    "server_path": "/hy-tmp/runs/g1i_step155_to_dapo_math17k_officialprompt_q32x16_cand64_max6144_ob512_100_20260820_154937/run.sh",
+    "bytes": 3026,
+    "sha256": "91e563e12a06398308af4d61459b33071421746f463e374d8264ea14de30af11"
+  },
+  {
+    "repository_path": "code/scripts/runs/g1i_step155_to_dapo_math17k_officialprompt_q32x16_cand64_max6144_ob512_continue100to200_eval512_20260821_131710/run.sh",
+    "server_path": "/hy-tmp/runs/g1i_step155_to_dapo_math17k_officialprompt_q32x16_cand64_max6144_ob512_continue100to200_eval512_20260821_131710/run.sh",
+    "bytes": 3043,
+    "sha256": "9e39fc8b066ffbcf1e5a4efc5259f707ab4d5da134e1cac88ccc08a5bbcb176b"
+  },
+  {
+    "repository_path": "code/scripts/runs/g1i_step155_to_dapo_math17k_officialprompt_q32x16_cand64_max6144_ob512_continue200to300_eval512_20260822_073045/run.sh",
+    "server_path": "/hy-tmp/runs/g1i_step155_to_dapo_math17k_officialprompt_q32x16_cand64_max6144_ob512_continue200to300_eval512_20260822_073045/run.sh",
+    "bytes": 3077,
+    "sha256": "aaa01ecd267467b547b7a6dd931c918d699809d7bdbcec69be1963bf2299530d"
+  },
+  {
+    "repository_path": "code/scripts/runs/g1i_step155_to_dapo_math17k_pass1_16_val500_gsm8kalg_resetstep_200_20260819_015707/run.sh",
+    "server_path": "/hy-tmp/runs/g1i_step155_to_dapo_math17k_pass1_16_val500_gsm8kalg_resetstep_200_20260819_015707/run.sh",
+    "bytes": 3037,
+    "sha256": "4925a9010dfe94ce2035f7b2ea48ef783c961ff0099a239041e3b48b89f0a985"
+  },
+  {
+    "repository_path": "code/scripts/runs/g1i_step155_to_dapo_math17k_pass1_16_val500_max4096_micro1_fullmem_resetstep_200_20260819_1503/run.sh",
+    "server_path": "/hy-tmp/runs/g1i_step155_to_dapo_math17k_pass1_16_val500_max4096_micro1_fullmem_resetstep_200_20260819_1503/run.sh",
+    "bytes": 3030,
+    "sha256": "235be162abd0110526bffe665d972c6e08b3d46b30b2bd7cb8209d117b1d26d2"
+  },
+  {
+    "repository_path": "code/scripts/runs/g1i_step155_to_dapo_processed_strictcot_max4096_lr1e7_pilot50_20260816_024807/run.sh",
+    "server_path": "/hy-tmp/runs/g1i_step155_to_dapo_processed_strictcot_max4096_lr1e7_pilot50_20260816_024807/run.sh",
+    "bytes": 2979,
+    "sha256": "5778f183a035081b877c9025460f49975d3bfeef725547db826dc24be1972aea"
+  },
+  {
+    "repository_path": "code/scripts/runs/g1i_step155_to_openr1_dapo_math17k_processed_maxnew6144_micro1_20260813_094132/run.sh",
+    "server_path": "/hy-tmp/runs/g1i_step155_to_openr1_dapo_math17k_processed_maxnew6144_micro1_20260813_094132/run.sh",
+    "bytes": 2821,
+    "sha256": "2cf49702c060046e80d983ed9e1b1af91f07e868d79041290dd2799433c59358"
+  },
+  {
+    "repository_path": "code/scripts/runs/g1i_step170_to_openr1_dapo_math17k_processed_noearlystop_50steps_20260813_130505/run.sh",
+    "server_path": "/hy-tmp/runs/g1i_step170_to_openr1_dapo_math17k_processed_noearlystop_50steps_20260813_130505/run.sh",
+    "bytes": 2151,
+    "sha256": "9fa68709b02730dd8a0951d17337bbf6c82b22ba6b3701374ab43ce52daedd7f"
+  },
+  {
+    "repository_path": "code/scripts/runs/g1i_step170_to_openr1_dapo_math17k_processed_noearlystop_50steps_fixedreward_20260813_162158/run.sh",
+    "server_path": "/hy-tmp/runs/g1i_step170_to_openr1_dapo_math17k_processed_noearlystop_50steps_fixedreward_20260813_162158/run.sh",
+    "bytes": 2163,
+    "sha256": "89e1ebae10e1f2f26a7ba266b98bdc5de198e9078e22975d1118df1a9da0a1a8"
+  },
+  {
+    "repository_path": "code/scripts/runs/g1i_step173_to_dapo_pass32_noearlystop_lr1e7_20260816_120144/run.sh",
+    "server_path": "/hy-tmp/runs/g1i_step173_to_dapo_pass32_noearlystop_lr1e7_20260816_120144/run.sh",
+    "bytes": 2935,
+    "sha256": "9eb5bdff087b21d3e031633851deafb55b11e46f9114d93269f037a53e911481"
+  },
+  {
+    "repository_path": "code/scripts/runs/g1i_step300_to_dapo_math17k_officialprompt_q32x16_cand64_max6144_ob512_continue300to400_eval384_20260824_122246/run.sh",
+    "server_path": "/hy-tmp/runs/g1i_step300_to_dapo_math17k_officialprompt_q32x16_cand64_max6144_ob512_continue300to400_eval384_20260824_122246/run.sh",
+    "bytes": 3047,
+    "sha256": "236a91a719570983c7cc1423cf173162bfa7248f5f1995360a9029fd2e497858"
+  },
+  {
+    "repository_path": "code/scripts/runs/g1i_step300_to_dapo_math17k_officialprompt_q32x16_cand64_max6144_ob512_continue300to400_eval512_20260824_015901/run.sh",
+    "server_path": "/hy-tmp/runs/g1i_step300_to_dapo_math17k_officialprompt_q32x16_cand64_max6144_ob512_continue300to400_eval512_20260824_015901/run.sh",
+    "bytes": 3037,
+    "sha256": "f32d7cf3b44e1f114629753983231d49edc937a5cac466115637894cfcbc4c6e"
+  },
+  {
+    "repository_path": "code/scripts/runs/g1i_step400_to_dapo_math17k_officialprompt_q32x16_cand64_max6144_ob512_continue400to500_eval384_20260825_134855/run.sh",
+    "server_path": "/hy-tmp/runs/g1i_step400_to_dapo_math17k_officialprompt_q32x16_cand64_max6144_ob512_continue400to500_eval384_20260825_134855/run.sh",
+    "bytes": 3165,
+    "sha256": "c7a040466c92daa4f13d6842b4d7a92bb76e2fb904b48554ef3b321f5d13fc3c"
+  },
+  {
+    "repository_path": "code/scripts/runs/g1i_step400_to_dapo_math17k_officialprompt_q32x16_cand64_max6144_ob512_continue400to500_eval384_20260825_1355_fixed/run.sh",
+    "server_path": "/hy-tmp/runs/g1i_step400_to_dapo_math17k_officialprompt_q32x16_cand64_max6144_ob512_continue400to500_eval384_20260825_1355_fixed/run.sh",
+    "bytes": 3051,
+    "sha256": "b5d78cb3d23f698e368dbe98aabbe1803db7cce861b2a065f2e6fc139ff112f0"
+  },
+  {
+    "repository_path": "code/scripts/runs/g1i_step500_to_dapo_math17k_officialprompt_q32x16_cand64_max6144_ob512_continue500to600_eval384_20260826_0000_fixed/run.sh",
+    "server_path": "/hy-tmp/runs/g1i_step500_to_dapo_math17k_officialprompt_q32x16_cand64_max6144_ob512_continue500to600_eval384_20260826_0000_fixed/run.sh",
+    "bytes": 3055,
+    "sha256": "53d5e572f08757b86f8d756bda4389ff566009b0594dfe10401d33f299566bf2"
+  },
+  {
+    "repository_path": "code/scripts/runs/g1i_step600_to_dapo_math17k_officialprompt_q32x16_cand64_max6144_ob512_continue600to800_eval384_20260827/run.sh",
+    "server_path": "/hy-tmp/runs/g1i_step600_to_dapo_math17k_officialprompt_q32x16_cand64_max6144_ob512_continue600to800_eval384_20260827/run.sh",
+    "bytes": 3099,
+    "sha256": "a74937b7c41ec0afbaf793300377c179b576aaeaaa2e4b9f33b75a93a44987c4"
+  },
+  {
+    "repository_path": "code/scripts/runs/g1i_step800_to_dapo_math17k_officialprompt_q32x16_cand64_max6144_ob512_continue800to1000_eval384_ckpt50_20260829_1810/run.sh",
+    "server_path": "/hy-tmp/runs/g1i_step800_to_dapo_math17k_officialprompt_q32x16_cand64_max6144_ob512_continue800to1000_eval384_ckpt50_20260829_1810/run.sh",
+    "bytes": 3111,
+    "sha256": "acf0515a007c0c7fd2a6e8a8ee181848ffe53deb66b78bfab59b5ba7a249dd09"
+  },
+  {
+    "repository_path": "code/scripts/runs/g1i_step85_to_dapo_math17k_pass1_16_val500_noearlystop_to200_20260819_0645/run.sh",
+    "server_path": "/hy-tmp/runs/g1i_step85_to_dapo_math17k_pass1_16_val500_noearlystop_to200_20260819_0645/run.sh",
+    "bytes": 2988,
+    "sha256": "43c4981edae65e4cca69df73c84a3b4bd89f7f11e72d41c53b3e9adf6dcdbf8a"
+  },
+  {
+    "repository_path": "code/scripts/runs/g1k_dapo_pass1_31_officialprompt_q32x16_cand64_max6144_ob512_step100to200_20260921_062417/run.sh",
+    "server_path": "/hy-tmp/runs/g1k_dapo_pass1_31_officialprompt_q32x16_cand64_max6144_ob512_step100to200_20260921_062417/run.sh",
+    "bytes": 3151,
+    "sha256": "e3a60127aa98a105f9ccf114984428820c63a6dca0201bd22af3713e2306e1d6"
+  },
+  {
+    "repository_path": "code/scripts/runs/g1k_dapo_pass1_31_officialprompt_q32x16_cand64_max6144_ob512_step200to300_20260922_093913/run.sh",
+    "server_path": "/hy-tmp/runs/g1k_dapo_pass1_31_officialprompt_q32x16_cand64_max6144_ob512_step200to300_20260922_093913/run.sh",
+    "bytes": 3145,
+    "sha256": "62623c56a5373e8c0df4377237588e2bec67b15359437e21f475ec645000a2da"
+  },
+  {
+    "repository_path": "code/scripts/runs/g1k_dapo_pass1_31_officialprompt_q32x16_cand64_max6144_ob512_step300to400_20260923_070337/run.sh",
+    "server_path": "/hy-tmp/runs/g1k_dapo_pass1_31_officialprompt_q32x16_cand64_max6144_ob512_step300to400_20260923_070337/run.sh",
+    "bytes": 3145,
+    "sha256": "f20dd6a1db8ad6b3a8411c7014e31c600f39137efbd1ddd96219571a95983f90"
+  },
+  {
+    "repository_path": "code/scripts/runs/g1k_step155_dapo_pass1_31_officialprompt_q32x16_cand64_max6144_ob512_step0to100_20260920_113623/run.sh",
+    "server_path": "/hy-tmp/runs/g1k_step155_dapo_pass1_31_officialprompt_q32x16_cand64_max6144_ob512_step0to100_20260920_113623/run.sh",
+    "bytes": 3147,
+    "sha256": "1e3f25e87a027ca0413e2470bee795f48e48b6f7c6358a50704942ca38ca9fdc"
+  },
+  {
+    "repository_path": "code/scripts/runs/g1k_step155_dapo_pass1_31_officialprompt_q32x16_cand64_max6144_ob512_step0to100_20260920_113659/run.sh",
+    "server_path": "/hy-tmp/runs/g1k_step155_dapo_pass1_31_officialprompt_q32x16_cand64_max6144_ob512_step0to100_20260920_113659/run.sh",
+    "bytes": 3147,
+    "sha256": "1e3f25e87a027ca0413e2470bee795f48e48b6f7c6358a50704942ca38ca9fdc"
+  },
+  {
+    "repository_path": "code/scripts/runs/g1k_step155_to_dapo_math17k_officialprompt_q32x16_cand64_max6144_ob512_step0to100_20260920_035639/run.sh",
+    "server_path": "/hy-tmp/runs/g1k_step155_to_dapo_math17k_officialprompt_q32x16_cand64_max6144_ob512_step0to100_20260920_035639/run.sh",
+    "bytes": 3140,
+    "sha256": "6e94f81a8593dbf617dcd62085e1902097d1c27f3908bd753340b22313f87cc7"
+  },
+  {
+    "repository_path": "code/scripts/runs/g1k_step155_to_dapo_math17k_officialprompt_q32x16_cand64_max6144_ob512_step0to100_20260920_035658/run.sh",
+    "server_path": "/hy-tmp/runs/g1k_step155_to_dapo_math17k_officialprompt_q32x16_cand64_max6144_ob512_step0to100_20260920_035658/run.sh",
+    "bytes": 3140,
+    "sha256": "6e94f81a8593dbf617dcd62085e1902097d1c27f3908bd753340b22313f87cc7"
+  },
+  {
+    "repository_path": "code/scripts/runs/g1k_temp6003_gsm8k_boxed_strictcot_q8x16_cand32_max2048_step0to155_20260917_020430/run.sh",
+    "server_path": "/hy-tmp/runs/g1k_temp6003_gsm8k_boxed_strictcot_q8x16_cand32_max2048_step0to155_20260917_020430/run.sh",
+    "bytes": 2766,
+    "sha256": "f1c92c2c0f2720cd0c90414414504a81409bb445e8e63b59b65e80dc72341fb9"
+  },
+  {
+    "repository_path": "code/scripts/runs/gsm8k_dapo_ckpt_sweep_officialcot_strict_20260823_014110/run_gsm8k_sweep.sh",
+    "server_path": "/hy-tmp/runs/gsm8k_dapo_ckpt_sweep_officialcot_strict_20260823_014110/run_gsm8k_sweep.sh",
+    "bytes": 1958,
+    "sha256": "1643de55a96fe48b89b428251422cd24f54c84379940869a4c6ebd3c46223d4d"
+  },
+  {
+    "repository_path": "code/scripts/runs/gsm8k_g1i_strict_quality_fp32master_nooffload_histalign_micro1_t1_topp1_max1024_20_v3_l40s_20260811_021444/eval_thinking_cot_strict.py",
+    "server_path": "/hy-tmp/runs/gsm8k_g1i_strict_quality_fp32master_nooffload_histalign_micro1_t1_topp1_max1024_20_v3_l40s_20260811_021444/eval_thinking_cot_strict.py",
+    "bytes": 27147,
+    "sha256": "ac562d9dd1920f5975bb36bf98d9c4ce45574fa248402e17519501ab2640aab6"
+  },
+  {
+    "repository_path": "code/scripts/runs/gsm8k_g1i_strict_quality_fp32master_nooffload_histalign_micro1_t1_topp1_max1024_20_v3_l40s_20260811_021444/infer.py",
+    "server_path": "/hy-tmp/runs/gsm8k_g1i_strict_quality_fp32master_nooffload_histalign_micro1_t1_topp1_max1024_20_v3_l40s_20260811_021444/infer.py",
+    "bytes": 22182,
+    "sha256": "62fb2af90addfec9aba3ddfc25ec24f2ffd5b0ba9932a1ef1360444f8dc15a3d"
+  },
+  {
+    "repository_path": "code/scripts/runs/gsm8k_g1i_strict_quality_fp32master_nooffload_histalign_micro1_t1_topp1_max1024_20_v3_l40s_20260811_021444/plot_metrics.py",
+    "server_path": "/hy-tmp/runs/gsm8k_g1i_strict_quality_fp32master_nooffload_histalign_micro1_t1_topp1_max1024_20_v3_l40s_20260811_021444/plot_metrics.py",
+    "bytes": 10764,
+    "sha256": "c3ff78522a785063980e4a34d7011b4cbbcb7561edb74dd542e6c35c43515340"
+  },
+  {
+    "repository_path": "code/scripts/runs/gsm8k_g1i_strict_quality_fp32master_nooffload_histalign_micro1_t1_topp1_max1024_20_v3_l40s_20260811_021444/reward.py",
+    "server_path": "/hy-tmp/runs/gsm8k_g1i_strict_quality_fp32master_nooffload_histalign_micro1_t1_topp1_max1024_20_v3_l40s_20260811_021444/reward.py",
+    "bytes": 22727,
+    "sha256": "3806c1ec9cee37f20b198e0eadf313c520c4401c82e73046999122bc39eed121"
+  },
+  {
+    "repository_path": "code/scripts/runs/gsm8k_g1i_strict_quality_fp32master_nooffload_histalign_micro1_t1_topp1_max1024_20_v3_l40s_20260811_021444/run.sh",
+    "server_path": "/hy-tmp/runs/gsm8k_g1i_strict_quality_fp32master_nooffload_histalign_micro1_t1_topp1_max1024_20_v3_l40s_20260811_021444/run.sh",
+    "bytes": 2954,
+    "sha256": "5adf75ab8da80674283c732f348557de63f6e8e89a459cc1a0edb1b866e913fe"
+  },
+  {
+    "repository_path": "code/scripts/runs/gsm8k_g1i_strict_quality_fp32master_nooffload_histalign_micro1_t1_topp1_max1024_20_v3_l40s_20260811_021444/train.py",
+    "server_path": "/hy-tmp/runs/gsm8k_g1i_strict_quality_fp32master_nooffload_histalign_micro1_t1_topp1_max1024_20_v3_l40s_20260811_021444/train.py",
+    "bytes": 56168,
+    "sha256": "0ecde3e030d4ebe29d749bf1bcfeb9af7be1de7c1ddbdd9c5de0c02b6c7defea"
+  },
+  {
+    "repository_path": "code/scripts/runs/gsm8k_g1i_strict_quality_fp32master_nooffload_histalign_micro1_t1_topp1_max1024_20_v3_l40s_20260811_021444/train_rl_thinking_cot_strict.py",
+    "server_path": "/hy-tmp/runs/gsm8k_g1i_strict_quality_fp32master_nooffload_histalign_micro1_t1_topp1_max1024_20_v3_l40s_20260811_021444/train_rl_thinking_cot_strict.py",
+    "bytes": 105676,
+    "sha256": "9ee23a6b65d41cffb6ab3d35bf246bb8730d7e4b9cc19948a3daba37baffe106"
+  },
+  {
+    "repository_path": "code/scripts/runs/gsm8k_g1i_strict_quality_fp32master_nooffload_histalign_micro1_t1_topp1_max1024_smoke1_v3_l40s_20260811_021113/eval_thinking_cot_strict.py",
+    "server_path": "/hy-tmp/runs/gsm8k_g1i_strict_quality_fp32master_nooffload_histalign_micro1_t1_topp1_max1024_smoke1_v3_l40s_20260811_021113/eval_thinking_cot_strict.py",
+    "bytes": 27147,
+    "sha256": "ac562d9dd1920f5975bb36bf98d9c4ce45574fa248402e17519501ab2640aab6"
+  },
+  {
+    "repository_path": "code/scripts/runs/gsm8k_g1i_strict_quality_fp32master_nooffload_histalign_micro1_t1_topp1_max1024_smoke1_v3_l40s_20260811_021113/infer.py",
+    "server_path": "/hy-tmp/runs/gsm8k_g1i_strict_quality_fp32master_nooffload_histalign_micro1_t1_topp1_max1024_smoke1_v3_l40s_20260811_021113/infer.py",
+    "bytes": 22182,
+    "sha256": "62fb2af90addfec9aba3ddfc25ec24f2ffd5b0ba9932a1ef1360444f8dc15a3d"
+  },
+  {
+    "repository_path": "code/scripts/runs/gsm8k_g1i_strict_quality_fp32master_nooffload_histalign_micro1_t1_topp1_max1024_smoke1_v3_l40s_20260811_021113/plot_metrics.py",
+    "server_path": "/hy-tmp/runs/gsm8k_g1i_strict_quality_fp32master_nooffload_histalign_micro1_t1_topp1_max1024_smoke1_v3_l40s_20260811_021113/plot_metrics.py",
+    "bytes": 10764,
+    "sha256": "c3ff78522a785063980e4a34d7011b4cbbcb7561edb74dd542e6c35c43515340"
+  },
+  {
+    "repository_path": "code/scripts/runs/gsm8k_g1i_strict_quality_fp32master_nooffload_histalign_micro1_t1_topp1_max1024_smoke1_v3_l40s_20260811_021113/reward.py",
+    "server_path": "/hy-tmp/runs/gsm8k_g1i_strict_quality_fp32master_nooffload_histalign_micro1_t1_topp1_max1024_smoke1_v3_l40s_20260811_021113/reward.py",
+    "bytes": 22727,
+    "sha256": "3806c1ec9cee37f20b198e0eadf313c520c4401c82e73046999122bc39eed121"
+  },
+  {
+    "repository_path": "code/scripts/runs/gsm8k_g1i_strict_quality_fp32master_nooffload_histalign_micro1_t1_topp1_max1024_smoke1_v3_l40s_20260811_021113/run.sh",
+    "server_path": "/hy-tmp/runs/gsm8k_g1i_strict_quality_fp32master_nooffload_histalign_micro1_t1_topp1_max1024_smoke1_v3_l40s_20260811_021113/run.sh",
+    "bytes": 2960,
+    "sha256": "f6a6a986f1d912915f997a0d982092db7382b8e94ed94e5d002e76aea37489e2"
+  },
+  {
+    "repository_path": "code/scripts/runs/gsm8k_g1i_strict_quality_fp32master_nooffload_histalign_micro1_t1_topp1_max1024_smoke1_v3_l40s_20260811_021113/train.py",
+    "server_path": "/hy-tmp/runs/gsm8k_g1i_strict_quality_fp32master_nooffload_histalign_micro1_t1_topp1_max1024_smoke1_v3_l40s_20260811_021113/train.py",
+    "bytes": 56168,
+    "sha256": "0ecde3e030d4ebe29d749bf1bcfeb9af7be1de7c1ddbdd9c5de0c02b6c7defea"
+  },
+  {
+    "repository_path": "code/scripts/runs/gsm8k_g1i_strict_quality_fp32master_nooffload_histalign_micro1_t1_topp1_max1024_smoke1_v3_l40s_20260811_021113/train_rl_thinking_cot_strict.py",
+    "server_path": "/hy-tmp/runs/gsm8k_g1i_strict_quality_fp32master_nooffload_histalign_micro1_t1_topp1_max1024_smoke1_v3_l40s_20260811_021113/train_rl_thinking_cot_strict.py",
+    "bytes": 105676,
+    "sha256": "9ee23a6b65d41cffb6ab3d35bf246bb8730d7e4b9cc19948a3daba37baffe106"
+  },
+  {
+    "repository_path": "code/scripts/runs/gsm8k_g1i_strict_quality_fp32master_nooffload_histalign_rfb256_micro4_t1_topp1_max1024_20_l40s_20260811_042201/eval_thinking_cot_strict.py",
+    "server_path": "/hy-tmp/runs/gsm8k_g1i_strict_quality_fp32master_nooffload_histalign_rfb256_micro4_t1_topp1_max1024_20_l40s_20260811_042201/eval_thinking_cot_strict.py",
+    "bytes": 27147,
+    "sha256": "ac562d9dd1920f5975bb36bf98d9c4ce45574fa248402e17519501ab2640aab6"
+  },
+  {
+    "repository_path": "code/scripts/runs/gsm8k_g1i_strict_quality_fp32master_nooffload_histalign_rfb256_micro4_t1_topp1_max1024_20_l40s_20260811_042201/infer.py",
+    "server_path": "/hy-tmp/runs/gsm8k_g1i_strict_quality_fp32master_nooffload_histalign_rfb256_micro4_t1_topp1_max1024_20_l40s_20260811_042201/infer.py",
+    "bytes": 22182,
+    "sha256": "62fb2af90addfec9aba3ddfc25ec24f2ffd5b0ba9932a1ef1360444f8dc15a3d"
+  },
+  {
+    "repository_path": "code/scripts/runs/gsm8k_g1i_strict_quality_fp32master_nooffload_histalign_rfb256_micro4_t1_topp1_max1024_20_l40s_20260811_042201/plot_metrics.py",
+    "server_path": "/hy-tmp/runs/gsm8k_g1i_strict_quality_fp32master_nooffload_histalign_rfb256_micro4_t1_topp1_max1024_20_l40s_20260811_042201/plot_metrics.py",
+    "bytes": 10764,
+    "sha256": "c3ff78522a785063980e4a34d7011b4cbbcb7561edb74dd542e6c35c43515340"
+  },
+  {
+    "repository_path": "code/scripts/runs/gsm8k_g1i_strict_quality_fp32master_nooffload_histalign_rfb256_micro4_t1_topp1_max1024_20_l40s_20260811_042201/reward.py",
+    "server_path": "/hy-tmp/runs/gsm8k_g1i_strict_quality_fp32master_nooffload_histalign_rfb256_micro4_t1_topp1_max1024_20_l40s_20260811_042201/reward.py",
+    "bytes": 22727,
+    "sha256": "3806c1ec9cee37f20b198e0eadf313c520c4401c82e73046999122bc39eed121"
+  },
+  {
+    "repository_path": "code/scripts/runs/gsm8k_g1i_strict_quality_fp32master_nooffload_histalign_rfb256_micro4_t1_topp1_max1024_20_l40s_20260811_042201/run.sh",
+    "server_path": "/hy-tmp/runs/gsm8k_g1i_strict_quality_fp32master_nooffload_histalign_rfb256_micro4_t1_topp1_max1024_20_l40s_20260811_042201/run.sh",
+    "bytes": 2963,
+    "sha256": "43d3ad6a76b91e966a84afad81722b138ca531897c3134cfc4c51ea2c672c45d"
+  },
+  {
+    "repository_path": "code/scripts/runs/gsm8k_g1i_strict_quality_fp32master_nooffload_histalign_rfb256_micro4_t1_topp1_max1024_20_l40s_20260811_042201/train.py",
+    "server_path": "/hy-tmp/runs/gsm8k_g1i_strict_quality_fp32master_nooffload_histalign_rfb256_micro4_t1_topp1_max1024_20_l40s_20260811_042201/train.py",
+    "bytes": 56168,
+    "sha256": "0ecde3e030d4ebe29d749bf1bcfeb9af7be1de7c1ddbdd9c5de0c02b6c7defea"
+  },
+  {
+    "repository_path": "code/scripts/runs/gsm8k_g1i_strict_quality_fp32master_nooffload_histalign_rfb256_micro4_t1_topp1_max1024_20_l40s_20260811_042201/train_rl_thinking_cot_strict.py",
+    "server_path": "/hy-tmp/runs/gsm8k_g1i_strict_quality_fp32master_nooffload_histalign_rfb256_micro4_t1_topp1_max1024_20_l40s_20260811_042201/train_rl_thinking_cot_strict.py",
+    "bytes": 105676,
+    "sha256": "9ee23a6b65d41cffb6ab3d35bf246bb8730d7e4b9cc19948a3daba37baffe106"
+  },
+  {
+    "repository_path": "code/scripts/runs/launch_g1i_strict_quality_fp32master_nooffload_histalign_micro1_20_v3_l40s.sh",
+    "server_path": "/hy-tmp/runs/launch_g1i_strict_quality_fp32master_nooffload_histalign_micro1_20_v3_l40s.sh",
+    "bytes": 2954,
+    "sha256": "5adf75ab8da80674283c732f348557de63f6e8e89a459cc1a0edb1b866e913fe"
+  },
+  {
+    "repository_path": "code/scripts/runs/launch_g1i_strict_quality_fp32master_nooffload_histalign_micro1_smoke1_l40s.sh",
+    "server_path": "/hy-tmp/runs/launch_g1i_strict_quality_fp32master_nooffload_histalign_micro1_smoke1_l40s.sh",
+    "bytes": 2960,
+    "sha256": "f6a6a986f1d912915f997a0d982092db7382b8e94ed94e5d002e76aea37489e2"
+  },
+  {
+    "repository_path": "code/scripts/runs/launch_g1i_strict_quality_fp32master_nooffload_rfb256_micro4_20_l40s.sh",
+    "server_path": "/hy-tmp/runs/launch_g1i_strict_quality_fp32master_nooffload_rfb256_micro4_20_l40s.sh",
+    "bytes": 2963,
+    "sha256": "43d3ad6a76b91e966a84afad81722b138ca531897c3134cfc4c51ea2c672c45d"
+  },
+  {
+    "repository_path": "code/scripts/runs/math500_dapo_ckpt_sweep_officialcot_strict_20260823_002612/run_math500_sweep.sh",
+    "server_path": "/hy-tmp/runs/math500_dapo_ckpt_sweep_officialcot_strict_20260823_002612/run_math500_sweep.sh",
+    "bytes": 2813,
+    "sha256": "4b346127f1587970d840bb68d83a47fb9380b0fc0f4a29dd878f5f5f5cfae698"
+  },
+  {
+    "repository_path": "code/scripts/runs/math500_g1i_base_official_cot_params_strict_20260820_143904/run.sh",
+    "server_path": "/hy-tmp/runs/math500_g1i_base_official_cot_params_strict_20260820_143904/run.sh",
+    "bytes": 744,
+    "sha256": "9da9877cc28a1661383fc54677474762018390dc4c7f30f72281a89e13c2db1c"
+  },
+  {
+    "repository_path": "code/scripts/runs/math500_g1i_ckpt_eval_20260820_114334/run.sh",
+    "server_path": "/hy-tmp/runs/math500_g1i_ckpt_eval_20260820_114334/run.sh",
+    "bytes": 1593,
+    "sha256": "c96d4f8b22db3f7ed89c5a401bfc68caab63e459f87b8d857d48d24b5557f8b7"
+  },
+  {
+    "repository_path": "code/scripts/runs/math500_g1i_ckpt_eval_20260820_114426/run.sh",
+    "server_path": "/hy-tmp/runs/math500_g1i_ckpt_eval_20260820_114426/run.sh",
+    "bytes": 1593,
+    "sha256": "c96d4f8b22db3f7ed89c5a401bfc68caab63e459f87b8d857d48d24b5557f8b7"
+  },
+  {
+    "repository_path": "code/scripts/runs/math500_g1i_ckpt_eval_20260820_114548/run.sh",
+    "server_path": "/hy-tmp/runs/math500_g1i_ckpt_eval_20260820_114548/run.sh",
+    "bytes": 1715,
+    "sha256": "52d8d8c817408daac63590ffca366f16f0e2686eeacbeda8cced1a2aaa75f5ae"
+  },
+  {
+    "repository_path": "code/scripts/runs/math500_g1i_step155_step200_official_cot_params_strict_20260820_145238/run_all.sh",
+    "server_path": "/hy-tmp/runs/math500_g1i_step155_step200_official_cot_params_strict_20260820_145238/run_all.sh",
+    "bytes": 1967,
+    "sha256": "f84b76f50549fac3300b07a19e4988489922ce2adddf0a8ee7ac25ebc70dd016"
+  },
+  {
+    "repository_path": "code/scripts/runs/phasebench2_20260811_040559/run_one.sh",
+    "server_path": "/hy-tmp/runs/phasebench2_20260811_040559/run_one.sh",
+    "bytes": 2689,
+    "sha256": "c14850701cf6c53fbe5fba41dfd7a74cbe9ecf0123624f6840df4c03d840f252"
+  },
+  {
+    "repository_path": "code/scripts/runs/phasebench_20260811_035149/run_one.sh",
+    "server_path": "/hy-tmp/runs/phasebench_20260811_035149/run_one.sh",
+    "bytes": 2703,
+    "sha256": "53cef9bc6be50065e3e36ba6b72b1423d30a7bba48fd8737970990ebc54f7482"
+  },
+  {
+    "repository_path": "code/scripts/runs/run_dyn512_q32_r16_schedopt_20_20260811_143351.sh",
+    "server_path": "/hy-tmp/runs/run_dyn512_q32_r16_schedopt_20_20260811_143351.sh",
+    "bytes": 2800,
+    "sha256": "ff4ff5457369b675892b4cefdd7ed7341dfdbcfa5bb912cff512b27da2fcc226"
+  },
+  {
+    "repository_path": "code/scripts/runs/run_g1i_20_rfb256_micro4_with_monitor_20260811_042201.sh",
+    "server_path": "/hy-tmp/runs/run_g1i_20_rfb256_micro4_with_monitor_20260811_042201.sh",
+    "bytes": 756,
+    "sha256": "72302a21cbfb3def62546bd46d2e631a96886bb157686f027cfc80ca9703ed87"
+  },
+  {
+    "repository_path": "code/scripts/runs/run_g1i_20_with_monitor_20260811_021444.sh",
+    "server_path": "/hy-tmp/runs/run_g1i_20_with_monitor_20260811_021444.sh",
+    "bytes": 1882,
+    "sha256": "f61f9c492e7269598c21bcd04c10a58f9b1e59eaf7e69cfd5485d7d3e889a4ae"
+  },
+  {
+    "repository_path": "code/scripts/runs/run_g1i_gsm8k_boxed_strictcot_dyn512_q32_r16_200_20260811_182752.sh",
+    "server_path": "/hy-tmp/runs/run_g1i_gsm8k_boxed_strictcot_dyn512_q32_r16_200_20260811_182752.sh",
+    "bytes": 2418,
+    "sha256": "b16689795a64dd0e4a5eb65c8992e44a80365c543d8e62a6f9ecebe1c109e391"
+  },
+  {
+    "repository_path": "code/scripts/runs/run_g1i_gsm8k_boxed_strictcot_dyn512_q32_r16_200_fixreward_20260811_183143.sh",
+    "server_path": "/hy-tmp/runs/run_g1i_gsm8k_boxed_strictcot_dyn512_q32_r16_200_fixreward_20260811_183143.sh",
+    "bytes": 2428,
+    "sha256": "75aa5a1c3816b7af502f5b5a30ea0526c35ea5b950856549e5cde33292c2a023"
+  },
+  {
+    "repository_path": "code/scripts/runs/run_g1i_gsm8k_boxed_strictcot_maxnew2048_20260811_210103.sh",
+    "server_path": "/hy-tmp/runs/run_g1i_gsm8k_boxed_strictcot_maxnew2048_20260811_210103.sh",
+    "bytes": 2651,
+    "sha256": "e7bd7577b8e63793472c4abedc0401ed29245fdb54a71ecd1eb45e0dbafdc9a9"
+  },
+  {
+    "repository_path": "code/scripts/runs/run_g1i_gsm8k_boxed_strictcot_maxnew2048_micro3_20260811_212644.sh",
+    "server_path": "/hy-tmp/runs/run_g1i_gsm8k_boxed_strictcot_maxnew2048_micro3_20260811_212644.sh",
+    "bytes": 2714,
+    "sha256": "2850663aa481332f610c093c58c03cf0ba777b34191ed04e2f5088e433ac320e"
+  },
+  {
+    "repository_path": "code/scripts/runs/run_g1i_gsm8k_continue_step105_fixed50_20260812_142929.sh",
+    "server_path": "/hy-tmp/runs/run_g1i_gsm8k_continue_step105_fixed50_20260812_142929.sh",
+    "bytes": 2657,
+    "sha256": "1cdb4eae859db883c5e36eaa8ad98371ba7cfae8fd40d84f5f83414f9080f171"
+  },
+  {
+    "repository_path": "code/scripts/runs/run_g1i_gsm8k_continue_step85_20260812_082824.sh",
+    "server_path": "/hy-tmp/runs/run_g1i_gsm8k_continue_step85_20260812_082824.sh",
+    "bytes": 2810,
+    "sha256": "50ddb42ba51fb4a778fdd746db4a6d961647f58f440ff95d199537b1f65ddcad"
+  },
+  {
+    "repository_path": "code/scripts/runs/run_g1i_gsm8k_strictcot_dyn512_q32_r16_200_20260811_150956.sh",
+    "server_path": "/hy-tmp/runs/run_g1i_gsm8k_strictcot_dyn512_q32_r16_200_20260811_150956.sh",
+    "bytes": 2435,
+    "sha256": "fb21aefca3df61d9e723df6c52f6f71aa248615dd376efee552ea2d4d1032270"
+  },
+  {
+    "repository_path": "code/scripts/runs/run_g1i_gsm8k_strictcot_dyn512_q32_r16_200_nojit_20260811_151200.sh",
+    "server_path": "/hy-tmp/runs/run_g1i_gsm8k_strictcot_dyn512_q32_r16_200_nojit_20260811_151200.sh",
+    "bytes": 2398,
+    "sha256": "3ee8129088311f843bc3eec4c1641ed658ce7a357391c37ea533fc67e56ce164"
+  },
+  {
+    "repository_path": "code/scripts/runs/run_g1i_step85_to_dapo_20260812_023404.sh",
+    "server_path": "/hy-tmp/runs/run_g1i_step85_to_dapo_20260812_023404.sh",
+    "bytes": 2836,
+    "sha256": "58d8f2bba1e39088860f9d059790f0c66f70cc50694b23f64841b55c53ba2499"
+  },
+  {
+    "repository_path": "code/scripts/runs/run_posthoc_repeat_fastpath_20_rfb256_micro4_20260811_062619.sh",
+    "server_path": "/hy-tmp/runs/run_posthoc_repeat_fastpath_20_rfb256_micro4_20260811_062619.sh",
+    "bytes": 2726,
+    "sha256": "1ad7d72a8f6caf2421991fb08e47417a8fd1756a189f670b4b340c552884d6c9"
+  },
+  {
+    "repository_path": "code/scripts/runs/rwkv7-g1k-gsm8k-step155_dapo_pass32zero_full_q32x16_cand64_max6144_ob512_step0to200_20260920_033656/launch.sh",
+    "server_path": "/hy-tmp/runs/rwkv7-g1k-gsm8k-step155_dapo_pass32zero_full_q32x16_cand64_max6144_ob512_step0to200_20260920_033656/launch.sh",
+    "bytes": 3232,
+    "sha256": "0401e31b51568e0a9a4a3157a10ca65fec0b46e7ab3f6461d403b5f31e897b7e"
+  },
+  {
+    "repository_path": "code/scripts/runs/rwkv7-g1k-gsm8k-step155_dapo_pass32zero_full_q32x16_cand64_max6144_ob512_step0to200_20260920_033709/launch.sh",
+    "server_path": "/hy-tmp/runs/rwkv7-g1k-gsm8k-step155_dapo_pass32zero_full_q32x16_cand64_max6144_ob512_step0to200_20260920_033709/launch.sh",
+    "bytes": 3232,
+    "sha256": "0401e31b51568e0a9a4a3157a10ca65fec0b46e7ab3f6461d403b5f31e897b7e"
+  },
+  {
+    "repository_path": "code/scripts/runs/rwkv_skills_official_gsm8k/run_eval_base.sh",
+    "server_path": "/hy-tmp/runs/rwkv_skills_official_gsm8k/run_eval_base.sh",
+    "bytes": 826,
+    "sha256": "2fc705d5f642ecbe6c2c95b595ebf32e95c31651a0f2ca5b57d0d753c7ca492c"
+  },
+  {
+    "repository_path": "code/sft/cuda/wkv7_cuda.cu",
+    "server_path": "/hy-tmp/rwkv-rlhf-gsm8k-project/root_RWKV-LM/RWKV7-math500_teacher_trace_sft_20260613_noinlineeval/cuda/wkv7_cuda.cu",
+    "bytes": 4559,
+    "sha256": "fbcab19d8e74cf7677cdcd70d5843806a0c3016fd9d795a6b87820d22ba21208"
+  },
+  {
+    "repository_path": "code/sft/cuda/wkv7_op.cpp",
+    "server_path": "/hy-tmp/rwkv-rlhf-gsm8k-project/root_RWKV-LM/RWKV7-math500_teacher_trace_sft_20260613_noinlineeval/cuda/wkv7_op.cpp",
+    "bytes": 2013,
+    "sha256": "6c782f172503a2463196ce92e3d32ce291996702127d980c0adb2aa457bdad23"
+  },
+  {
+    "repository_path": "code/sft/cuda/wkv7state_cuda.cu",
+    "server_path": "/hy-tmp/rwkv-rlhf-gsm8k-project/root_RWKV-LM/RWKV7-math500_teacher_trace_sft_20260613_noinlineeval/cuda/wkv7state_cuda.cu",
+    "bytes": 6262,
+    "sha256": "bfcfc358c9f32df4388f5ae08d205bd199277b8a01ef740994c1235569a66b6b"
+  },
+  {
+    "repository_path": "code/sft/cuda/wkv7state_op.cpp",
+    "server_path": "/hy-tmp/rwkv-rlhf-gsm8k-project/root_RWKV-LM/RWKV7-math500_teacher_trace_sft_20260613_noinlineeval/cuda/wkv7state_op.cpp",
+    "bytes": 2360,
+    "sha256": "40c7c327791c80e02caa0c80fc40217c2e9bc658ef579f6f7dfe157f8073fda8"
+  },
+  {
+    "repository_path": "code/sft/infer.py",
+    "server_path": "/hy-tmp/rwkv-rlhf-gsm8k-project/root_RWKV-LM/RWKV7-math500_teacher_trace_sft_20260613_noinlineeval/infer.py",
+    "bytes": 16956,
+    "sha256": "9363d0a9760f02b5e658b4f435af1856247ae64bde7a0e1c3b957dd50a4b0c65"
+  },
+  {
+    "repository_path": "code/sft/main.py",
+    "server_path": "/hy-tmp/rwkv-rlhf-gsm8k-project/root_RWKV-LM/RWKV7-math500_teacher_trace_sft_20260613_noinlineeval/main.py",
+    "bytes": 21273,
+    "sha256": "76db88df0e106272c7c7af723e2499e92d1357e12cf5493bd5dc488f3032c162"
+  },
+  {
+    "repository_path": "code/sft/plot_metrics.py",
+    "server_path": "/hy-tmp/rwkv-rlhf-gsm8k-project/root_RWKV-LM/RWKV7-math500_teacher_trace_sft_20260613_noinlineeval/plot_metrics.py",
+    "bytes": 10764,
+    "sha256": "c3ff78522a785063980e4a34d7011b4cbbcb7561edb74dd542e6c35c43515340"
+  },
+  {
+    "repository_path": "code/sft/prepare_deepmath_rwkv_jsonl.py",
+    "server_path": "/hy-tmp/rwkv-rlhf-gsm8k-project/root_RWKV-LM/RWKV7-math500_teacher_trace_sft_20260613_noinlineeval/prepare_deepmath_rwkv_jsonl.py",
+    "bytes": 1325,
+    "sha256": "04e0758f901e7b422fa8833f4048e845554fd457b7cf86bd5263fd8d73580b50"
+  },
+  {
+    "repository_path": "code/sft/reference/rwkv7.py",
+    "server_path": "/hy-tmp/rwkv-rlhf-gsm8k-project/root_RWKV-LM/RWKV7-math500_teacher_trace_sft_20260613_noinlineeval/reference/rwkv7.py",
+    "bytes": 22246,
+    "sha256": "abb45c79de09f995f999fbebee62caac49899c7e9caf15ca9c77b1a6c33f4134"
+  },
+  {
+    "repository_path": "code/sft/reference/utils.py",
+    "server_path": "/hy-tmp/rwkv-rlhf-gsm8k-project/root_RWKV-LM/RWKV7-math500_teacher_trace_sft_20260613_noinlineeval/reference/utils.py",
+    "bytes": 5410,
+    "sha256": "b08aa9580696c2baa58de483ae61e074a4c08ab62441ce439c2f6759871d5f45"
+  },
+  {
+    "repository_path": "code/sft/reward.py",
+    "server_path": "/hy-tmp/rwkv-rlhf-gsm8k-project/root_RWKV-LM/RWKV7-math500_teacher_trace_sft_20260613_noinlineeval/reward.py",
+    "bytes": 20559,
+    "sha256": "974482615177c51bcb25153315f3c4a5bb9daf39f929e46f4ffefaadb9a451f6"
+  },
+  {
+    "repository_path": "code/sft/run_deepmath_trl_doc_g1f1p5b.sh",
+    "server_path": "/hy-tmp/rwkv-rlhf-gsm8k-project/root_RWKV-LM/RWKV7-math500_teacher_trace_sft_20260613_noinlineeval/run_deepmath_trl_doc_g1f1p5b.sh",
+    "bytes": 1429,
+    "sha256": "1498ca2b54508f8c8b0b0bfc5b91e7934384ab5cfd906a1f2a0f0f312e603057"
+  },
+  {
+    "repository_path": "code/sft/run_deepmath_trl_doc_g1f1p5b_full.sh",
+    "server_path": "/hy-tmp/rwkv-rlhf-gsm8k-project/root_RWKV-LM/RWKV7-math500_teacher_trace_sft_20260613_noinlineeval/run_deepmath_trl_doc_g1f1p5b_full.sh",
+    "bytes": 1433,
+    "sha256": "d59baf20f8aa928d8fdfab41942f046c2a31c3f9961fe6cfabbd182ea0aa0b08"
+  },
+  {
+    "repository_path": "code/sft/rwkv7_trainable.py",
+    "server_path": "/hy-tmp/rwkv-rlhf-gsm8k-project/root_RWKV-LM/RWKV7-math500_teacher_trace_sft_20260613_noinlineeval/rwkv7_trainable.py",
+    "bytes": 25153,
+    "sha256": "9754262096a02dec55576c037a6e43ac7d54a5d96a638c6915e6e582ad6daae4"
+  },
+  {
+    "repository_path": "code/sft/sft_distill.py",
+    "server_path": "/hy-tmp/rwkv-rlhf-gsm8k-project/root_RWKV-LM/RWKV7-math500_teacher_trace_sft_20260613_noinlineeval/sft_distill.py",
+    "bytes": 9611,
+    "sha256": "2a5dff72188e54cca5b1f88326625ae2759668ee401f236a5db5d77d5cd4d842"
+  },
+  {
+    "repository_path": "code/sft/sft_distill_fast.py",
+    "server_path": "/hy-tmp/rwkv-rlhf-gsm8k-project/root_RWKV-LM/RWKV7-math500_teacher_trace_sft_20260613_noinlineeval/sft_distill_fast.py",
+    "bytes": 9573,
+    "sha256": "21ba289a996783f22c25543fd856d4ff87befd69f12eb95f1ba3bfccccdf5701"
+  },
+  {
+    "repository_path": "code/sft/sft_distill_with_eval.py",
+    "server_path": "/hy-tmp/rwkv-rlhf-gsm8k-project/root_RWKV-LM/RWKV7-math500_teacher_trace_sft_20260613_noinlineeval/sft_distill_with_eval.py",
+    "bytes": 11629,
+    "sha256": "b0b17f861005cccbcda06baf55c4adda2ddb678c826fe41d3d7fadeeba46ca63"
+  },
+  {
+    "repository_path": "code/sft/sft_openmath_with_eval.py",
+    "server_path": "/hy-tmp/rwkv-rlhf-gsm8k-project/root_RWKV-LM/RWKV7-math500_teacher_trace_sft_20260613_noinlineeval/sft_openmath_with_eval.py",
+    "bytes": 13917,
+    "sha256": "7ab67c59221613ccdd38c85029f10a8fb3cd520b6c667adbe62160d2c3c250bf"
+  },
+  {
+    "repository_path": "code/sft/stateful_rollout.py",
+    "server_path": "/hy-tmp/rwkv-rlhf-gsm8k-project/root_RWKV-LM/RWKV7-math500_teacher_trace_sft_20260613_noinlineeval/stateful_rollout.py",
+    "bytes": 9899,
+    "sha256": "1f11c67786289a60535aa29dcd77a93b94bf4308711577a7c53ffb850ae63ae2"
+  },
+  {
+    "repository_path": "code/sft/train.py",
+    "server_path": "/hy-tmp/rwkv-rlhf-gsm8k-project/root_RWKV-LM/RWKV7-math500_teacher_trace_sft_20260613_noinlineeval/train.py",
+    "bytes": 60821,
+    "sha256": "e55a869b7971091fb57c3e45ab690d8e9e8394527df546a8057d8b3d9519e477"
+  },
+  {
+    "repository_path": "code/sft/utils.py",
+    "server_path": "/hy-tmp/rwkv-rlhf-gsm8k-project/root_RWKV-LM/RWKV7-math500_teacher_trace_sft_20260613_noinlineeval/utils.py",
+    "bytes": 3755,
+    "sha256": "2d79a6afc1e9019369d94b861f8ef1571c843e007c0bb087755e77abb6d5ad5f"
+  },
+  {
+    "repository_path": "code/scripts/watch_and_launch_g1k_dapo_100to200.sh",
+    "server_path": "/hy-tmp/watch_and_launch_g1k_dapo_100to200.sh",
+    "bytes": 701,
+    "sha256": "52f8f372c90f55c9e8596baec649a98daa0826073487c58cad8d694d36a3053e"
+  },
+  {
+    "repository_path": "code/scripts/watch_and_launch_g1k_dapo_300to400.sh",
+    "server_path": "/hy-tmp/watch_and_launch_g1k_dapo_300to400.sh",
+    "bytes": 692,
+    "sha256": "b563efe65d7936a6979544ba90e1755a53f7dfae7fd7611ca4c1c20e29297f7d"
+  },
+  {
+    "repository_path": "code/scripts/watch_continue_after_400.sh",
+    "server_path": "/hy-tmp/watch_continue_after_400.sh",
+    "bytes": 3450,
+    "sha256": "82b674c84f2c09345547ce806bfcec2fbc35ab293e02a0a6f765f0b7b04a95f1"
+  },
+  {
+    "repository_path": "code/scripts/watch_continue_after_400_v2.sh",
+    "server_path": "/hy-tmp/watch_continue_after_400_v2.sh",
+    "bytes": 3487,
+    "sha256": "5f336aaf749c447ea435017d6293185e7b019326c2c2e619b03e36d74cac53d5"
+  }
+]

@@ -1,0 +1,5 @@
+backup-assets/
+restored/
+*.partial
+*.assembling
+__pycache__/
